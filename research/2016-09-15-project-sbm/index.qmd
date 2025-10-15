@@ -16,33 +16,32 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 bibliography: sbm.bib
 ---
 
-::: {.column-page}
+::: column-page
 {{< video https://www.youtube.com/watch?v=cHTB2kxBqEk >}}
 :::
 
-[{{< fa file-lines >}} Documentation](http://mapbrain.readthedocs.io/en/latest/quickstart.html){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the documentation"}
-[{{< fa download >}} Download](https://github.com/SiPBA/mapBrain){.btn .btn-primary .btn role="button" data-toggle="tooltip" title="Download the package"}
-
-
+[{{< fa file-lines >}} Documentation](http://mapbrain.readthedocs.io/en/latest/quickstart.html){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the documentation"} [{{< fa download >}} Download](https://github.com/SiPBA/mapBrain){.btn .btn-primary .btn role="button" data-toggle="tooltip" title="Download the package"}
 
 # What is the Spherical Brain Mapping?
+
 The **Spherical Brain Mapping** (SBM) is a framework intended to map the internal structures and features of the brain onto a 2D image that summarizes all this information, as described in [@martinez2016spherical] and previously presented in [@martinez2014projecting] and [@martinez2015volumetric]. 3D brain imaging, such as MRI or PET produces a huge amount of data that is currently analysed using uni or multivariate approaches.
 
 A new structural parametrization of MRI images has been added, using a modified hidden markov model to trace routes that follow minimal intensity change paths inside the brain, instead of the rectilinear paths used in typical SBM [@martinez2016structural]. This file, currently only working in MATLAB, is contained in the file hmmPaths.m.
 
 # Features
+
 ## Project the Brain.
-![Example of the Projections for White and Grey Matter](03-projections-1.png){width=300 fig-align="left"}
+
+![Example of the Projections for White and Grey Matter](03-projections-1.png){width="300" fig-align="left"}
 
 Spherical Brain Mapping uses an algorithm to perform a projection of the different tissues of the brain to a single plane that can be visually analysed.
 
 ## Locate the most signifcant areas.
 
-![Projected Atlas of the AAL regions](map-1.png){width=300 fig-align="left"}
+![Projected Atlas of the AAL regions](map-1.png){width="300" fig-align="left"}
 
-Projected Atlas of the AAL regions
-It is possible to superimpose a projected brain atlas onto a resulting significance map (e.g., a t-map). Thereby it is easy to identify the sources of the changes in a two-dimensional map.
-
+Projected Atlas of the AAL regions It is possible to superimpose a projected brain atlas onto a resulting significance map (e.g., a t-map). Thereby it is easy to identify the sources of the changes in a two-dimensional map.
 
 ## Write your own Extensions.
+
 Spherical Brain Mapping is written in Matlab, totally compatible with Octave, and ported to Python, so that you can write your own statistical properties to project the brain. The more specific these statistical are, the more significant will be your results.

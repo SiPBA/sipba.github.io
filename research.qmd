@@ -12,5 +12,6 @@ Currently I research in Information Technology, inside the interdisciplinary fie
 
 During this period I have belonged to the Signal Processing and Biomedical Applications (SiPBA) research group, and I have written or contributed to several publications.
 
----
+------------------------------------------------------------------------
+
 # Research projects

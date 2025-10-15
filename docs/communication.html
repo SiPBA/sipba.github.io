@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.361">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>F.J. Martinez-Murcia - Communication</title>
+<title>Communication – SiPBA Research Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/favicon.ico" rel="icon">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -37,19 +38,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-fe5b45687c9c27489b08400823fa31a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -58,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -93,8 +99,35 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -103,48 +136,51 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logos/SinFondoClaro.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">F.J. Martinez-Murcia</span>
+    <span class="navbar-title">SiPBA Research Lab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html" rel="" target="">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="./people.html"> 
+<span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html" rel="" target="">
- <span class="menu-text">Teaching</span></a>
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./communication.html" rel="" target="" aria-current="page">
- <span class="menu-text">Communication</span></a>
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/SiPBA" target="_blank"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
           </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -154,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(16)</span></div><div class="category" data-category="ciencia">ciencia <span class="quarto-category-count">(12)</span></div><div class="category" data-category="cienciavision">cienciavision <span class="quarto-category-count">(1)</span></div><div class="category" data-category="comunicacion">comunicacion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="divulgacion">divulgacion <span class="quarto-category-count">(13)</span></div><div class="category" data-category="humor">humor <span class="quarto-category-count">(6)</span></div><div class="category" data-category="ia">ia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="musica">musica <span class="quarto-category-count">(6)</span></div><div class="category" data-category="scenio">scenio <span class="quarto-category-count">(3)</span></div><div class="category" data-category="sin-categoria">sin-categoria <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tecnologia">tecnologia <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Y2llbmNpYQ==">ciencia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2llbmNpYXZpc2lvbg==">cienciavision <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29tdW5pY2FjaW9u">comunicacion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGl2dWxnYWNpb24=">divulgacion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aHVtb3I=">humor <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aWE=">ia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bXVzaWNh">musica <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c2Nlbmlv">scenio <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -165,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -173,7 +209,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 
 
@@ -181,30 +219,30 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cienciavision,musica,comunicacion,scenio,ia" data-listing-date-sort="1608418800000" data-listing-file-modified-sort="1712835766274" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="g-col-1" data-index="0" data-categories="Y2llbmNpYXZpc2lvbiUyQ211c2ljYSUyQ2NvbXVuaWNhY2lvbiUyQ3NjZW5pbyUyQ2lh" data-listing-date-sort="1608418800000" data-listing-file-modified-sort="1760437025000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1072">
 <a href="./communication/2020-12-22-modelito-sabanero/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./communication/2020-12-22-modelito-sabanero/PORTADA_MODELITO.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./communication/2020-12-22-modelito-sabanero/PORTADA_MODELITO.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Mi Modelito Sabanero
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cienciavision'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y2llbmNpYXZpc2lvbg=='); return false;">
 cienciavision
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('musica'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('bXVzaWNh'); return false;">
 musica
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('comunicacion'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tdW5pY2FjaW9u'); return false;">
 comunicacion
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('scenio'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('c2Nlbmlv'); return false;">
 scenio
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('ia'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aWE='); return false;">
 ia
 </div>
 </div>
@@ -223,35 +261,35 @@ Dec 20, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ciencia,scenio,divulgacion,humor,musica" data-listing-date-sort="1607641200000" data-listing-file-modified-sort="1712835766270" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="1" data-categories="Y2llbmNpYSUyQ3NjZW5pbyUyQ2RpdnVsZ2FjaW9uJTJDaHVtb3IlMkNtdXNpY2E=" data-listing-date-sort="1607641200000" data-listing-file-modified-sort="1760437025000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
 <a href="./communication/2020-12-11-divulgamiento-y-confinacion-el-musical/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./communication/2020-12-11-divulgamiento-y-confinacion-el-musical/divulgamiento_y_confinacion.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./communication/2020-12-11-divulgamiento-y-confinacion-el-musical/divulgamiento_y_confinacion.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Divulgamiento y Confinación – El Musical
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y2llbmNpYQ=='); return false;">
 ciencia
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('scenio'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('c2Nlbmlv'); return false;">
 scenio
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('ZGl2dWxnYWNpb24='); return false;">
 divulgacion
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('humor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aHVtb3I='); return false;">
 humor
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('musica'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('bXVzaWNh'); return false;">
 musica
 </div>
 </div>
 <div class="card-text listing-description">
-Ayer fue&nbsp;Trivulgando, un evento de divulgación nacional que se nos va haciendo mayor. Por la…
+Ayer fue&nbsp;Trivulgando, un evento de divulgación nacional que se nos va haciendo mayor. Por la situación actual, este año había una temática subyacente a todas las ponencias…
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -259,463 +297,6 @@ Ayer fue&nbsp;Trivulgando, un evento de divulgación nacional que se nos va haci
 </div>
 <div class="listing-date">
 Dec 11, 2020
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="ciencia,divulgacion,humor,scenio,musica" data-listing-date-sort="1590184800000" data-listing-file-modified-sort="1712835766138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./communication/2020-05-23-el-p-valor/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./communication/2020-05-23-el-p-valor/BARBER_VIDEO_P_VALOR.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-El P-Valor
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('humor'); return false;">
-humor
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('scenio'); return false;">
-scenio
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('musica'); return false;">
-musica
-</div>
-</div>
-<div class="card-text listing-description">
-En ciencia, la significación, o decir que algo es “Significativo” es un término mucho más preciso que en el lenguaje natural. Es una medida de la probabilidad de que un…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-May 23, 2020
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="ciencia" data-listing-date-sort="1580943600000" data-listing-file-modified-sort="1712835766134" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./communication/2020-02-06-podcast-efecto-moire-episodio-1/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="communication/2020-02-06-podcast-efecto-moire-episodio-1/images/podcast_imagen.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Podcast Efecto Moiré - Episodio 1
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-</div>
-<div class="card-text listing-description">
-En el marco del programa de formación para docentes de la UMA, estoy haciendo un curso de edición de Video y Podcast para su uso docente. Como práctica, he preparado un…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Feb 6, 2020
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="ciencia,divulgacion,tecnologia" data-listing-date-sort="1578178800000" data-listing-file-modified-sort="1712835765926" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./communication/2020-01-05-desgranando-la-ciencia-6-repligantes/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Desgranando la Ciencia 6: RepliGANtes
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tecnologia'); return false;">
-tecnologia
-</div>
-</div>
-<div class="card-text listing-description">
-He tenido el placer de asistir a Desgranando Ciencia 6 por primera vez como ponente! Hablo de Deep…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Jan 5, 2020
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="ciencia,divulgacion" data-listing-date-sort="1567634400000" data-listing-file-modified-sort="1712835765794" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./communication/2019-09-05-las-maquinas-nos-quitan-el-trabajo-de-nuevo/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="communication/2019-09-05-las-maquinas-nos-quitan-el-trabajo-de-nuevo/images/69090871_2188735534734761_2288422828019548160_o-1024x683.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-¡Las máquinas nos quitan el trabajo! (de nuevo)
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-</div>
-<div class="card-text listing-description">
-Siempre es un placer que me inviten a saraos, pero ya que lo hagan como “invited speaker” son palabras mayores. Y eso es lo que me pidieron para el XX ENEM Granada. Que llegara y soltara una sarta de mis chominaicas. Y encima de las tablas, frente a cientos de estudiantes y post-estudiantes de matemáticas de…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Sep 5, 2019
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="ciencia,divulgacion,musica" data-listing-date-sort="1559426400000" data-listing-file-modified-sort="1712835765670" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./communication/2019-06-02-barbers-science-en-la-clausura-de-granadaciencia/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://i0.wp.com/www.fjmartinezmurcia.es/wp-content/uploads/2019/07/D7kP0OwWsAAh7YO.jpg?fit=640%2C905&ssl=1" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Barber’s Science en la clausura de <span class="citation" data-cites="GranadaCiencia">@GranadaCiencia</span>
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('musica'); return false;">
-musica
-</div>
-</div>
-<div class="card-text listing-description">
-¡Pelotazo! Con apenas un mes de vida, Barber’s Science se codeó con los grandes de la divulgación en el evento de clausura de <em>Granada, ciudad de la ciencia y la innovación.</em> ¡Todo un grandísimo…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Jun 2, 2019
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="ciencia,divulgacion,musica" data-listing-date-sort="1558562400000" data-listing-file-modified-sort="1712835765554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./communication/2019-05-23-pint-of-science-granada-2019/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://i2.wp.com/www.fjmartinezmurcia.es/wp-content/uploads/2019/07/D7HQ25YW0AUVS_l.jpg?fit=640%2C480&ssl=1" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Pint of Science Granada 2019
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('musica'); return false;">
-musica
-</div>
-</div>
-<div class="card-text listing-description">
-Era la primera vez para muchas cosas, y ha sido mágica. En primer lugar porque de un absurdo reto en twitter he montado un cuarteto de armonía vocal, o <em>BarberShop Quartet</em> que parece que está despegando a pasos agigantados. En segundo lugar porque era mi primera charla divulgativa de más de 15 minutos, y estaba muy nervioso por, entre otras…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-May 23, 2019
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="ciencia,divulgacion,musica" data-listing-date-sort="1552258800000" data-listing-file-modified-sort="1712835765554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./communication/2019-03-11-la-cancion-del-silicio/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-La Canción del Silicio
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('musica'); return false;">
-musica
-</div>
-</div>
-<div class="card-text listing-description">
-Esto es una respuesta al reto del International Year…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-F.J. Martinez-Murcia
-</div>
-<div class="listing-date">
-Mar 11, 2019
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="ciencia,divulgacion,humor" data-listing-date-sort="1526853600000" data-listing-file-modified-sort="1712835765414" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./communication/2018-05-21-y-llego-la-final/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="communication/2018-05-21-y-llego-la-final/images/Q1B9277-1024x683.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Y llegó la Final
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('humor'); return false;">
-humor
-</div>
-</div>
-<div class="card-text listing-description">
-Finalmente, tras la maravillosa experiencia de la semifinal de&nbsp;<strong>Famelab</strong>, tuvimos unas cuantas jornadas más de convivencia y aprendizaje, incluyendo la genial Masterclass de&nbsp; <strong>James…</strong><strong></strong>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-May 21, 2018
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="10" data-categories="divulgacion,humor" data-listing-date-sort="1526162400000" data-listing-file-modified-sort="1712835765358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./communication/2018-05-13-en-la-feria-de-la-ciencia-de-guadalajara/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-En la Feria de la Ciencia de Guadalajara
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('humor'); return false;">
-humor
-</div>
-</div>
-<div class="card-text listing-description">
-En la que es mi primera experiencia como monologuista fuera del círculo académico (3MT y Famelab), me llamaron para actuar en la I Feria de la Ciencia de Guadalajara. Para mi es todo un honor haber participado, y quiero agradecer a todos los que lo hicieron posible, con especial mención a Juan Pablo Guzmán, un adverso de pro, que lo…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-May 13, 2018
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="ciencia,divulgacion,humor" data-listing-date-sort="1523311200000" data-listing-file-modified-sort="1712835765358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./communication/2018-04-10-finalista-en-famelab/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="communication/2018-04-10-finalista-en-famelab/images/30442443_2057666084477418_8640889998100398080_n.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-¡Finalista en Famelab!
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('humor'); return false;">
-humor
-</div>
-</div>
-<div class="card-text listing-description">
-Pues resulta que finalmente he pasado a la final de&nbsp;<strong>Famelab</strong>, el concurso de monólogos…<strong></strong>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Apr 10, 2018
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="12" data-categories="ciencia,divulgacion" data-listing-date-sort="1522620000000" data-listing-file-modified-sort="1712835765358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./communication/2018-04-02-conoce-a-los-famelabers/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Conoce a los #Famelabers
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-</div>
-<div class="card-text listing-description">
-Este domingo, a iniciativa (y gracias a) nuestra anfitriona y compañera Laura Parro, de Viajando por Planetas, nos juntamos en un directo de Youtube parte de los semifinalistas de Famelab 2018, para hablar sobre…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Apr 2, 2018
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="13" data-categories="ciencia,divulgacion,humor" data-listing-date-sort="1520895600000" data-listing-file-modified-sort="1712835765358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./communication/2018-03-13-semifinalista-en-famelab-2018/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semifinalista en Famelab 2018!
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('ciencia'); return false;">
-ciencia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('humor'); return false;">
-humor
-</div>
-</div>
-<div class="card-text listing-description">
-Esto es una noticia corta. Básicamente, soy semifinalista en Famelab 2018, el concurso de monólogos científicos por excelencia en España.&nbsp; Es una…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Mar 13, 2018
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="14" data-categories="sin-categoria" data-listing-date-sort="1491775200000" data-listing-file-modified-sort="1712835765214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./communication/2017-04-10-mi-charla-de-three-minute-thesis/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Mi charla de Three-Minute Thesis
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('sin-categoria'); return false;">
-sin-categoria
-</div>
-</div>
-<div class="card-text listing-description">
-https://www.youtube.com/watch?v=jAu_Gj3oMAU
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Apr 10, 2017
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="15" data-categories="divulgacion" data-listing-date-sort="1488495600000" data-listing-file-modified-sort="1712835765042" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./communication/2017-03-03-el-3mt-granada/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="communication/2017-03-03-el-3mt-granada/images/IMG_6089-1024x683.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-El 3MT Granada
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('divulgacion'); return false;">
-divulgacion
-</div>
-</div>
-<div class="card-text listing-description">
-Three minute thesis es una iniciativa internacional con sólo un objetivo: contar tu tesis en tres minutos, sólo con ayuda de una diapositiva estática, para una audiencia inteligente pero no…<strong></strong>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Mar 3, 2017
 </div>
 </div>
 </div>
@@ -747,121 +328,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  let localAlternateSentinel = 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -877,18 +343,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -920,11 +375,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sipba\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -934,8 +426,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -947,7 +448,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -991,6 +614,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1016,6 +640,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1076,6 +726,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

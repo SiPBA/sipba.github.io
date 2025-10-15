@@ -3,26 +3,37 @@ project:
   output-dir: docs
 
 website:
-  title: "F.J. Martinez-Murcia"
+  title: "SiPBA Research Lab"
+  description: "Demo projects, experiments, debugging data and so on from the [SiPBA Research Lab](https://sipba.github.io/)"
+  site-url: https://sipba.github.io/
+  favicon: images/favicon.ico
   navbar:
-    left:
+    title: ""
+    background: primary
+    search: true
+    logo: images/logos/SinFondoClaro.png
+    right:
       - href: index.qmd
         text: Home
+      - href: people.qmd
+        text: People
       - href: research.qmd
         text: Research
       - publications.qmd
-      - teaching.qmd
-      - communication.qmd
       - blog.qmd
+      - icon: github # add icons as navbar buttons
+        href: https://github.com/SiPBA
+        target: _blank
 
 format:
   html:
-    theme: 
-      light: flatly
-      dark: darkly
+    theme: cosmo
     css: styles.css
     toc: true
     page-layout: full
 
 editor: visual
 
+# navbar: 
+#    background: "#222322"
+#    foreground: "#FFFFFF"

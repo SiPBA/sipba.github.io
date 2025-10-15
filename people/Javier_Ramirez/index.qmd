@@ -1,0 +1,35 @@
+---
+title: "Javier Ramírez"
+name: "Javier"
+lastname: "Ramírez"
+include-after-body: _footer.html
+about: 
+  template: solana
+  image: javierrp.jpg
+  image-width: 10em
+  links:
+  - icon: linkedin
+    text: LinkedIn
+    href: https://www.linkedin.com/in/javier-ramírez-66a08784
+  - icon: envelope
+    text: Email
+    href: mailto:javierrp@ugr.es
+categories: [team leader, full professor] # self-defined categories
+---
+
+### {{< fa circle-user >}} Bio
+
+**Full Professor**
+
+**Department of Signal Theory, Networking and Communications\
+Instituto Universitario Andaluz Interuniversitario en Data Science and Coputational Intelligence**
+
+Electronics engineer (1998) and doctor by the University of Granada (UGR, 2001). He was awarded the FPU grant to carry out his thesis. Since 2012 he has been a University Professor in the area of Signal Theory, Telematics and Communications at the UGR. In 2006 he promoted the creation of the Signal Processing and Biomedical Applications (SiPBA) research group. He has supervised 14 Doctoral Theses, 4 of which were awarded the Extraordinary Doctorate Prize.
+
+He has participated in 17 national and regional research projects, being the PI of four, 3 projects of the European Union’s Framework Programme, being the coordinator of one and in 6 innovative research contracts financed by private companies, being director of the execution of one of them. He’s the author of a patent. He has published more than 200 articles in relevant national and international conferences, 119 in impact index journals (ISI-JCR) and 18 book chapters.
+
+He has carried out research stays in prestigious centres such as the High-Speed Digital Architecture Laboratory (HSDAL) at the University of Florida (Gainesville, USA), the FAMU/FSU College of Engineering at Florida State University (Tallahassee, USA) or the Computational Intelligence and Machine Learning Group at the University of Regensburg (Germany) in collaboration with Professors Dr. Fred J. Taylor, Dr. Uwe Meyer-Baese, and Dr. Elmar W. Lang, respectively.
+
+::: {.card title="Life Expectancy" padding="3px"}
+This is the content.
+:::

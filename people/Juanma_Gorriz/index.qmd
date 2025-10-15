@@ -1,0 +1,27 @@
+---
+title: "Juan Manuel Górriz"
+name: "Juan Manuel"
+lastname: "Górriz"
+include-after-body: _footer.html
+about: 
+  template: solana
+  image: juanma.jpg
+  image-width: 10em
+  links:
+  - icon: linkedin
+    text: LinkedIn
+    href: https://www.linkedin.com/in/juan-manuel-górriz-sáez-64137497
+  - icon: envelope
+    text: Email
+    href: mailto:gorriz@ugr.es
+categories: [team leader, full professor] # self-defined categories
+---
+
+
+### {{< fa circle-user >}} Bio 
+
+Juan Manuel Górriz Sáez (Full Professor at the University of Granada, Spain and Research Associate at the University of Cambridge, UK) was born in Almeria in 27th May 1976. He received his M.Sc. in Physics in 2000 and his M.Sc. in Electronic Engineering in 2001, both from the University of Granada, Spain. He then earned the Ph.D. degree in Electronic Engineering in 2003 and the Ph.D. degree in Physics in 2006, from the Universities of Cádiz and Granada, Spain, respectively. He has already been the supervisor of 15 Ph.D. students and has published more than 200 journal papers (including articles in the International Journal of Neural Systems, Human Brain Mapping, Information Fusion, Neuroimage, IEEE Trans. Medical Imaging, PlosOne, etc.) that have received more than 13000 cites, with an h-index equal to 60. He actually leads the group in “Signal Processing and Biomedical Applications” (SIPBA), whose reference is TIC-218 in the Andalusian Research Plan, at the Data Science and Computational Intelligence Institute (DASCI-UGR). He has served as Senior Editor in the Journal of Alzheimer Disease (IOP), Associate Editor in Neurocomputing (Elsevier), IEEE Transactions on Emerging Topics in Computational Intelligence and Current Alzheimer Research (Bentham) journals, acting as editorial member of several journals and conferences. He has received many awards and honors, such as the 2015 Spanish National Engineering Academy Medal (Young Researchers), the 2008 ASI Andalusian Prize for the best research project “DENCLASES” in neuroscience, full membership in Cambridge Neuroscience, the Social Council Award at the UGR (Young Researchers), etc. He has developed several short and long stays as visiting Professor in top centers around the world, such as University of Cambridge (UK), University of Regensburg and LMU (Germany), University of Liege (Belgium), NorthEastern University (USA), Infineon-Siemens AG, Munich (Germany), etc.
+
+::: {.card title="Life Expectancy" padding="3px"}
+This is the content.
+:::

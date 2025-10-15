@@ -1,42 +1,23 @@
 [
   {
-    "listing": "/research.html",
+    "listing": "/people.html",
     "items": [
-      "/research/2023-09-01-project-latidos/index.html",
-      "/research/2017-11-30-project-brainsimulator/index.html",
-      "/research/2017-06-01-phd-thesis/index.html",
-      "/research/2016-10-24-project-swpca/index.html",
-      "/research/2016-09-15-project-sbm/index.html"
+      "/people/Juanma_Gorriz/index.html",
+      "/people/Francisco_Martinez/index.html",
+      "/people/Javier_Ramirez/index.html"
     ]
   },
   {
-    "listing": "/teaching.html",
+    "listing": "/publications.html",
     "items": [
-      "/teaching/2021-02-13-Quees-un-filtro/index.html",
-      "/teaching/2021-10-01-DeepLearning/index.html",
-      "/teaching/2020-04-14-CyS-UMA/index.html",
-      "/teaching/2018-12-04-software-carpentry-workshop-en-el-ift-e-icmat-del-csic/index.html"
+      "/publications/2024-05-10-bridging/index.html"
     ]
   },
   {
     "listing": "/communication.html",
     "items": [
       "/communication/2020-12-22-modelito-sabanero/index.html",
-      "/communication/2020-12-11-divulgamiento-y-confinacion-el-musical/index.html",
-      "/communication/2020-05-23-el-p-valor/index.html",
-      "/communication/2020-02-06-podcast-efecto-moire-episodio-1/index.html",
-      "/communication/2020-01-05-desgranando-la-ciencia-6-repligantes/index.html",
-      "/communication/2019-09-05-las-maquinas-nos-quitan-el-trabajo-de-nuevo/index.html",
-      "/communication/2019-06-02-barbers-science-en-la-clausura-de-granadaciencia/index.html",
-      "/communication/2019-05-23-pint-of-science-granada-2019/index.html",
-      "/communication/2019-03-11-la-cancion-del-silicio/index.html",
-      "/communication/2018-05-21-y-llego-la-final/index.html",
-      "/communication/2018-05-13-en-la-feria-de-la-ciencia-de-guadalajara/index.html",
-      "/communication/2018-04-10-finalista-en-famelab/index.html",
-      "/communication/2018-04-02-conoce-a-los-famelabers/index.html",
-      "/communication/2018-03-13-semifinalista-en-famelab-2018/index.html",
-      "/communication/2017-04-10-mi-charla-de-three-minute-thesis/index.html",
-      "/communication/2017-03-03-el-3mt-granada/index.html"
+      "/communication/2020-12-11-divulgamiento-y-confinacion-el-musical/index.html"
     ]
   },
   {
@@ -44,50 +25,23 @@
     "items": [
       "/blog/2024-04-01-generador-acks/index.html",
       "/blog/2021-06-08-alcala-la-real-ano-de-construccion-de-edificios/index.html",
-      "/blog/2019-07-06-un-proyecto-teuton/index.html",
-      "/blog/2019-07-05-la-movilidad-internacional-y-el-sistema-cientifico-espanol/index.html",
-      "/blog/2019-02-05-taller-de-comunicacion-3mt/index.html",
-      "/blog/2018-02-26-jupyter-lab/index.html",
-      "/blog/2018-01-30-jugando-con-logos/index.html",
-      "/blog/2017-11-21-bohemian-rhapsody/index.html",
-      "/blog/2017-11-15-sintesis-de-imagenes-cerebrales-en-python/index.html",
-      "/blog/2017-11-10-construyendo-una-zanfona-parte-v/index.html",
-      "/blog/2017-11-09-construyendo-una-zanfona-parte-iv/index.html",
-      "/blog/2017-11-08-construyendo-una-zanfona-parte-iii/index.html",
-      "/blog/2017-11-07-construyendo-una-zanfona-parte-ii/index.html",
-      "/blog/2017-11-06-opciones-de-open-access-verde-para-cientificos/index.html",
-      "/blog/2017-11-02-construyendo-una-zanfona-gracias-a-ugears/index.html",
-      "/blog/2017-05-03-avatar-visualmooc/index.html",
-      "/blog/2017-05-03-comienza-el-mooc-visual-thinking-en-educacion/index.html",
-      "/blog/2016-09-12-hablemos-en-japones-nhk-world/index.html",
-      "/blog/2016-08-06-sintesis-de-voces-cantadas-con-letra-en-linux-ahora-es-posible/index.html",
-      "/blog/2016-04-12-como-conectar-a-un-kernel-remoto-de-ipython-en-spyder/index.html",
-      "/blog/2016-01-22-un-pensamiento-sobre-los-svm/index.html",
-      "/blog/2015-12-01-jesucristo-superstar-santa-cecilia-2015/index.html",
-      "/blog/2015-11-10-migrando-todo-a-github/index.html",
-      "/blog/2015-09-02-pensamientos-sobre-los-gmo/index.html",
-      "/blog/2015-08-26-fluidsynth-superado-ahora-empieza-lo-bueno/index.html",
-      "/blog/2015-07-15-y-vuelvo-a-tocar-con-achake/index.html",
-      "/blog/2015-06-11-ahora-empieza-lo-bueno/index.html",
-      "/blog/2015-05-19-chusocol/index.html",
-      "/blog/2015-05-12-resultado-de-la-velada/index.html",
-      "/blog/2015-05-05-xix-veladas-musicales/index.html",
-      "/blog/2015-04-07-errare-humanum-est/index.html",
-      "/blog/2015-03-05-que-ide-puedo-usar-para-trabajar-con-python-como-si-fuera-matlab/index.html",
-      "/blog/2015-03-04-tocando-mis-primeras-notas/index.html",
-      "/blog/2015-03-03-manana-me-pongo/index.html",
-      "/blog/2015-03-03-a-estas-alturas/index.html",
-      "/blog/2015-02-25-los-proyectos-personales/index.html",
-      "/blog/2015-02-21-entre-apis-y-ces/index.html",
-      "/blog/2015-02-18-comienza-la-aventura/index.html",
-      "/blog/2014-10-07-monos-en-el-espacio/index.html",
-      "/blog/2014-09-09-flor-del-cerezo/index.html"
+      "/blog/2019-07-06-un-proyecto-teuton/index.html"
     ]
   },
   {
-    "listing": "/publications.html",
+    "listing": "/index.html",
     "items": [
       "/publications/2024-05-10-bridging/index.html"
+    ]
+  },
+  {
+    "listing": "/research.html",
+    "items": [
+      "/research/2023-09-01-project-latidos/index.html",
+      "/research/2017-11-30-project-brainsimulator/index.html",
+      "/research/2017-06-01-phd-thesis/index.html",
+      "/research/2016-10-24-project-swpca/index.html",
+      "/research/2016-09-15-project-sbm/index.html"
     ]
   }
 ]
