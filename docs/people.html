@@ -79,13 +79,41 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-lab-member'] = new List('listing-lab-member', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-former-members .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-started','listing-ended',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-image","listing-title","listing-lastname","listing-subtitle","listing-categories","listing-started","listing-ended"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-former-members'] = new List('listing-former-members', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -194,9 +222,10 @@ window.Quarto = {
    
   <ul>
   <li><a href="#team" id="toc-team" class="nav-link active" data-scroll-target="#team">Team</a></li>
+  <li><a href="#former-members" id="toc-former-members" class="nav-link" data-scroll-target="#former-members">Former Members</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZnVsbCUyMHByb2Zlc3Nvcg==">full professor <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cG9zdGRvYw==">postdoc <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGVhbSUyMGxlYWRlcg==">team leader <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="QWRqdW50JTIwUHJvZmVzc29y">Adjunt Professor <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXNzb2NpYXRlJTIwUHJvZmVzc29y">Associate Professor <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UGhEJTIwU3R1ZGVudA==">PhD Student <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9zdGRvYw==">Postdoc <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZnVsbCUyMHByb2Zlc3Nvcg==">full professor <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cG9zdGRvYw==">postdoc <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGVhbSUyMGxlYWRlcg==">team leader <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -223,43 +252,241 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="team">Team</h2>
 <div id="listing-lab-member" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-categories="dGVhbSUyMGxlYWRlciUyQ2Z1bGwlMjBwcm9mZXNzb3I=" data-listing-file-modified-sort="1760515375000" data-listing-reading-time-sort="2" data-listing-word-count-sort="297">
+<div class="g-col-1" data-index="0" data-categories="dGVhbSUyMGxlYWRlciUyQ2Z1bGwlMjBwcm9mZXNzb3I=" data-listing-file-modified-sort="1760695589000" data-listing-reading-time-sort="2" data-listing-word-count-sort="297">
 <a href="./people/Juanma_Gorriz/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
-<div class="listing-item-img-placeholder card-img-top" style="height: 200px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./people/Juanma_Gorriz/juanma.jpg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Juan Manuel Górriz
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('dGVhbSUyMGxlYWRlcg=='); return false;">
+team leader
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZnVsbCUyMHByb2Zlc3Nvcg=='); return false;">
+full professor
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="cG9zdGRvYw==" data-listing-file-modified-sort="1760442756000" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="g-col-1" data-index="1" data-categories="cG9zdGRvYw==" data-listing-file-modified-sort="1760694955000" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <a href="./people/Francisco_Martinez/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
-<div class="listing-item-img-placeholder card-img-top" style="height: 200px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./people/Francisco_Martinez/paco.jpg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Francisco J. Martinez-Murcia
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('cG9zdGRvYw=='); return false;">
+postdoc
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="dGVhbSUyMGxlYWRlciUyQ2Z1bGwlMjBwcm9mZXNzb3I=" data-listing-file-modified-sort="1760515636000" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
+<div class="g-col-1" data-index="2" data-categories="dGVhbSUyMGxlYWRlciUyQ2Z1bGwlMjBwcm9mZXNzb3I=" data-listing-file-modified-sort="1760695598000" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
 <a href="./people/Javier_Ramirez/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
-<div class="listing-item-img-placeholder card-img-top" style="height: 200px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./people/Javier_Ramirez/javierrp.jpg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Javier Ramírez
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('dGVhbSUyMGxlYWRlcg=='); return false;">
+team leader
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZnVsbCUyMHByb2Zlc3Nvcg=='); return false;">
+full professor
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="QXNzb2NpYXRlJTIwUHJvZmVzc29y" data-listing-date-sort="1531087200000" data-listing-file-modified-sort="1760695557000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
+<a href="./people/fermin-segovia/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./people/fermin-segovia/images/fermin.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Fermín Segovia
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('QXNzb2NpYXRlJTIwUHJvZmVzc29y'); return false;">
+Associate Professor
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="QXNzb2NpYXRlJTIwUHJvZmVzc29y" data-listing-date-sort="1531173600000" data-listing-file-modified-sort="1760695564000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./people/diego-salas-gonzalez/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./people/diego-salas-gonzalez/images/dsalas.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Diego Salas-Gonzalez
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('QXNzb2NpYXRlJTIwUHJvZmVzc29y'); return false;">
+Associate Professor
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="QXNzb2NpYXRlJTIwUHJvZmVzc29y" data-listing-date-sort="1531173600000" data-listing-file-modified-sort="1760695545000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="327">
+<a href="./people/ignacio-alvarez-illan/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./people/ignacio-alvarez-illan/images/ignacio.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ignacio Alvarez Illan
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('QXNzb2NpYXRlJTIwUHJvZmVzc29y'); return false;">
+Associate Professor
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="UGhEJTIwU3R1ZGVudCUyQ0FkanVudCUyMFByb2Zlc3Nvcg==" data-listing-date-sort="1539381600000" data-listing-file-modified-sort="1760695528000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
+<a href="./people/jacob-rodriguez-rivero/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./people/jacob-rodriguez-rivero/images/jrr3.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jacob Rodríguez Rivero
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('UGhEJTIwU3R1ZGVudA=='); return false;">
+PhD Student
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('QWRqdW50JTIwUHJvZmVzc29y'); return false;">
+Adjunt Professor
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
 </div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="former-members" class="level2">
+<h2 class="anchored" data-anchor-id="former-members">Former Members</h2>
+<div id="listing-former-members" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-former-members-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-former-members'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-image" data-direction="asc">
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Name
+        </option>
+         <option value="listing-subtitle" data-direction="asc">
+          Role
+        </option>
+         <option value="listing-started" data-direction="asc">
+          Started
+        </option>
+         <option value="listing-ended" data-direction="asc">
+          Ended
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-image" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;"> </a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Name</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-subtitle" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Role</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-started" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Started</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-ended" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Ended</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="UG9zdGRvYw==" data-listing-title-sort="Diego Castillo-Barnes">
+<td>
+<span class="listing-image"><img loading="lazy" src="./images/profiles/diegoc.png" style="height: 25px;"></span>
+</td>
+<td>
+<a href="https://drganghe.github.io/quarto-academic-website-template" class="title listing-title">Diego Castillo-Barnes</a>
+</td>
+<td>
+<span class="listing-subtitle">Postdoc</span>
+</td>
+<td>
+<span class="listing-started">2016</span>
+</td>
+<td>
+<span class="listing-ended">2023</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="UG9zdGRvYw==" data-listing-title-sort="Carmen Jiménez Mesa">
+<td>
+<span class="listing-image"><img loading="lazy" src="./images/profiles/carmen.png" style="height: 25px;"></span>
+</td>
+<td>
+<a href="https://drganghe.github.io/quarto-academic-website-template" class="title listing-title">Carmen Jiménez Mesa</a>
+</td>
+<td>
+<span class="listing-subtitle">Postdoc</span>
+</td>
+<td>
+<span class="listing-started">2020</span>
+</td>
+<td>
+<span class="listing-ended">2025</span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

@@ -1,0 +1,7 @@
+---
+title: "Carmen Jiménez Mesa"
+date: "2020-05-09"
+draft: true
+---
+
+Carmen Jiménez Mesa received the B.Sc. degree in industrial electronic engineering from the University of Granada (Spain) in 2018, and the M.Sc. degree in automation and robotics from the Polytechnic University of Madrid (Spain) in 2019. She is a Ph.D. student at the University of Granada. Her research interests lie in the field of image processing and machine learning applications in biomedical databases.

@@ -1,0 +1,9 @@
+---
+title: "Diego Salas-Gonzalez"
+date: "2018-07-10"
+coverImage: "network-3357642-e1531309568106.jpg"
+image: images/dsalas.png
+categories: [Associate Professor] # self-defined categories
+---
+
+Informacion

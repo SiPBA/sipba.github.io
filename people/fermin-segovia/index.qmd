@@ -1,0 +1,22 @@
+---
+title: "Fermín Segovia"
+date: "2018-07-09"
+image: images/fermin.png
+categories: [Associate Professor] # self-defined categories
+orcid: 0000-0002-2222-2222
+affiliation: Department of Signal Theory, Networking and Communications
+affiliation-url: https://dasci.es/
+about:
+  template: trestles
+  image: images/fermin.png
+  image-width: 10em
+  links:
+  - icon: linkedin
+    text: LinkedIn
+    href: https://www.linkedin.com/in/fermin-segovia-543210123
+  - icon: envelope
+---
+
+Fermín Segovia received the B.Sc. degree in Computer Science and the Master degree in Computer Engineering and Networks from the University of Granada (Spain) in 2006 and 2009 respectively. In 2011, he obtained the PhD. degree from the same University.
+
+After several periods of postdoctoral research at the universities of Cambridge (UK), Regensburg (Germany) and Liege (Belgium), in 2015 he settled in the Department of Signal Theory, Telematics and Communications at the University of Granada (Spain), where he currently holds a position as associate professor. His main research interests include neuroimage processing and biomedical applications.

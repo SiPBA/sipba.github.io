@@ -4,7 +4,11 @@
     "items": [
       "/people/Juanma_Gorriz/index.html",
       "/people/Francisco_Martinez/index.html",
-      "/people/Javier_Ramirez/index.html"
+      "/people/Javier_Ramirez/index.html",
+      "/people/fermin-segovia/index.html",
+      "/people/diego-salas-gonzalez/index.html",
+      "/people/ignacio-alvarez-illan/index.html",
+      "/people/jacob-rodriguez-rivero/index.html"
     ]
   },
   {
@@ -23,6 +27,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/2025-10-16-bases-de-la-convocatoria-de-los-premios-catedra-endesa-ugr-en-inteligencia-artificial-2025/index.html",
       "/blog/2024-04-01-generador-acks/index.html",
       "/blog/2021-06-08-alcala-la-real-ano-de-construccion-de-edificios/index.html",
       "/blog/2019-07-06-un-proyecto-teuton/index.html"

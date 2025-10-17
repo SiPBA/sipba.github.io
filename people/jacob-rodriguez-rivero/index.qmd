@@ -1,0 +1,8 @@
+---
+title: "Jacob Rodríguez Rivero"
+date: "2018-10-13"
+image: images/jrr3.png
+categories: [PhD Student, Adjunt Professor] # self-defined categories
+---
+
+He is a Telecommunication Engineer by University of Seville and  Executive Master in Business Administration (EMBA) by I.I. San Telmo (IESE). 12 years in Endesa and Enel, he works as Unit Manager in Endesa Ingenieria and Innovation Project Manager in Endesa Red.  In adition, He is associated teacher in Telecomunication degree at University of Granada. He is involved in different national and international R&D projects as Smart City Malaga, SmartCity  Barcelona, , SmartCity Buzios (Brasil), SmartCity Santiago (Chile), SmartCity Bogotá (Colombia), Growsmarter (H2020) and GRACIOSA.

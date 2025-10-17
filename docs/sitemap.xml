@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sipba.github.io/people.html</loc>
-    <lastmod>2025-10-14T11:53:15.000Z</lastmod>
+    <lastmod>2025-10-17T10:09:57.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/publications.html</loc>
@@ -17,23 +17,39 @@
     <lastmod>2025-10-14T10:17:04.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/people/Francisco_Martinez/index.html</loc>
-    <lastmod>2025-10-14T11:52:36.000Z</lastmod>
+    <loc>https://sipba.github.io/people/jacob-rodriguez-rivero/index.html</loc>
+    <lastmod>2025-10-17T10:05:28.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/research/2023-09-01-project-latidos/index.html</loc>
+    <loc>https://sipba.github.io/people/diego-salas-gonzalez/index.html</loc>
+    <lastmod>2025-10-17T10:06:04.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sipba.github.io/people/Javier_Ramirez/index.html</loc>
+    <lastmod>2025-10-17T10:06:38.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sipba.github.io/people/Juanma_Gorriz/index.html</loc>
+    <lastmod>2025-10-17T10:06:29.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sipba.github.io/research/2014-01-01-petra-toolbox/index.html</loc>
+    <lastmod>2025-10-16T10:38:34.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sipba.github.io/research/2017-11-30-project-brainsimulator/index.html</loc>
     <lastmod>2025-10-14T10:17:07.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/research/2017-06-01-phd-thesis/index.html</loc>
+    <loc>https://sipba.github.io/research/2016-10-24-project-swpca/index.html</loc>
     <lastmod>2025-10-14T10:17:07.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/research/2016-09-15-project-sbm/index.html</loc>
-    <lastmod>2025-10-17T09:18:19.000Z</lastmod>
+    <loc>https://sipba.github.io/publications/2024-05-10-bridging/index.html</loc>
+    <lastmod>2025-10-14T11:46:50.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/communication/2020-12-22-modelito-sabanero/index.html</loc>
+    <loc>https://sipba.github.io/communication/2020-12-11-divulgamiento-y-confinacion-el-musical/index.html</loc>
     <lastmod>2025-10-14T10:17:05.000Z</lastmod>
   </url>
   <url>
@@ -49,28 +65,40 @@
     <lastmod>2025-10-14T10:17:05.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/communication/2020-12-11-divulgamiento-y-confinacion-el-musical/index.html</loc>
+    <loc>https://sipba.github.io/blog/2025-10-16-bases-de-la-convocatoria-de-los-premios-catedra-endesa-ugr-en-inteligencia-artificial-2025/index.html</loc>
+    <lastmod>2025-10-17T09:28:16.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sipba.github.io/communication/2020-12-22-modelito-sabanero/index.html</loc>
     <lastmod>2025-10-14T10:17:05.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/publications/2024-05-10-bridging/index.html</loc>
-    <lastmod>2025-10-14T11:46:50.000Z</lastmod>
+    <loc>https://sipba.github.io/research/2016-09-15-project-sbm/index.html</loc>
+    <lastmod>2025-10-17T09:18:19.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/research/2016-10-24-project-swpca/index.html</loc>
+    <loc>https://sipba.github.io/research/2017-06-01-phd-thesis/index.html</loc>
     <lastmod>2025-10-14T10:17:07.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/research/2017-11-30-project-brainsimulator/index.html</loc>
+    <loc>https://sipba.github.io/research/2023-09-01-project-latidos/index.html</loc>
     <lastmod>2025-10-14T10:17:07.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/people/Juanma_Gorriz/index.html</loc>
-    <lastmod>2025-10-15T08:02:55.000Z</lastmod>
+    <loc>https://sipba.github.io/research/2018-07-23-petra/index.html</loc>
+    <lastmod>2025-10-17T09:13:42.000Z</lastmod>
   </url>
   <url>
-    <loc>https://sipba.github.io/people/Javier_Ramirez/index.html</loc>
-    <lastmod>2025-10-15T08:07:16.000Z</lastmod>
+    <loc>https://sipba.github.io/people/Francisco_Martinez/index.html</loc>
+    <lastmod>2025-10-17T09:55:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sipba.github.io/people/fermin-segovia/index.html</loc>
+    <lastmod>2025-10-17T10:05:57.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sipba.github.io/people/ignacio-alvarez-illan/index.html</loc>
+    <lastmod>2025-10-17T10:05:45.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/blog.html</loc>
@@ -78,22 +106,10 @@
   </url>
   <url>
     <loc>https://sipba.github.io/index.html</loc>
-    <lastmod>2025-10-14T11:48:51.000Z</lastmod>
+    <lastmod>2025-10-17T09:48:04.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/research.html</loc>
     <lastmod>2025-10-14T11:06:52.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sipba.github.io/research/2014-01-01-petra-toolbox/index.html</loc>
-    <lastmod>2025-10-16T10:38:34.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sipba.github.io/research/2018-07-23-petra/index.html</loc>
-    <lastmod>2025-10-17T09:13:42.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sipba.github.io/research/2013-01-01-trial/index.html</loc>
-    <lastmod>2025-10-17T09:05:26.000Z</lastmod>
   </url>
 </urlset>

@@ -3,6 +3,7 @@ title: "Javier Ramírez"
 name: "Javier"
 lastname: "Ramírez"
 include-after-body: _footer.html
+image: javierrp.jpg
 about: 
   template: solana
   image: javierrp.jpg

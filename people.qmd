@@ -4,12 +4,29 @@ listing:
   - id: lab-member
     sort: "lastname asc"
     type: grid
-    fields: [image, title, subtitle]
+    fields: [image, title, categories]
     grid-item-align: center
     grid-columns: 4
     image-height: 200px
     categories: true
     contents: people # all Quarto docs in the `posts` directory will be included on your listing page
+  - id: former-members
+    sort: "lastname asc"
+    type: table
+    fields: [image, title, subtitle, started, ended]
+    grid-item-align: center  
+    grid-columns: 4
+    image-height: 25px
+    field-display-names: 
+        title: "Name"
+        subtitle: "Role"
+        started: "Started"
+        ended: "Ended"
+  #  categories: true
+  #  sort-ui: true
+  #  filter-ui: true
+    contents: 
+    - /people/former-members.yml
 format: html
 ---
 
@@ -17,4 +34,8 @@ format: html
 ## Team
 
 :::{#lab-member}
+:::
+
+## Former Members
+:::{#former-members}
 :::
