@@ -3,7 +3,7 @@ title: "PETRA"
 date: "2018-07-23"
 title-block-banner: images/PETRABANNER.jpg
 image: images/PETRABANNER.jpg
-categories: [python, matlab, project] # self-defined categories
+categories: [python, matlab] # self-defined categories
 about:
   id: hero-heading
   template: trestles

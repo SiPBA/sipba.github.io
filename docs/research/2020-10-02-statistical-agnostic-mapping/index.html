@@ -6,11 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="F.J. Martinez-Murcia">
-<meta name="dcterms.date" content="2017-06-01">
-<meta name="description" content="FStatistical Neuroimage Modeling, Processing and Synthesis based on Texture and Component Analysis: Tackling the Small Sample Size Problem..">
+<meta name="dcterms.date" content="2020-10-02">
 
-<title>Doctoral Thesis – SiPBA Research Lab</title>
+<title>Statistical Agnostic Mapping – SiPBA Research Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,12 +35,13 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe5b45687c9c27489b08400823fa31a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -72,6 +71,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(images/BannerSAM.jpg);
+background-size: cover;
+      }
+</style>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -133,50 +139,20 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Doctoral Thesis</h1>
-                  <div>
-        <div class="description">
-          FStatistical Neuroimage Modeling, Processing and Synthesis based on Texture and Component Analysis: Tackling the Small Sample Size Problem..
-        </div>
-      </div>
-                          <div class="quarto-categories">
+      <h1 class="title">Statistical Agnostic Mapping</h1>
+                                <div class="quarto-categories">
                 <div class="quarto-category">python</div>
-                <div class="quarto-category">matlab</div>
-                <div class="quarto-category">thesis</div>
               </div>
                   </div>
   </div>
-    
-  <div class="quarto-title-meta-author column-page-left">
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-heading">Affiliation</div>
-    
-      <div class="quarto-title-meta-contents">
-      <p class="author"><a href="https://fjmartinezmurcia.es/">F.J. Martinez-Murcia</a> <a href="https://orcid.org/0000-0001-8146-7056" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              <a href="https://dasci.es/">
-              Dpt. of Signal Theory, Networking and Communications. University of Granada &amp; DaSCI.
-              </a>
-            </p>
-        </div>
-    </div>
-
   <div class="quarto-title-meta column-page-left">
-
-        
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 1, 2017</p>
+        <p class="date">October 2, 2020</p>
       </div>
     </div>
-    
-      
     </div>
-    
-  
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
@@ -185,9 +161,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#this-thesis-is-copyleft" id="toc-this-thesis-is-copyleft" class="nav-link active" data-scroll-target="#this-thesis-is-copyleft">This thesis is copyleft</a></li>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#what-is-sam" id="toc-what-is-sam" class="nav-link active" data-scroll-target="#what-is-sam"><strong>What is SAM?</strong></a></li>
+  <li><a href="#some-comments-from-our-reviewers" id="toc-some-comments-from-our-reviewers" class="nav-link" data-scroll-target="#some-comments-from-our-reviewers">Some comments from our reviewers</a>
+  <ul class="collapse">
+  <li><a href="#from-your-point-of-view-what-is-sam" id="toc-from-your-point-of-view-what-is-sam" class="nav-link" data-scroll-target="#from-your-point-of-view-what-is-sam">From your point of view, what is SAM?</a></li>
+  <li><a href="#what-do-you-think-about-the-potential-use-of-sam" id="toc-what-do-you-think-about-the-potential-use-of-sam" class="nav-link" data-scroll-target="#what-do-you-think-about-the-potential-use-of-sam">What do you think about the potential use of SAM?</a></li>
+  <li><a href="#what-do-you-think-about-the-other-models-that-can-be-employed-thanks-to-the-flexibility-of-the-glm-spm-approach" id="toc-what-do-you-think-about-the-other-models-that-can-be-employed-thanks-to-the-flexibility-of-the-glm-spm-approach" class="nav-link" data-scroll-target="#what-do-you-think-about-the-other-models-that-can-be-employed-thanks-to-the-flexibility-of-the-glm-spm-approach">What do you think about the other models that can be employed thanks to the flexibility of the GLM-SPM approach?</a></li>
+  <li><a href="#how-would-factorial-designs-be-handled" id="toc-how-would-factorial-designs-be-handled" class="nav-link" data-scroll-target="#how-would-factorial-designs-be-handled">How would factorial designs be handled?</a></li>
+  <li><a href="#what-about-the-inclusion-of-regressors-to-model-out-nuisance-effects" id="toc-what-about-the-inclusion-of-regressors-to-model-out-nuisance-effects" class="nav-link" data-scroll-target="#what-about-the-inclusion-of-regressors-to-model-out-nuisance-effects">What about the inclusion of regressors to model out nuisance effects?</a></li>
+  <li><a href="#is-sam-dependent-on-the-predefined-atlas" id="toc-is-sam-dependent-on-the-predefined-atlas" class="nav-link" data-scroll-target="#is-sam-dependent-on-the-predefined-atlas">Is SAM dependent on the predefined atlas?</a></li>
+  <li><a href="#is-sam-dependent-of-the-feature-extraction-and-selection-fes-scheme" id="toc-is-sam-dependent-of-the-feature-extraction-and-selection-fes-scheme" class="nav-link" data-scroll-target="#is-sam-dependent-of-the-feature-extraction-and-selection-fes-scheme">Is SAM dependent of the Feature Extraction and Selection (FES) scheme?</a></li>
+  <li><a href="#conclusions-summary" id="toc-conclusions-summary" class="nav-link" data-scroll-target="#conclusions-summary">Conclusions summary</a></li>
+  </ul></li>
+  <li><a href="#comparison-between-spm-and-sam" id="toc-comparison-between-spm-and-sam" class="nav-link" data-scroll-target="#comparison-between-spm-and-sam">Comparison between SPM and SAM</a></li>
+  <li><a href="#try-it-out" id="toc-try-it-out" class="nav-link" data-scroll-target="#try-it-out">Try it out!</a></li>
+  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography">Bibliography</a></li>
   </ul>
 </nav>
     </div>
@@ -198,34 +186,91 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="this-thesis-is-copyleft" class="level2">
-<h2 class="anchored" data-anchor-id="this-thesis-is-copyleft">This thesis is copyleft</h2>
-<p>This thesis is licensed under a <strong>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</strong>. This means that you can download and distribute it as long as you cite the author and do not make money from it.</p>
-<p><a href="https://github.com/pakitochus/thesis" class="btn btn-primary" role="button" data-toggle="tooltip" title="Download the package"><i class="fa-solid fa-download" aria-label="download"></i> Download</a></p>
+<div class="quarto-about-trestles column-page-left">
+  <div class="about-entity">
+    <img src="images/BoundTheo.webp" class="about-image
+  rounded " style="width: 20em;">
+
+    <div class="about-links">
+  <a href="https://github.com/SiPBA/SAM" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">GitHub</span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><div id="hero-heading">
+<section id="what-is-sam" class="level1">
+<h1><strong>What is SAM?</strong></h1>
+<p>SAM (<em>Statistical Agnostic Mapping</em>) is a framework based on statistical learning theory (SLT) that provides similar activation maps than the ones obtained by the voxel-wise SPM, but defined on ROIs, under a rigorous development in scenarios with a small sample/dimension ratio and large, small and trivial effect sizes.</p>
+<p>The present methodology seeks to solve the problems related to classical inference that are observed in neuroscience. Although statistical inference based on a null hypothesis has been used predominantly for exploratory analyses in brain studies (for example, using tools like&nbsp;<a href="https://www.fil.ion.ucl.ac.uk/spm/">SPM</a>,&nbsp;<a href="https://afni.nimh.nih.gov/">AFNI</a>&nbsp;or&nbsp;<a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki">FSL</a>), recent research maintains that this procedure produces a high number of false positives because data from most of these studies do not meet the model’s assumptions. In this context, SAM allows the creation of significance maps in the study of a certain condition or neurological pathology from the information contained in brain imaging regions of interest, using multivariate approaches based on automatic learning.</p>
+<p><a href="https://www.mathworks.com/matlabcentral/fileexchange/80638-sam" class="btn btn-success" role="button" data-toggle="tooltip" title="Download the PETRA toolbox"><i class="fa-solid fa-download" aria-label="download"></i> DOWNLOAD</a></p>
+<p><a href="https://github.com/SiPBA/SAM" class="btn btn-outline-primary" role="button" data-toggle="tooltip" title="Download the PETRA toolbox"><i class="fa-brands fa-github" aria-label="github"></i> GITHUB</a></p>
 </section>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>The rise of neuroimaging in the last years has provided physicians and radiologist with the ability to study the brain with unprecedented ease. This led to a new biological perspective in the study of neurodegenerative diseases, allowing the characterization of different anatomical and functional patterns associated with them. <strong>Computer Aided Diagnosis (CAD)</strong> systems use statistical techniques for preparing, processing and extracting information from neuroimaging data pursuing a major goal: <strong>optimize the process of analysis and diagnosis of neurodegenerative diseases and mental conditions</strong>.</p>
-<p>With this thesis we focus on three different stages of the CAD pipeline: preprocessing, feature extraction and validation. For <strong>preprocessing</strong>, we have developed a method that target a relatively recent concern: the confounding effect of false positives due to differences in the acquisition at multiple sites. Our method can effectively merge datasets while reducing the acquisition site effects. Regarding <strong>feature extraction</strong>, we have studied decomposition algorithms (independent component analysis, factor analysis), texture features and a complete framework called Spherical Brain Mapping, that reduces the 3-dimensional brain images to two-dimensional statistical maps. This allowed us to improve the performance of automatic systems for detecting Alzheimer’s and Parkinson’s diseases. Finally, we developed a <strong>brain image simulation technique</strong> that can be used to validate new functional datasets as well as for educational purposes.</p>
+</div></div>
+</div>
+
+<section id="some-comments-from-our-reviewers" class="level1">
+<h1>Some comments from our reviewers</h1>
+<section id="from-your-point-of-view-what-is-sam" class="level2">
+<h2 data-anchor-id="from-your-point-of-view-what-is-sam">From your point of view, what is SAM?</h2>
+<p>SAM is an <strong>alternative method to classic statistical inference</strong> in neuroimaging. Specifically, it tries to address a few thorny points about multiple comparison correction through family-wise error rate (FWER) control and the link between sample size and sensitivity of the test. The approach proposed relies on a region-wise machine learning technique and the calculation of error bounds on classification accuracy.</p>
+<p>The recent publication by <em>Gorriz et al.</em> introduces this alternative strategy to estimate group-level or second-level activation maps <strong>without employing multiple testing correction to control for family-wise error rates or false discovery rates</strong>. One can ask whether voxel level activation statistics at the individual subject level generalize at the population level through a test statistic that captures prevalence of activation within the study population. The paper develops such a prevalence-like nonparametric test statistic, not based on prevalence of activation but that of classification error. It utilizes analytical <strong>lower and upper bounds on error</strong> inspired by empirical risk minimization and concentration of measure theory without specifying a null distribution. Then statistical significance testing according to this new test statistic automatically provides a group-level activation map.</p>
 </section>
-<section id="slides" class="level2">
-<h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/FyLtXK5oB16mBM" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/FranciscoJessMartnezMurcia/tesis-statistical-neuroimage-modeling-processing-and-synthesis-based-on-texture-and-component-analysis" title="Tesis: Statistical Neuroimage Modeling, Processing and Synthesis based on Texture and Component Analysis" target="_blank">Tesis: Statistical Neuroimage Modeling, Processing and Synthesis based on Texture and Component Analysis</a> </strong> from <strong><a href="//www.slideshare.net/FranciscoJessMartnezMurcia" target="_blank">Francisco Jesús Martínez Murcia</a></strong> </div>
+<section id="what-do-you-think-about-the-potential-use-of-sam" class="level2">
+<h2 data-anchor-id="what-do-you-think-about-the-potential-use-of-sam">What do you think about the potential use of SAM?</h2>
+<p>The method proposed is interesting and its emphasis on using population proportion or prevalence of classifier error in predicting task conditions is important. While different from other types of activation prevalence statistics in the literature, such methods are generally underutilized in the field. The empirical results look promising…</p>
+<p>Personally, I think the method is a very important addition to the field…</p>
+</section>
+<section id="what-do-you-think-about-the-other-models-that-can-be-employed-thanks-to-the-flexibility-of-the-glm-spm-approach" class="level2">
+<h2 data-anchor-id="what-do-you-think-about-the-other-models-that-can-be-employed-thanks-to-the-flexibility-of-the-glm-spm-approach">What do you think about the other models that can be employed thanks to the flexibility of the GLM-SPM approach?</h2>
+<p>SAM is an alternative method for performing group comparisons. Indeed, <strong>GLM</strong> could be used as well in this framework.</p>
+<p>Up to now, SAM is more focused on group comparisons that perform binary classification but the multiclass problem in ML can also be solved by the use of binary comparisons in Error-correcting output codes (ECOC) which represents <strong>a powerful framework to deal with multiclass classification problems</strong>.</p>
+</section>
+<section id="how-would-factorial-designs-be-handled" class="level2">
+<h2 data-anchor-id="how-would-factorial-designs-be-handled">How would factorial designs be handled?</h2>
+<p>Factorial designs could be managed as well by preparing the binary groups (by properly –multi– labeling the effects we want to measure) that are behind these studies. In this context, the output class could be a set of variables quantifying such specific state of responses.</p>
+<p>In the future users will explore these configurations to extend SAM into <strong>more complex scenarios</strong>. At this stage of the development, SAM is more focused on the experimental settings used in many applications found in the extant literature.</p>
+</section>
+<section id="what-about-the-inclusion-of-regressors-to-model-out-nuisance-effects" class="level2">
+<h2 data-anchor-id="what-about-the-inclusion-of-regressors-to-model-out-nuisance-effects">What about the inclusion of regressors to model out nuisance effects?</h2>
+<p>Combination of ML in addition to FES is robust against outliers. Thus, the idea of correcting effects by linear models is discarded in this sense, although it could be incorporated in the methods as a preprocessing step.</p>
+</section>
+<section id="is-sam-dependent-on-the-predefined-atlas" class="level2">
+<h2 data-anchor-id="is-sam-dependent-on-the-predefined-atlas">Is SAM dependent on the predefined atlas?</h2>
+<p>SAM is based on Machine Learning using feature extraction and selection and linear decision functions. <strong>The method does not depend on the selected atlas</strong> as long as the regions taken for the analysis are large enough to take advantage of this multivariate approach. Multivariate approaches using ML can detect differences in regions using a kind of two-tailed test which is particularly valuable when brain responses are modeled by a series of functions (regressors or predictors) for which no specific contrasts can be used.</p>
+</section>
+<section id="is-sam-dependent-of-the-feature-extraction-and-selection-fes-scheme" class="level2">
+<h2 data-anchor-id="is-sam-dependent-of-the-feature-extraction-and-selection-fes-scheme">Is SAM dependent of the Feature Extraction and Selection (FES) scheme?</h2>
+<p>Sure, FES is used as a pre-processing method to transform raw data into features. Any FES scheme (ICA, PLS PCA or even deep learning for FE) could be used to provide a low dimensional space where SAM works. The inference provided by SAM is referred to that feature space.</p>
+</section>
+<section id="conclusions-summary" class="level2">
+<h2 data-anchor-id="conclusions-summary">Conclusions summary</h2>
+<p>The value of the SAM is in the link to the activation prevalence literature by means of a theoretical approach based on concentration inequalities. Previous works have already made it clear that prevalence of activation in the group is a valuable quantity, one that has more ecological validity since it ensures prevalent activation implies that activation could be found in the activation maps of individuals. This potentially has two benefits: i) <strong>helping frame the contribution of this work as a learning theory/risk minimization approach to prevalence estimation</strong> and ii) <strong>it results in an alternative to SPM, FSL or any empirical method for prevalence estimation</strong>.</p>
+</section>
+</section>
+<section id="comparison-between-spm-and-sam" class="level1">
+<h1>Comparison between SPM and SAM</h1>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" width="400" height="300" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="https://sipba.ugr.es/wp-content/uploads/2020/10/AD_sam_spm.mp4"></video></div>
+</section>
+<section id="try-it-out" class="level1">
+<h1>Try it out!</h1>
+<p>Start using SAM from our <strong>GitHub</strong> repository:</p>
+<p><a href="https://github.com/SiPBA/SAM" class="btn btn-outline-primary" role="button" data-toggle="tooltip" title="Download the PETRA toolbox"><i class="fa-brands fa-github" aria-label="github"></i> GITHUB</a></p>
+<p>SAM has been created with <strong>MATLAB R2020b</strong> but it is compatible with any release:</p>
+<p><a href="https://www.mathworks.com/matlabcentral/fileexchange/80638-sam">https://www.mathworks.com/matlabcentral/fileexchange/80638-sam</a></p>
+<p><a href="https://www.mathworks.com/matlabcentral/fileexchange/80638-sam" class="btn btn-success" role="button" data-toggle="tooltip" title="Download the PETRA toolbox"><i class="fa-solid fa-download" aria-label="download"></i> DOWNLOAD</a></p>
+<p>Available soon for <strong>Python 3.x</strong>.</p>
+</section>
+<section id="bibliography" class="level1">
+<h1>Bibliography</h1>
+<p>Find our works</p>
+<p>Statistical Agnostic Mapping J.M. Gorriz, C. Jimenez-Mesa, R. Romero-Garcia, F. Segovia, J. Ramirez, D. Castillo-Barnes, F.J. Martinez-Murcia, A. Ortiz, D. Salas-Gonzalez, I.A. Illan, C.G. Puntonet, D. Lopez-Garcia, M. Gomez-Rio, J. Suckling, Statistical Agnostic Mapping: A framework in neuroimaging based on concentration inequalities, Information Fusion, Volume 66, 2021, Pages 198-212, ISSN 1566-2535</p>
 
 
+
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{martinez-murcia2017,
-  author = {Martinez-Murcia, F.J.},
-  title = {Doctoral {Thesis}},
-  date = {2017-06-01},
-  url = {https://pakitochus.github.io/fjmartinezmurcia.es/posts/2017-06-01-phd-thesis/},
-  langid = {en}
-}
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-martinez-murcia2017" class="csl-entry quarto-appendix-citeas" role="listitem">
-Martinez-Murcia, F.J. 2017. <span>“Doctoral Thesis.”</span> June 1,
-2017. <a href="https://pakitochus.github.io/fjmartinezmurcia.es/posts/2017-06-01-phd-thesis/">https://pakitochus.github.io/fjmartinezmurcia.es/posts/2017-06-01-phd-thesis/</a>.
-</div></div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -246,13 +291,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -644,6 +682,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

@@ -1,9 +1,21 @@
 ---
-title: "Ignacio Alvarez Illan"
+title: "Ignacio Álvarez Illán"
 date: "2018-07-10"
 image: images/ignacio.png
 categories: [Associate Professor] # self-defined categories
+lastname: "Álvarez Illán"
+about:
+  template: trestles
+  image: images/ignacio.png
+  links:
+  - icon: linkedin
+    text: LinkedIn
+    href: https://www.linkedin.com/in/ignacio-alvarez-illan-543210123
+  - icon: envelope
+    text: Email
+    href: mailto:illan@ugr.es
 ---
+
 
 Ignacio Alvarez Illan works on the processing and classification of medical imaging for the help in the diagnosis of neurodegenerative diseases and breast cancer. The candidate's research career began in the field of theoretical physics. After obtaining a bachelor's degree in Physics from the Complutense University of Madrid in 2004, with an Erasmus scholarship at the Humboldt Universität (Berlin), he began his research career in high-energy physics working at the Deutches Elektron-Synchotron ( DESY) in Berlin. Later he obtained an FPI scholarship in the department of theoretical physics of the University of Granada to carry out his doctoral thesis. In this stage, the candidate produced 2 articles and a technical report, including a work as the only author in string theory.
 

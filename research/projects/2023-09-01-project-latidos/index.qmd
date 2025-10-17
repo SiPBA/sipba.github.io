@@ -1,5 +1,5 @@
 ---
-title: "LATiDOS"
+title: LATiDOS
 description: "LATent variable models to Determine the Onset of neurodegenerative Symptoms."
 author:
   - name: F.J. Martinez-Murcia
@@ -14,6 +14,17 @@ citation:
 image: latidos_logo.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 bibliography: latidos_bibliography.bib
+id: PID2022-137629OA-I00
+started: 2023-09-01
+ended: 2026-08-31
+funding: 121000€
+tags:
+  - proyecto
+  - "#latente"
+funder: Agencia Estatal de Investigación (AEI)
+funder-url: https://www.aei.es/
+funder-logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
+acronym: LATiDOS
 ---
 
 ![Overview of the LATiDOS methodology](overview_methodology.png)

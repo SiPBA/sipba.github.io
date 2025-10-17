@@ -5,9 +5,9 @@
       "/people/Juanma_Gorriz/index.html",
       "/people/Francisco_Martinez/index.html",
       "/people/Javier_Ramirez/index.html",
+      "/people/ignacio-alvarez-illan/index.html",
       "/people/fermin-segovia/index.html",
       "/people/diego-salas-gonzalez/index.html",
-      "/people/ignacio-alvarez-illan/index.html",
       "/people/jacob-rodriguez-rivero/index.html"
     ]
   },
@@ -42,13 +42,13 @@
   {
     "listing": "/research.html",
     "items": [
-      "/research/2023-09-01-project-latidos/index.html",
+      "/research/2020-10-02-statistical-agnostic-mapping/index.html",
       "/research/2018-07-23-petra/index.html",
       "/research/2017-11-30-project-brainsimulator/index.html",
-      "/research/2017-06-01-phd-thesis/index.html",
       "/research/2016-10-24-project-swpca/index.html",
       "/research/2016-09-15-project-sbm/index.html",
-      "/research/2014-01-01-petra-toolbox/index.html"
+      "/research/2014-01-01-petra-toolbox/index.html",
+      "/research/projects/2023-09-01-project-latidos/index.html"
     ]
   }
 ]

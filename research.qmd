@@ -1,17 +1,42 @@
 ---
 title: "Research"
 listing: 
-  contents: research # all Quarto docs in the `posts` directory will be included on your listing page
+- id: research
+  contents: /research # all Quarto docs in the `posts` directory will be included on your listing page
   type: grid # or `default` or `table`; each type has its own set of yaml options to include
   sort: "date desc" # can also sort on more than one field
   categories: true # allows you to sort posts by assigned categories 
+  exclude: 
+    categories: ["project"]
+- id: projects
+  sort: "started desc"
+  type: table
+  fields: [image, title, author, funder, description, funding, started, ended]
+  grid-item-align: left
+  grid-columns: 3
+  image-height: 30px
+  field-display-names: 
+      title: "Title"
+      author: "Team"
+      funder: "Funder"
+      started: "Start"
+      ended: "End"
+      funding: "Funding"
+#  categories: true
+#  sort-ui: true
+#  filter-ui: true
+  contents: 
+    - /research/projects/ 
+    - /research/projects.yml 
 format: html
 ---
 
-Currently I research in Information Technology, inside the interdisciplinary field of Computer Aided Diagnosis, Image-based diagnosis and Statistical and Digital Signal Processing. A provisional title for all this research is Computed Aided Diagnosis for the detection of Neurodegenerative Disorders using Medical Imaging.
+# Tools
 
-During this period I have belonged to the Signal Processing and Biomedical Applications (SiPBA) research group, and I have written or contributed to several publications.
-
-------------------------------------------------------------------------
+:::{#research}
+:::
 
 # Research projects
+
+:::{#projects}
+:::

@@ -8,7 +8,7 @@ author:
     affiliation: Dpt. of Signal Theory, Networking and Communications. University of Granada & DaSCI. 
     affiliation-url: https://dasci.es/ 
 date: 10-24-2016
-categories: [python, project] # self-defined categories
+categories: [python] # self-defined categories
 citation: 
   url: https://pakitochus.github.io/fjmartinezmurcia.es/posts/2016-09-15-project-sbm/ 
 image: promo-swpca.jpg

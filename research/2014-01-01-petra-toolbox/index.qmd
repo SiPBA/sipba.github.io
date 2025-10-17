@@ -8,7 +8,7 @@ author:
     affiliation: Dpt. of Signal Theory, Networking and Communications. University of Granada & DaSCI. 
     affiliation-url: https://dasci.es/ 
 date: 01-01-2014
-categories: [python, matlab, project] # self-defined categories
+categories: [python, matlab] # self-defined categories
 image: petrav2.webp
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 about:

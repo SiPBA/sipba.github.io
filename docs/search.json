@@ -18,7 +18,7 @@
     "href": "people.html#former-members",
     "title": "People",
     "section": "Former Members",
-    "text": "Former Members\n\n\n   \n     \n     \n       Order By\n       Default\n         \n        \n         \n          Name\n        \n         \n          Role\n        \n         \n          Started\n        \n         \n          Ended\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nName\n\n\nRole\n\n\nStarted\n\n\nEnded\n\n\n\n\n\n\n\n\n\nDiego Castillo-Barnes\n\n\nPostdoc\n\n\n2016\n\n\n2023\n\n\n\n\n\n\n\nCarmen Jiménez Mesa\n\n\nPostdoc\n\n\n2020\n\n\n2025\n\n\n\n\n\nNo matching items"
+    "text": "Former Members\n\n\n   \n     \n     \n       Order By\n       Default\n         \n        \n         \n          Name\n        \n         \n          Role\n        \n         \n          Started\n        \n         \n          Ended\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nName\n\n\nRole\n\n\nStarted\n\n\nEnded\n\n\n\n\n\n\n \n\n\nAbdelbasset Brahim\n\n\nPhD Student\n\n\n2014\n\n\n2018\n\n\n\n\n\n\n\nDiego Castillo-Barnes\n\n\nPostdoc\n\n\n2016\n\n\n2023\n\n\n\n\n \n\n\nRosa María Chaves Rodríguez\n\n\nPhD Student\n\n\n2010\n\n\n2013\n\n\n\n\n \n\n\nAntonio R. Hidalgo\n\n\nPhD Student\n\n\n2009\n\n\n2011\n\n\n\n\n\n\n\nCarmen Jiménez Mesa\n\n\nPostdoc\n\n\n2020\n\n\n2025\n\n\n\n\n \n\n\nLaila Kheder\n\n\nPhD Student\n\n\n2014\n\n\n2018\n\n\n\n\n \n\n\nMiriam López Pérez\n\n\nPhD Student\n\n\n2009\n\n\n2011\n\n\n\n\n \n\n\nAlberto Olivares Vicente\n\n\nPhD Student\n\n\n2010\n\n\n2013\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications.html",
@@ -70,18 +70,39 @@
     "text": "Bio\nJuan Manuel Górriz Sáez (Full Professor at the University of Granada, Spain and Research Associate at the University of Cambridge, UK) was born in Almeria in 27th May 1976. He received his M.Sc. in Physics in 2000 and his M.Sc. in Electronic Engineering in 2001, both from the University of Granada, Spain. He then earned the Ph.D. degree in Electronic Engineering in 2003 and the Ph.D. degree in Physics in 2006, from the Universities of Cádiz and Granada, Spain, respectively. He has already been the supervisor of 15 Ph.D. students and has published more than 200 journal papers (including articles in the International Journal of Neural Systems, Human Brain Mapping, Information Fusion, Neuroimage, IEEE Trans. Medical Imaging, PlosOne, etc.) that have received more than 13000 cites, with an h-index equal to 60. He actually leads the group in “Signal Processing and Biomedical Applications” (SIPBA), whose reference is TIC-218 in the Andalusian Research Plan, at the Data Science and Computational Intelligence Institute (DASCI-UGR). He has served as Senior Editor in the Journal of Alzheimer Disease (IOP), Associate Editor in Neurocomputing (Elsevier), IEEE Transactions on Emerging Topics in Computational Intelligence and Current Alzheimer Research (Bentham) journals, acting as editorial member of several journals and conferences. He has received many awards and honors, such as the 2015 Spanish National Engineering Academy Medal (Young Researchers), the 2008 ASI Andalusian Prize for the best research project “DENCLASES” in neuroscience, full membership in Cambridge Neuroscience, the Social Council Award at the UGR (Young Researchers), etc. He has developed several short and long stays as visiting Professor in top centers around the world, such as University of Cambridge (UK), University of Regensburg and LMU (Germany), University of Liege (Belgium), NorthEastern University (USA), Infineon-Siemens AG, Munich (Germany), etc.\n\nThis is the content."
   },
   {
+    "objectID": "research/projects/2023-09-01-project-latidos/index.html",
+    "href": "research/projects/2023-09-01-project-latidos/index.html",
+    "title": "LATiDOS",
+    "section": "",
+    "text": "Overview of the LATiDOS methodology\nLATiDOS is a proposal oriented to solve a particular problem: to create data-driven models of the progression of neurodegeneration and use them to determine the individual age of symptom onset."
+  },
+  {
+    "objectID": "research/projects/2023-09-01-project-latidos/index.html#publications",
+    "href": "research/projects/2023-09-01-project-latidos/index.html#publications",
+    "title": "LATiDOS",
+    "section": "Publications:",
+    "text": "Publications:\n\nA novel framework to evaluate regression performance, called Statistical Agnostic Regression (SAR) by Gorriz et al. (2024).\nWe published a paper in the International Journal of Neural Systems about a cross-modality latent variable framework using joint Variational Autoencoders, by Martinez-Murcia et al. (2024).\nWe published a novel paper within the GENFI initiative, in collaboration with the team at the LMU University in Munich, entitled Frequency and Longitudinal Course of Behavioral and Neuropsychiatric Symptoms in Participants with Genetic Frontotemporal Dementia by Schönecker et al. (2024)\nWe presented a series of publications at the International Work-Conference on the Interplay Between Artificial and Natural Computation (IWINAC 2024):\n\nA Cross-Modality Latent Representation for the Prediction of Clinical Symptomatology in Parkinson’s Disease by Vázquez-García et al. (2024)\nPDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models by López et al. (2024)\n\nWe collaborated with the Deutsche Zentrum für Neurodegenerative Erkrankungen (DZNE) in an analysis published in the Alzheimer’s & Dementia journal about the exploratory analysis of the proteomic profile in plasma in adults with Down syndrome in the context of Alzheimer’s Disease by Wagemann et al. (2025). These novel biomarkers could be used to stratify patients into different groups and predict the disease progression."
+  },
+  {
+    "objectID": "research/projects/2023-09-01-project-latidos/index.html#talks",
+    "href": "research/projects/2023-09-01-project-latidos/index.html#talks",
+    "title": "LATiDOS",
+    "section": "Talks",
+    "text": "Talks\n\nIWINAC 2024: [Cross-Modality Latent Variable Framework for the Prediction of Clinical Symptomatology in Parkinson’s Disease]\nIWINAC 2024: [PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models]\nActividad: Música e IA at the European Researcher’s Night 2024 (27/09/2024)\nTaller: ¡Las máquinas nos quitan el trabajo! (14/03/2024), en el proyecto Mujer y Niña en la Ciencia de la Unidad de Cultura Científica de la Universidad de Granada."
+  },
+  {
+    "objectID": "research/projects/2023-09-01-project-latidos/index.html#software",
+    "href": "research/projects/2023-09-01-project-latidos/index.html#software",
+    "title": "LATiDOS",
+    "section": "Software",
+    "text": "Software\n\nWe released the PDBIGDATA database, a new database for Parkinsonism Research focused on Large Models."
+  },
+  {
     "objectID": "research/2014-01-01-petra-toolbox/index.html",
     "href": "research/2014-01-01-petra-toolbox/index.html",
     "title": "PETRA",
     "section": "",
     "text": "PETRA is a Matlab toolbox to manage and analyze neuroimaging data by means of multivariate techniques.\nPETRA is a Matlab software toolbox for PET and SPECT (even MRI) analysis. It is developed at the SiPBA lab, together with collaborating institutes and Universities worldwide. The development of PETRA was supported by funding from the Spanish Ministry of Science, the UGR, the Consejería de Innovación of Junta de Andalucía and Ingenia and currently receives support from several projects under different competitive calls.\nThe PETRA software is released as open source under the GNU general public license. The toolbox includes algorithms for simple and advanced analysis and classification of PET, SPECT, etc. images with the aim of Alzheimer and Parkinson diseases diagnosis/detection. It supports the data formats of all major functional/anatomical imaging systems (.dcm, .nii, .mat, etc.) and new formats can be added easily.\nPETRA, or the Platform for the Evaluation of Medical Imaging, is a toolbox designed to facilitate the access to the recent advances in neuroimaging data analysis based on multivariate approaches. The toolbox, written on Matlab, is freely available and implements a Graphical User Interface that allows managing neuroimaging data in an easy way.\nHere’s the paper where the PETRA was first presented:\n\nF. Segovia et al. PETRA: Multivariate analyses for neuroimaging data. Proceedings IWBBIO 2014. Granada 7-9 April, 2014."
-  },
-  {
-    "objectID": "research/2017-11-30-project-brainsimulator/index.html",
-    "href": "research/2017-11-30-project-brainsimulator/index.html",
-    "title": "BrainSimulator",
-    "section": "",
-    "text": "Schema of Brain Simulator\n\n\nbrainSimulator is a brain image synthesis procedure for data augmentation and standardization of evaluation of ML neuroimaging pipelines. It intends to generate a new image set that share characteristics given an original one. The system focuses on nuclear imaging modalities such as PET or SPECT brain images. It analyses the dataset by applying PCA to the original dataset, and then model the distribution of samples in the projected eigenbrain space using a Probability Density Function (PDF) estimator. Once the model has been built, anyone can generate new coordinates on the eigenbrain space belonging to the same class, which can be then projected back to the image space.\n Documentation  Download\n\nInstallation\nbrainSimulator is now available via pypi and can be installed directly from:\npip install brainSimulator\nAlternatively, download the package, uncompress and execute:\ncd /path/to/uncompressed/brainSimulator/\npython setup.py install\n\n\nQuickstart\nThis allows to train the model once and then perform as many sample drawings as required.\n#navigate to the folder where simulator.py is located\nimport brainSimulator as sim\n\nsimulator = sim.BrainSimulator(algorithm='PCA', method='mvnormal')\nsimulator.fit(original_dataset, labels) \nimages, classes = simulator.generateDataset(original_dataset, labels, N=200, classes=[0, 1, 2])\n\n\n\n\nCitationBibTeX citation:@online{martinez-murcia2017,\n  author = {Martinez-Murcia, F.J.},\n  title = {BrainSimulator},\n  date = {2017-11-30},\n  url = {https://pakitochus.github.io/fjmartinezmurcia.es/posts/2017-11-30-project-brainsimulator/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMartinez-Murcia, F.J. 2017. “BrainSimulator.” November 30,\n2017. https://pakitochus.github.io/fjmartinezmurcia.es/posts/2017-11-30-project-brainsimulator/."
   },
   {
     "objectID": "research/2016-10-24-project-swpca/index.html",
@@ -231,60 +252,11 @@
     "text": "Write your own Extensions.\nSpherical Brain Mapping is written in Matlab, totally compatible with Octave, and ported to Python, so that you can write your own statistical properties to project the brain. The more specific these statistical are, the more significant will be your results."
   },
   {
-    "objectID": "research/2017-06-01-phd-thesis/index.html",
-    "href": "research/2017-06-01-phd-thesis/index.html",
-    "title": "Doctoral Thesis",
+    "objectID": "research/2017-11-30-project-brainsimulator/index.html",
+    "href": "research/2017-11-30-project-brainsimulator/index.html",
+    "title": "BrainSimulator",
     "section": "",
-    "text": "This thesis is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. This means that you can download and distribute it as long as you cite the author and do not make money from it.\n Download"
-  },
-  {
-    "objectID": "research/2017-06-01-phd-thesis/index.html#this-thesis-is-copyleft",
-    "href": "research/2017-06-01-phd-thesis/index.html#this-thesis-is-copyleft",
-    "title": "Doctoral Thesis",
-    "section": "",
-    "text": "This thesis is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. This means that you can download and distribute it as long as you cite the author and do not make money from it.\n Download"
-  },
-  {
-    "objectID": "research/2017-06-01-phd-thesis/index.html#abstract",
-    "href": "research/2017-06-01-phd-thesis/index.html#abstract",
-    "title": "Doctoral Thesis",
-    "section": "Abstract",
-    "text": "Abstract\nThe rise of neuroimaging in the last years has provided physicians and radiologist with the ability to study the brain with unprecedented ease. This led to a new biological perspective in the study of neurodegenerative diseases, allowing the characterization of different anatomical and functional patterns associated with them. Computer Aided Diagnosis (CAD) systems use statistical techniques for preparing, processing and extracting information from neuroimaging data pursuing a major goal: optimize the process of analysis and diagnosis of neurodegenerative diseases and mental conditions.\nWith this thesis we focus on three different stages of the CAD pipeline: preprocessing, feature extraction and validation. For preprocessing, we have developed a method that target a relatively recent concern: the confounding effect of false positives due to differences in the acquisition at multiple sites. Our method can effectively merge datasets while reducing the acquisition site effects. Regarding feature extraction, we have studied decomposition algorithms (independent component analysis, factor analysis), texture features and a complete framework called Spherical Brain Mapping, that reduces the 3-dimensional brain images to two-dimensional statistical maps. This allowed us to improve the performance of automatic systems for detecting Alzheimer’s and Parkinson’s diseases. Finally, we developed a brain image simulation technique that can be used to validate new functional datasets as well as for educational purposes."
-  },
-  {
-    "objectID": "research/2017-06-01-phd-thesis/index.html#slides",
-    "href": "research/2017-06-01-phd-thesis/index.html#slides",
-    "title": "Doctoral Thesis",
-    "section": "Slides",
-    "text": "Slides\n    Tesis: Statistical Neuroimage Modeling, Processing and Synthesis based on Texture and Component Analysis  from Francisco Jesús Martínez Murcia"
-  },
-  {
-    "objectID": "research/2023-09-01-project-latidos/index.html",
-    "href": "research/2023-09-01-project-latidos/index.html",
-    "title": "LATiDOS",
-    "section": "",
-    "text": "Overview of the LATiDOS methodology\nLATiDOS is a proposal oriented to solve a particular problem: to create data-driven models of the progression of neurodegeneration and use them to determine the individual age of symptom onset."
-  },
-  {
-    "objectID": "research/2023-09-01-project-latidos/index.html#publications",
-    "href": "research/2023-09-01-project-latidos/index.html#publications",
-    "title": "LATiDOS",
-    "section": "Publications:",
-    "text": "Publications:\n\nA novel framework to evaluate regression performance, called Statistical Agnostic Regression (SAR) by Gorriz et al. (2024).\nWe published a paper in the International Journal of Neural Systems about a cross-modality latent variable framework using joint Variational Autoencoders, by Martinez-Murcia et al. (2024).\nWe published a novel paper within the GENFI initiative, in collaboration with the team at the LMU University in Munich, entitled Frequency and Longitudinal Course of Behavioral and Neuropsychiatric Symptoms in Participants with Genetic Frontotemporal Dementia by Schönecker et al. (2024)\nWe presented a series of publications at the International Work-Conference on the Interplay Between Artificial and Natural Computation (IWINAC 2024):\n\nA Cross-Modality Latent Representation for the Prediction of Clinical Symptomatology in Parkinson’s Disease by Vázquez-García et al. (2024)\nPDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models by López et al. (2024)\n\nWe collaborated with the Deutsche Zentrum für Neurodegenerative Erkrankungen (DZNE) in an analysis published in the Alzheimer’s & Dementia journal about the exploratory analysis of the proteomic profile in plasma in adults with Down syndrome in the context of Alzheimer’s Disease by Wagemann et al. (2025). These novel biomarkers could be used to stratify patients into different groups and predict the disease progression."
-  },
-  {
-    "objectID": "research/2023-09-01-project-latidos/index.html#talks",
-    "href": "research/2023-09-01-project-latidos/index.html#talks",
-    "title": "LATiDOS",
-    "section": "Talks",
-    "text": "Talks\n\nIWINAC 2024: [Cross-Modality Latent Variable Framework for the Prediction of Clinical Symptomatology in Parkinson’s Disease]\nIWINAC 2024: [PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models]\nActividad: Música e IA at the European Researcher’s Night 2024 (27/09/2024)\nTaller: ¡Las máquinas nos quitan el trabajo! (14/03/2024), en el proyecto Mujer y Niña en la Ciencia de la Unidad de Cultura Científica de la Universidad de Granada."
-  },
-  {
-    "objectID": "research/2023-09-01-project-latidos/index.html#software",
-    "href": "research/2023-09-01-project-latidos/index.html#software",
-    "title": "LATiDOS",
-    "section": "Software",
-    "text": "Software\n\nWe released the PDBIGDATA database, a new database for Parkinsonism Research focused on Large Models."
+    "text": "Schema of Brain Simulator\n\n\nbrainSimulator is a brain image synthesis procedure for data augmentation and standardization of evaluation of ML neuroimaging pipelines. It intends to generate a new image set that share characteristics given an original one. The system focuses on nuclear imaging modalities such as PET or SPECT brain images. It analyses the dataset by applying PCA to the original dataset, and then model the distribution of samples in the projected eigenbrain space using a Probability Density Function (PDF) estimator. Once the model has been built, anyone can generate new coordinates on the eigenbrain space belonging to the same class, which can be then projected back to the image space.\n Documentation  Download\n\nInstallation\nbrainSimulator is now available via pypi and can be installed directly from:\npip install brainSimulator\nAlternatively, download the package, uncompress and execute:\ncd /path/to/uncompressed/brainSimulator/\npython setup.py install\n\n\nQuickstart\nThis allows to train the model once and then perform as many sample drawings as required.\n#navigate to the folder where simulator.py is located\nimport brainSimulator as sim\n\nsimulator = sim.BrainSimulator(algorithm='PCA', method='mvnormal')\nsimulator.fit(original_dataset, labels) \nimages, classes = simulator.generateDataset(original_dataset, labels, N=200, classes=[0, 1, 2])\n\n\n\n\nCitationBibTeX citation:@online{martinez-murcia2017,\n  author = {Martinez-Murcia, F.J.},\n  title = {BrainSimulator},\n  date = {2017-11-30},\n  url = {https://pakitochus.github.io/fjmartinezmurcia.es/posts/2017-11-30-project-brainsimulator/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMartinez-Murcia, F.J. 2017. “BrainSimulator.” November 30,\n2017. https://pakitochus.github.io/fjmartinezmurcia.es/posts/2017-11-30-project-brainsimulator/."
   },
   {
     "objectID": "research/2018-07-23-petra/index.html",
@@ -292,6 +264,69 @@
     "title": "PETRA",
     "section": "",
     "text": "GitHub\n  \n\n  \n  \nPETRA is a Matlab toolbox to manage and analyze neuroimaging data by means of multivariate techniques.\nPETRA is a Matlab software toolbox for PET and SPECT (even MRI) analysis. It is developed at the SiPBA lab, together with collaborating institutes and Universities worldwide. The development of PETRA was supported by funding from the Spanish Ministry of Science, the UGR, the Consejería de Innovación of Junta de Andalucía and Ingenia and currently receives support from several projects under different competitive calls.\nThe PETRA software is released as open source under the GNU general public license. The toolbox includes algorithms for simple and advanced analysis and classification of PET, SPECT, etc. images with the aim of Alzheimer and Parkinson diseases diagnosis/detection. It supports the data formats of all major functional/anatomical imaging systems (.dcm, .nii, .mat, etc.) and new formats can be added easily.\n DOWNLOAD\n\n\n\nPETRA, or the Platform for the Evaluation of Medical Imaging, is a toolbox designed to facilitate the access to the recent advances in neuroimaging data analysis based on multivariate approaches. The toolbox, written on Matlab, is freely available and implements a Graphical User Interface that allows managing neuroimaging data in an easy way.\nHere’s the paper where the PETRA was first presented:\n\nF. Segovia et al. PETRA: Multivariate analyses for neuroimaging data. Proceedings IWBBIO 2014. Granada 7-9 April, 2014.\n\n\nInstallation\nmapBrain is now available via pypi and can be installed directly from:\npip install mapBrain\nOtherwise, copy the *.py files directly to the working directory, and import the library with import mapBrain.\n\n\nQuickstart\nThe Statistical Brain Mapping is structured as a class that can be invoked from every script. The simplest approach would be using:\nimport mapBrain\nimport nibabel as nib\n\nimg = nib.load('MRIimage.nii')\nsbm = mapBrain.SphericalBrainMapping()\nmap = sbm.doSBM(img.get_data(), measure='average', show=True)\nSpherical Brain Mapping follows a GNU General Public License v3.0, so the code and all its derivatives are free (as in beer and in speech).\n DOWNLOAD THE CODE NOW"
+  },
+  {
+    "objectID": "research/2020-10-02-statistical-agnostic-mapping/index.html",
+    "href": "research/2020-10-02-statistical-agnostic-mapping/index.html",
+    "title": "Statistical Agnostic Mapping",
+    "section": "",
+    "text": "GitHub\n  \n\n  \n  \n\n\nSAM (Statistical Agnostic Mapping) is a framework based on statistical learning theory (SLT) that provides similar activation maps than the ones obtained by the voxel-wise SPM, but defined on ROIs, under a rigorous development in scenarios with a small sample/dimension ratio and large, small and trivial effect sizes.\nThe present methodology seeks to solve the problems related to classical inference that are observed in neuroscience. Although statistical inference based on a null hypothesis has been used predominantly for exploratory analyses in brain studies (for example, using tools like SPM, AFNI or FSL), recent research maintains that this procedure produces a high number of false positives because data from most of these studies do not meet the model’s assumptions. In this context, SAM allows the creation of significance maps in the study of a certain condition or neurological pathology from the information contained in brain imaging regions of interest, using multivariate approaches based on automatic learning.\n DOWNLOAD\n GITHUB"
+  },
+  {
+    "objectID": "research/2020-10-02-statistical-agnostic-mapping/index.html#from-your-point-of-view-what-is-sam",
+    "href": "research/2020-10-02-statistical-agnostic-mapping/index.html#from-your-point-of-view-what-is-sam",
+    "title": "Statistical Agnostic Mapping",
+    "section": "From your point of view, what is SAM?",
+    "text": "From your point of view, what is SAM?\nSAM is an alternative method to classic statistical inference in neuroimaging. Specifically, it tries to address a few thorny points about multiple comparison correction through family-wise error rate (FWER) control and the link between sample size and sensitivity of the test. The approach proposed relies on a region-wise machine learning technique and the calculation of error bounds on classification accuracy.\nThe recent publication by Gorriz et al. introduces this alternative strategy to estimate group-level or second-level activation maps without employing multiple testing correction to control for family-wise error rates or false discovery rates. One can ask whether voxel level activation statistics at the individual subject level generalize at the population level through a test statistic that captures prevalence of activation within the study population. The paper develops such a prevalence-like nonparametric test statistic, not based on prevalence of activation but that of classification error. It utilizes analytical lower and upper bounds on error inspired by empirical risk minimization and concentration of measure theory without specifying a null distribution. Then statistical significance testing according to this new test statistic automatically provides a group-level activation map."
+  },
+  {
+    "objectID": "research/2020-10-02-statistical-agnostic-mapping/index.html#what-do-you-think-about-the-potential-use-of-sam",
+    "href": "research/2020-10-02-statistical-agnostic-mapping/index.html#what-do-you-think-about-the-potential-use-of-sam",
+    "title": "Statistical Agnostic Mapping",
+    "section": "What do you think about the potential use of SAM?",
+    "text": "What do you think about the potential use of SAM?\nThe method proposed is interesting and its emphasis on using population proportion or prevalence of classifier error in predicting task conditions is important. While different from other types of activation prevalence statistics in the literature, such methods are generally underutilized in the field. The empirical results look promising…\nPersonally, I think the method is a very important addition to the field…"
+  },
+  {
+    "objectID": "research/2020-10-02-statistical-agnostic-mapping/index.html#what-do-you-think-about-the-other-models-that-can-be-employed-thanks-to-the-flexibility-of-the-glm-spm-approach",
+    "href": "research/2020-10-02-statistical-agnostic-mapping/index.html#what-do-you-think-about-the-other-models-that-can-be-employed-thanks-to-the-flexibility-of-the-glm-spm-approach",
+    "title": "Statistical Agnostic Mapping",
+    "section": "What do you think about the other models that can be employed thanks to the flexibility of the GLM-SPM approach?",
+    "text": "What do you think about the other models that can be employed thanks to the flexibility of the GLM-SPM approach?\nSAM is an alternative method for performing group comparisons. Indeed, GLM could be used as well in this framework.\nUp to now, SAM is more focused on group comparisons that perform binary classification but the multiclass problem in ML can also be solved by the use of binary comparisons in Error-correcting output codes (ECOC) which represents a powerful framework to deal with multiclass classification problems."
+  },
+  {
+    "objectID": "research/2020-10-02-statistical-agnostic-mapping/index.html#how-would-factorial-designs-be-handled",
+    "href": "research/2020-10-02-statistical-agnostic-mapping/index.html#how-would-factorial-designs-be-handled",
+    "title": "Statistical Agnostic Mapping",
+    "section": "How would factorial designs be handled?",
+    "text": "How would factorial designs be handled?\nFactorial designs could be managed as well by preparing the binary groups (by properly –multi– labeling the effects we want to measure) that are behind these studies. In this context, the output class could be a set of variables quantifying such specific state of responses.\nIn the future users will explore these configurations to extend SAM into more complex scenarios. At this stage of the development, SAM is more focused on the experimental settings used in many applications found in the extant literature."
+  },
+  {
+    "objectID": "research/2020-10-02-statistical-agnostic-mapping/index.html#what-about-the-inclusion-of-regressors-to-model-out-nuisance-effects",
+    "href": "research/2020-10-02-statistical-agnostic-mapping/index.html#what-about-the-inclusion-of-regressors-to-model-out-nuisance-effects",
+    "title": "Statistical Agnostic Mapping",
+    "section": "What about the inclusion of regressors to model out nuisance effects?",
+    "text": "What about the inclusion of regressors to model out nuisance effects?\nCombination of ML in addition to FES is robust against outliers. Thus, the idea of correcting effects by linear models is discarded in this sense, although it could be incorporated in the methods as a preprocessing step."
+  },
+  {
+    "objectID": "research/2020-10-02-statistical-agnostic-mapping/index.html#is-sam-dependent-on-the-predefined-atlas",
+    "href": "research/2020-10-02-statistical-agnostic-mapping/index.html#is-sam-dependent-on-the-predefined-atlas",
+    "title": "Statistical Agnostic Mapping",
+    "section": "Is SAM dependent on the predefined atlas?",
+    "text": "Is SAM dependent on the predefined atlas?\nSAM is based on Machine Learning using feature extraction and selection and linear decision functions. The method does not depend on the selected atlas as long as the regions taken for the analysis are large enough to take advantage of this multivariate approach. Multivariate approaches using ML can detect differences in regions using a kind of two-tailed test which is particularly valuable when brain responses are modeled by a series of functions (regressors or predictors) for which no specific contrasts can be used."
+  },
+  {
+    "objectID": "research/2020-10-02-statistical-agnostic-mapping/index.html#is-sam-dependent-of-the-feature-extraction-and-selection-fes-scheme",
+    "href": "research/2020-10-02-statistical-agnostic-mapping/index.html#is-sam-dependent-of-the-feature-extraction-and-selection-fes-scheme",
+    "title": "Statistical Agnostic Mapping",
+    "section": "Is SAM dependent of the Feature Extraction and Selection (FES) scheme?",
+    "text": "Is SAM dependent of the Feature Extraction and Selection (FES) scheme?\nSure, FES is used as a pre-processing method to transform raw data into features. Any FES scheme (ICA, PLS PCA or even deep learning for FE) could be used to provide a low dimensional space where SAM works. The inference provided by SAM is referred to that feature space."
+  },
+  {
+    "objectID": "research/2020-10-02-statistical-agnostic-mapping/index.html#conclusions-summary",
+    "href": "research/2020-10-02-statistical-agnostic-mapping/index.html#conclusions-summary",
+    "title": "Statistical Agnostic Mapping",
+    "section": "Conclusions summary",
+    "text": "Conclusions summary\nThe value of the SAM is in the link to the activation prevalence literature by means of a theoretical approach based on concentration inequalities. Previous works have already made it clear that prevalence of activation in the group is a valuable quantity, one that has more ecological validity since it ensures prevalent activation implies that activation could be found in the activation maps of individuals. This potentially has two benefits: i) helping frame the contribution of this work as a learning theory/risk minimization approach to prevalence estimation and ii) it results in an alternative to SPM, FSL or any empirical method for prevalence estimation."
   },
   {
     "objectID": "people/Francisco_Martinez/index.html",
@@ -310,7 +345,7 @@
   {
     "objectID": "people/ignacio-alvarez-illan/index.html",
     "href": "people/ignacio-alvarez-illan/index.html",
-    "title": "Ignacio Alvarez Illan",
+    "title": "Ignacio Álvarez Illán",
     "section": "",
     "text": "Ignacio Alvarez Illan works on the processing and classification of medical imaging for the help in the diagnosis of neurodegenerative diseases and breast cancer. The candidate’s research career began in the field of theoretical physics. After obtaining a bachelor’s degree in Physics from the Complutense University of Madrid in 2004, with an Erasmus scholarship at the Humboldt Universität (Berlin), he began his research career in high-energy physics working at the Deutches Elektron-Synchotron ( DESY) in Berlin. Later he obtained an FPI scholarship in the department of theoretical physics of the University of Granada to carry out his doctoral thesis. In this stage, the candidate produced 2 articles and a technical report, including a work as the only author in string theory.\nThe interests of the researcher soon turned to more applied areas. He completed his doctoral thesis in the field of medical image analysis, through the development of computer diagnosis assistance techniques for Alzheimer’s disease, which received award of PhD with merits. He began his teaching activities in the degree of telecommunications engineering, teaching subjects such as digital signals or random signals. During this stage and his postdoctoral stage, and within the Sipba research group (Signal Processing and Biomedical Applications), the candidate has participated in 16 research projects, has published 50 articles and 65 contributions to congresses, has developed the PETRA software with GNU license, has collaborated with researchers from the University of Malaga, Cadiz, and Granada and the university hospitals Virgen de las Nieves(Granada) and Virgen de la Victoria (Malaga) at national level, and with researchers of the university of Cambridge (UK), Florida State University (US), Memorial Sloan Kettering Center of New York (US),  and Regensburg Universität (Germany) internationally. He was awarded in 2015 with a Marie Curie IOF project SmartMammaCAD funded by the European Research Council and the Horizon 2020 program, with a funded stay at the Florida State University of 2 years. Altogether, he has have 9 years of postoctoral experience, with 4 posdoctoral contracts."
   },
@@ -340,6 +375,6 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Currently I research in Information Technology, inside the interdisciplinary field of Computer Aided Diagnosis, Image-based diagnosis and Statistical and Digital Signal Processing. A provisional title for all this research is Computed Aided Diagnosis for the detection of Neurodegenerative Disorders using Medical Imaging.\nDuring this period I have belonged to the Signal Processing and Biomedical Applications (SiPBA) research group, and I have written or contributed to several publications.\n\n\nResearch projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLATiDOS\n\n\n\npython\n\n\nproject\n\n\n\nLATent variable models to Determine the Onset of neurodegenerative Symptoms.\n\n\n\nF.J. Martinez-Murcia\n\n\nSep 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPETRA\n\n\n\npython\n\n\nmatlab\n\n\nproject\n\n\n\n\n\n\n\n\n\n\nJul 23, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBrainSimulator\n\n\n\npython\n\n\nproject\n\n\n\nFunctional brain image synthesis using the KDE or MVN distribution.\n\n\n\nF.J. Martinez-Murcia\n\n\nNov 30, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDoctoral Thesis\n\n\n\npython\n\n\nmatlab\n\n\nthesis\n\n\n\nFStatistical Neuroimage Modeling, Processing and Synthesis based on Texture and Component Analysis: Tackling the Small Sample Size Problem..\n\n\n\nF.J. Martinez-Murcia\n\n\nJun 1, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSignificance Weighted Principal Component Analysis (SWPCA)\n\n\n\npython\n\n\nproject\n\n\n\nSignificance Weighted Principal Component Analysis (SWPCA) is a technique (1) developed to parse out the influence of a categorical variable that introduces variability in a…\n\n\n\nF.J. Martinez-Murcia\n\n\nOct 24, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpherical Brain Mapping\n\n\n\npython\n\n\nmatlab\n\n\nproject\n\n\n\nThe Spherical Brain Mapping (SBM) is a feature extraction and visualization framework intended to map the internal structures and features of the brain onto a 2D image that…\n\n\n\n\n\n\nSep 15, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPETRA\n\n\n\npython\n\n\nmatlab\n\n\nproject\n\n\n\nPETRA is a Matlab toolbox to manage and analyze neuroimaging data by means of multivariate techniques.\n\n\n\nF.J. Martinez-Murcia\n\n\nJan 1, 2014\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Tools\n\n\n\n\n\n\n\n\n\n\nStatistical Agnostic Mapping\n\n\n\npython\n\n\n\n\n\n\n\n\n\n\nOct 2, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPETRA\n\n\n\npython\n\n\nmatlab\n\n\n\n\n\n\n\n\n\n\nJul 23, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBrainSimulator\n\n\n\npython\n\n\n\nFunctional brain image synthesis using the KDE or MVN distribution.\n\n\n\nF.J. Martinez-Murcia\n\n\nNov 30, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSignificance Weighted Principal Component Analysis (SWPCA)\n\n\n\npython\n\n\n\nSignificance Weighted Principal Component Analysis (SWPCA) is a technique (1) developed to parse out the influence of a categorical variable that introduces variability in a…\n\n\n\nF.J. Martinez-Murcia\n\n\nOct 24, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpherical Brain Mapping\n\n\n\npython\n\n\nmatlab\n\n\n\nThe Spherical Brain Mapping (SBM) is a feature extraction and visualization framework intended to map the internal structures and features of the brain onto a 2D image that…\n\n\n\n\n\n\nSep 15, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPETRA\n\n\n\npython\n\n\nmatlab\n\n\n\nPETRA is a Matlab toolbox to manage and analyze neuroimaging data by means of multivariate techniques.\n\n\n\nF.J. Martinez-Murcia\n\n\nJan 1, 2014\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nResearch projects\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Team\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nTitle\n\n\nTeam\n\n\nFunder\n\n\nDescription\n\n\nFunding\n\n\nStart\n\n\nEnd\n\n\n\n\n\n\n\n\n\nLATiDOS\n\n\nF.J. Martinez-Murcia\n\n\nAgencia Estatal de Investigación (AEI)\n\n\nLATent variable models to Determine the Onset of neurodegenerative Symptoms.\n\n\n121000€\n\n\n2023-09-01\n\n\n2026-08-31\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -2,7 +2,7 @@
 title: "Spherical Brain Mapping"
 description: "The Spherical Brain Mapping (SBM) is a feature extraction and visualization framework intended to map the internal structures and features of the brain onto a 2D image that summarizes all this information."
 date: 09-15-2016
-categories: [python, matlab, project] # self-defined categories
+categories: [python, matlab] # self-defined categories
 citation: 
   url: https://pakitochus.github.io/fjmartinezmurcia.es/posts/2016-09-15-project-sbm/ 
 image: sbm-logo.jpg

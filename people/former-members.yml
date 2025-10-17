@@ -17,3 +17,51 @@
       categories: [Postdoc] 
       started: "2020"
       ended: "2025"
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      title: "Abdelbasset Brahim"
+      lastname: "Abdelbasset"
+#      author: 
+      subtitle: "PhD Student"
+      categories: [PhD Student] 
+      started: "2014"
+      ended: "2018"
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      title: "Laila Kheder"
+      lastname: "Kheder"
+#      author: 
+      subtitle: "PhD Student"
+      categories: [PhD Student] 
+      started: "2014"
+      ended: "2018"
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      title: "Miriam López Pérez"
+      lastname: "López Pérez"
+#      author: 
+      subtitle: "PhD Student"
+      categories: [PhD Student] 
+      started: "2009"
+      ended: "2011"
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      title: "Rosa María Chaves Rodríguez"
+      lastname: "Chaves Rodríguez"
+#      author: 
+      subtitle: "PhD Student"
+      categories: [PhD Student] 
+      started: "2010"
+      ended: "2013"
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      title: "Antonio R. Hidalgo"
+      lastname: "Hidalgo"
+#      author: 
+      subtitle: "PhD Student"
+      categories: [PhD Student] 
+      started: "2009"
+      ended: "2011"
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      title: "Alberto Olivares Vicente"
+      lastname: "Olivares Vicente"
+#      author: 
+      subtitle: "PhD Student"
+      categories: [PhD Student] 
+      started: "2010"
+      ended: "2013"
