@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research – SiPBA Research Lab</title>
+<title>Finley Malloc – SiPBA Research Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fe5b45687c9c27489b08400823fa31a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-fe5b45687c9c27489b08400823fa31a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,80 +66,22 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logos/SinFondoClaro.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logos/SinFondoClaro.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">SiPBA Research Lab</span>
     </a>
   </div>
@@ -153,23 +92,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
@@ -185,7 +124,15 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Finley Malloc</h1>
+                      </div>
+  </div>
+  <div class="quarto-title-meta column-page-left">
+    </div>
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -193,292 +140,58 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#research-projects" id="toc-research-projects" class="nav-link active" data-scroll-target="#research-projects">Research projects</a></li>
+  <li><a href="#this-content-appears-above-the-formatted-about-page-content." id="toc-this-content-appears-above-the-formatted-about-page-content." class="nav-link active" data-scroll-target="#this-content-appears-above-the-formatted-about-page-content.">This content appears above the formatted about page content.</a></li>
+  <li><a href="#this-content-appears-below-the-formatted-about-page-content." id="toc-this-content-appears-below-the-formatted-about-page-content." class="nav-link" data-scroll-target="#this-content-appears-below-the-formatted-about-page-content.">This content appears below the formatted about page content.</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="bWF0bGFi">matlab <span class="quarto-category-count">(4)</span></div><div class="category" data-category="cHJvamVjdA==">project <span class="quarto-category-count">(6)</span></div><div class="category" data-category="cHl0aG9u">python <span class="quarto-category-count">(7)</span></div><div class="category" data-category="dGhlc2lz">thesis <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Research</h1>
+
+
+
+
+<section id="this-content-appears-above-the-formatted-about-page-content." class="level3">
+<h3>This content appears above the formatted about page content.</h3>
+<div class="quarto-about-jolla column-page-left">
+  <img src="profile.jpg" class="about-image
+  round " style="height: 15em; width: 15em;">
+ <div id="hero-heading">
+<p>Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.</p>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<p>University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015</p>
+<p>Macalester College | St.&nbsp;Paul, MN B.A in Economics | Sept 2007 - June 2011</p>
+</section>
+<section id="experience" class="level2">
+<h2 data-anchor-id="experience">Experience</h2>
+<p>Wengo Analytics | Head Data Scientist | April 2018 - present</p>
+<p>GeoScynce | Chief Analyst | Sept 2012 - April 2018</p>
+</section>
+</div> 
+  <hr class="about-sep">
+   <div class="about-links">
+  <a href="https://twitter.com" class="about-link" rel="" target="">
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">twitter</span>
+  </a>
+  <a href="https://github.com" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
+</div>
 </div>
 
-
-
-<div class="quarto-title-meta column-page-left">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Currently I research in Information Technology, inside the interdisciplinary field of Computer Aided Diagnosis, Image-based diagnosis and Statistical and Digital Signal Processing. A provisional title for all this research is Computed Aided Diagnosis for the detection of Neurodegenerative Disorders using Medical Imaging.</p>
-<p>During this period I have belonged to the Signal Processing and Biomedical Applications (SiPBA) research group, and I have written or contributed to several publications.</p>
-<hr>
-<section id="research-projects" class="level1">
-<h1>Research projects</h1>
+</section>
+<section id="this-content-appears-below-the-formatted-about-page-content." class="level3">
+<h3 data-anchor-id="this-content-appears-below-the-formatted-about-page-content.">This content appears below the formatted about page content.</h3>
 
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cHl0aG9uJTJDcHJvamVjdA==" data-listing-date-sort="1693519200000" data-listing-file-modified-sort="1760437027000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="955">
-<a href="./research/2023-09-01-project-latidos/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2023-09-01-project-latidos/latidos_logo.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-LATiDOS
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">
-python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdA=='); return false;">
-project
-</div>
-</div>
-<div class="card-text listing-description">
-LATent variable models to Determine the Onset of neurodegenerative Symptoms.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-F.J. Martinez-Murcia
-</div>
-<div class="listing-date">
-Sep 1, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cHl0aG9uJTJDbWF0bGFiJTJDcHJvamVjdA==" data-listing-date-sort="1532296800000" data-listing-file-modified-sort="1760692422000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="322">
-<a href="./research/2018-07-23-petra/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2018-07-23-petra/images/PETRABANNER.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-PETRA
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">
-python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0bGFi'); return false;">
-matlab
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdA=='); return false;">
-project
-</div>
-</div>
-<div class="card-text listing-description">
-PETRA is a Matlab toolbox to <strong>manage and analyze</strong>&nbsp;<strong>neuroimaging data</strong> by means of <strong>multivariate techniques</strong>.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Jul 23, 2018
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cHl0aG9uJTJDcHJvamVjdA==" data-listing-date-sort="1511996400000" data-listing-file-modified-sort="1760437027000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="193">
-<a href="./research/2017-11-30-project-brainsimulator/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2017-11-30-project-brainsimulator/schema.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-BrainSimulator
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">
-python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdA=='); return false;">
-project
-</div>
-</div>
-<div class="card-text listing-description">
-Functional brain image synthesis using the KDE or MVN distribution.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-F.J. Martinez-Murcia
-</div>
-<div class="listing-date">
-Nov 30, 2017
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="cHl0aG9uJTJDbWF0bGFiJTJDdGhlc2lz" data-listing-date-sort="1496268000000" data-listing-file-modified-sort="1760437027000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="315">
-<a href="./research/2017-06-01-phd-thesis/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2017-06-01-phd-thesis/background.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Doctoral Thesis
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">
-python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0bGFi'); return false;">
-matlab
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('dGhlc2lz'); return false;">
-thesis
-</div>
-</div>
-<div class="card-text listing-description">
-FStatistical Neuroimage Modeling, Processing and Synthesis based on Texture and Component Analysis: Tackling the Small Sample Size Problem..
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-F.J. Martinez-Murcia
-</div>
-<div class="listing-date">
-Jun 1, 2017
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="cHl0aG9uJTJDcHJvamVjdA==" data-listing-date-sort="1477260000000" data-listing-file-modified-sort="1760437027000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
-<a href="./research/2016-10-24-project-swpca/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2016-10-24-project-swpca/promo-swpca.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Significance Weighted Principal Component Analysis (SWPCA)
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">
-python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdA=='); return false;">
-project
-</div>
-</div>
-<div class="card-text listing-description">
-Significance Weighted Principal Component Analysis (SWPCA) is a technique (1) developed to parse out the influence of a categorical variable that introduces variability in a…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-F.J. Martinez-Murcia
-</div>
-<div class="listing-date">
-Oct 24, 2016
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="cHl0aG9uJTJDbWF0bGFiJTJDcHJvamVjdA==" data-listing-date-sort="1473890400000" data-listing-file-modified-sort="1760692699000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="269">
-<a href="./research/2016-09-15-project-sbm/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2016-09-15-project-sbm/sbm-logo.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Spherical Brain Mapping
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">
-python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0bGFi'); return false;">
-matlab
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdA=='); return false;">
-project
-</div>
-</div>
-<div class="card-text listing-description">
-The Spherical Brain Mapping (SBM) is a feature extraction and visualization framework intended to map the internal structures and features of the brain onto a 2D image that…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Sep 15, 2016
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="cHl0aG9uJTJDbWF0bGFiJTJDcHJvamVjdA==" data-listing-date-sort="1388530800000" data-listing-file-modified-sort="1760611114000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="213">
-<a href="./research/2014-01-01-petra-toolbox/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2014-01-01-petra-toolbox/petrav2.webp" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-PETRA
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">
-python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0bGFi'); return false;">
-matlab
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdA=='); return false;">
-project
-</div>
-</div>
-<div class="card-text listing-description">
-PETRA is a Matlab toolbox to manage and analyze neuroimaging data by means of multivariate techniques.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-F.J. Martinez-Murcia
-</div>
-<div class="listing-date">
-Jan 1, 2014
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -499,13 +212,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

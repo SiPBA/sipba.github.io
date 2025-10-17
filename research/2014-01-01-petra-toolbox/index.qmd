@@ -1,0 +1,37 @@
+---
+title: "PETRA"
+description: "PETRA is a Matlab toolbox to manage and analyze neuroimaging data by means of multivariate techniques."
+author:
+  - name: F.J. Martinez-Murcia
+    url: https://fjmartinezmurcia.es/
+    orcid: 0000-0001-8146-7056
+    affiliation: Dpt. of Signal Theory, Networking and Communications. University of Granada & DaSCI. 
+    affiliation-url: https://dasci.es/ 
+date: 01-01-2014
+categories: [python, matlab, project] # self-defined categories
+image: petrav2.webp
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+about:
+  template: trestles
+  image: petra_pan.webp
+  image-width: 10em
+  links:
+  - icon: github
+    text: GitHub
+    href: https://github.com/sipba/petra
+---
+
+PETRA is a Matlab toolbox to manage and analyze neuroimaging data by means of multivariate techniques.
+
+PETRA is a Matlab software toolbox for PET and SPECT (even MRI) analysis. It is developed at the SiPBA lab, together with collaborating institutes and Universities worldwide. The development of PETRA was supported by funding from the Spanish Ministry of Science, the UGR, the Consejería de Innovación of Junta de Andalucía and Ingenia and currently receives support from several projects under different competitive calls.
+
+The PETRA software is released as open source under the GNU general public license. The toolbox includes algorithms for simple and advanced analysis and classification of PET, SPECT, etc. images with the aim of Alzheimer and Parkinson diseases diagnosis/detection. It supports the data formats of all major functional/anatomical imaging systems (.dcm, .nii, .mat, etc.) and new formats can be added easily.
+
+PETRA, or the Platform for the Evaluation of Medical Imaging, is a toolbox designed to facilitate the access to the recent advances in neuroimaging data analysis based on
+multivariate approaches. The toolbox, written on Matlab, is freely available
+and implements a Graphical User Interface that allows managing
+neuroimaging data in an easy way.
+
+Here’s the paper where the PETRA was first presented:
+
+- F. Segovia et al. *PETRA: Multivariate analyses for neuroimaging data*. Proceedings IWBBIO 2014. Granada 7-9 April, 2014.

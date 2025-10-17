@@ -32,8 +32,6 @@ format:
     toc: true
     page-layout: full
 
-editor: visual
-
 # navbar: 
 #    background: "#222322"
 #    foreground: "#FFFFFF"
