@@ -6,13 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Francisco J. Martinez-Murcia">
-<meta name="author" content="Juan Eloy Arco">
-<meta name="author" content="Carmen Jimenez-Mesa">
-<meta name="author" content="Fermin Segovia">
-<meta name="author" content="Ignacio A. Illan">
-<meta name="author" content="Javier Ramirez">
-<meta name="author" content="Juan Manuel Gorriz">
 <meta name="dcterms.date" content="2024-05-22">
 
 <title>Bridging Imaging and Clinical Scores in Parkinson’s Progression Via Multimodal Self-Supervised Deep Learning – SiPBA Research Lab</title>
@@ -156,11 +149,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">1. INTRODUCTION</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">2. METHODOLOGY</a>
+  <ul class="collapse">
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">2.1 DATASET</a></li>
+  <li><a href="#d-convolutional-vae" id="toc-d-convolutional-vae" class="nav-link" data-scroll-target="#d-convolutional-vae">2.2 3D CONVOLUTIONAL VAE</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">2.3. EVALUATION</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">3. RESULTS</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">5. CONCLUSIONS</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -174,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 
 
-<div class="quarto-title-meta-author column-page">
+<div class="quarto-title-meta-author column-body">
   <div class="quarto-title-meta-heading">Authors</div>
   <div class="quarto-title-meta-heading">Affiliations</div>
   
@@ -257,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
       </div>
   </div>
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-body">
 
       
     <div>
@@ -281,51 +288,94 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. INTRODUCTION</h2>
+<p>Parkinson’s disease (PD) affects more than 6.2 million people worldwide. It is characterized by a loss of dopamine-producing neurons in the brain, causing tremors, rigidity, and cognitive decline among other symptoms. Ioflupane I-123 binds to the presynaptic dopamine transporters (DaTs), allowing to visualize and quantify DaT concentration at the striata, which is key to characterize PD in SPECT imaging. Early detection and monitoring of PD progression could be tackled by modelling a self-supervised, low-dimensional representation of a FPCIT dataset, which enables us to longitudinally compare images and identify patterns of change that are indicative of neurodegeneration.</p>
+</section>
+<section id="methodology" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="methodology">2. METHODOLOGY</h2>
+<p>This work proposes a novel approach to detect and quantify subtle changes in DaT concentration and distribution in the brain using 3D convolutional variational AEs (CVAEs). The composite variables of the latent space are then modelled using Decission Trees and XGBoost regression, and the spaces are interpreted through visualization and SHAP.</p>
+<section id="dataset" class="level3 p-5 text-bg-dark rounded-3">
+<h3 class="anchored" data-anchor-id="dataset">2.1 DATASET</h3>
+<p>Data used for this work was obtained from the Parkinson’s Progression Markers Initiative. Specific cohort from the PPMI database that follows individuals diagnosed with PD and Healthy Control subjects (HC) during 5 years, recording symptomatology via the MDS-UPDRS scale. All the Ioflupane I-123 SPECT scans have been intensity normalized to non-specific areas and a sigmoid function was applied to compress the high-intensity values.</p>
+</section>
+<section id="d-convolutional-vae" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="d-convolutional-vae">2.2 3D CONVOLUTIONAL VAE</h3>
+<div class="page-columns page-full">
+<div id="fig-cvae" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-cvae-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="featured.jpg" class="img-fluid figure-img column-screen-inset">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cvae-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Structure of the convolutional VAE
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation">2.3. EVALUATION</h3>
+<ul>
+<li>Use the μ parameters of the latent distribution Nd(μd,σd) as features.</li>
+<li>K-Means features (KMF) are generated to capture important data characteristics.</li>
+<li>Regression using Decision Trees (DT) and XGBoost.</li>
+<li>Performance metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and coefficient of determination R2 are computed using 10-fold cross-validation.</li>
+<li>SHapley Additive exPlanations (SHAP) is applied to the outputs of each system.</li>
+</ul>
+</section>
+</section>
+<section id="results" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="results">3. RESULTS</h2>
+<div id="fig-results" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="image36520.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Results of the evaluation
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>R2&gt;0 for almost all target UPDRS categories and d-dimensional latent spaces.</li>
+<li>Low latent dimensionality (3, 8) is generally for individual perceived symptomatology (UPDRS 1, 2 and 4).</li>
+<li>UPDRS - total is better accounted for by the 20-D model (MAE = 12.21, R2=0.26), pointing at higher complexity of the composite and stronger relationship with FPCIT patterns.</li>
+<li>UPDRS 3, more dependent on measured motor symptoms, benefits from the 20-D space.</li>
+</ul>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div id="fig-interpretation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-interpretation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="image34806.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-interpretation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Interpretability of the manifold
+</figcaption>
+</figure>
+</div>
+</div></div><p>For top performing 20-D XGB model of UPDRS (total), SHAP reveals:<br>
+- top-3 features that contribute to the output of the algorithm are latent variables 2, 10 and 0.<br>
+- Approx. linear dependency between importance to the algorithm output and values of the latent variables.<br>
+- Composition of variables 2 and 10 accounts for relevant characteristics of Ioflupane SPECT imaging: the general intensity of the striata, the separation between them and the uptake ratio between its anterior and posterior parts.<br>
+- Anterior-posterior uptake ratio more related to progression in the first symptoms. Average intensity for the automatic diagnosis of PD.</p>
+</section>
+<section id="conclusions" class="level2 p-5 text-bg-primary rounded-3">
+<h2 class="anchored" data-anchor-id="conclusions">5. CONCLUSIONS</h2>
+<ul>
+<li>The latent features of trained CVAEs are related to different aspects of the MDS-UPDRS scale with R2&gt;0.20.<br>
+</li>
+<li>Best performance for UPDRS (total) with latent variables 2 and 10.<br>
+</li>
+<li>Anterior/Posterior ratio are more related to progression of the first symptoms. Average striatal intensity for the diagnosis of PD.</li>
+</ul>
+<p>This work paves the way for exploratory analysis of links between neuroimaging patterns and neurological disorders in an hypothesis-free environment.</p>
+</section>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{martinez-murcia2024,
-  author = {Martinez-Murcia, Francisco J. and Arco, Juan Eloy and
-    Jimenez-Mesa, Carmen and Segovia, Fermin and Illan, Ignacio A. and
-    Ramirez, Javier and Gorriz, Juan Manuel},
-  title = {Bridging {Imaging} and {Clinical} {Scores} in {Parkinson’s}
-    {Progression} {Via} {Multimodal} {Self-Supervised} {Deep}
-    {Learning}},
-  journal = {International Journal of Neural Systems},
-  volume = {34},
-  number = {8},
-  pages = {2450043},
-  date = {2024-05-22},
-  url = {https://www.worldscientific.com/doi/abs/10.1142/S0129065724500436},
-  doi = {10.1142/S0129065724500436},
-  langid = {en},
-  abstract = {Neurodegenerative diseases pose a formidable challenge to
-    medical research, demanding a nuanced understanding of their
-    progressive nature. In this regard, latent generative models can
-    effectively be used in a data-driven modeling of different
-    dimensions of neurodegeneration, framed within the context of the
-    manifold hypothesis. This paper proposes a joint framework for a
-    multi-modal, common latent generative model to address the need for
-    a more comprehensive understanding of the neurodegenerative
-    landscape in the context of Parkinson’s disease (PD). The proposed
-    architecture uses coupled variational autoencoders (VAEs) to joint
-    model a common latent space to both neuroimaging and clinical data
-    from the Parkinson’s Progression Markers Initiative (PPMI).
-    Alternative loss functions, different normalization procedures, and
-    the interpretability and explainability of latent generative models
-    are addressed, leading to a model that was able to predict clinical
-    symptomatology in the test set, as measured by the unified
-    Parkinson’s disease rating scale (UPDRS), with R2 up to 0.86 for
-    same-modality and 0.441 cross-modality (using solely neuroimaging).
-    The findings provide a foundation for further advancements in the
-    field of clinical research and practice, with potential applications
-    in decision-making processes for PD. The study also highlights the
-    limitations and capabilities of the proposed model, emphasizing its
-    direct interpretability and potential impact on understanding and
-    interpreting neuroimaging patterns associated with PD
-    symptomatology.}
-}
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-martinez-murcia2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-martinez-murcia2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Martinez-Murcia, Francisco J., Juan Eloy Arco, Carmen Jimenez-Mesa,
 Fermin Segovia, Ignacio A. Illan, Javier Ramirez, and Juan Manuel
 Gorriz. 2024. <span>“Bridging Imaging and Clinical Scores in Parkinson’s

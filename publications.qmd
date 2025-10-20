@@ -1,19 +1,33 @@
 ---
 title: "Publications"
 listing:
-  - id: pubs
-    template: _ejs/publications.ejs
+  - id: journal
+    #template: _ejs/publications.ejs
     contents: 
       - publications/**/*.qmd
-      #- publications/publications.yml
-    sort: "pub_number desc"
+      - publications/publications.yml
     page-size: 30
     filter-ui: true
-    fields: [image, pub_number, title, publication, author,url_source]
+    fields: [image, title, container-title, author, year]
+    sort: "year desc"
+    type: table
+    grid-item-align: left
+    grid-columns: 3
+    image-height: 30px
+    field-display-names: 
+        title: "Title"
+        author: "Authors"
+        container-title: "Journal"
+        funder: "Funder"
+        year: "Year"
+    include: 
+      ENTRYTYPE: "article"
 page-layout: full
 ---
 
 <hr>
 
-:::{#pubs}
+## Journal Articles
+
+:::{#journal}
 :::
