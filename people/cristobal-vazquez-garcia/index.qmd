@@ -1,0 +1,14 @@
+---
+title: "Cristóbal Vázquez García"
+name: "Cristóbal"
+lastname: "Vázquez García"
+include-after-body: _footer.html
+about: 
+  template: trestles
+  image-width: 10em
+  links:
+  - icon: envelope
+    text: Email
+    href: mailto:crisvgarcia@ugr.es
+categories: [PhD Student] # self-defined categories
+---

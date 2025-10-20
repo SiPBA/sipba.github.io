@@ -2,7 +2,7 @@
 title: "Francisco J. Martinez-Murcia"
 name: "Francisco J."
 lastname: "Martinez-Murcia"
-include-after-body: _footer.html
+include-after-body: ../../_footer.html
 image: paco.jpg
 about: 
   template: trestles
@@ -21,7 +21,7 @@ about:
   - icon: envelope
     text: Email
     href: mailto:fjesusmartinez@ugr.es
-categories: [postdoc] # self-defined categories
+categories: [Postdoc] # self-defined categories
 ---
 
 ### {{< fa circle-user >}} Bio

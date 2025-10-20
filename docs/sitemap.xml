@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sipba.github.io/contact.html</loc>
-    <lastmod>2025-10-20T07:19:03.000Z</lastmod>
+    <lastmod>2025-10-20T07:59:00.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/research.html</loc>
@@ -10,11 +10,15 @@
   </url>
   <url>
     <loc>https://sipba.github.io/index.html</loc>
-    <lastmod>2025-10-20T07:19:55.000Z</lastmod>
+    <lastmod>2025-10-20T07:50:20.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/blog.html</loc>
     <lastmod>2025-10-14T10:17:04.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sipba.github.io/people/alejandro-segura-hernandez/index.html</loc>
+    <lastmod>2025-10-20T07:37:50.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/people/ignacio-alvarez-illan/index.html</loc>
@@ -26,7 +30,7 @@
   </url>
   <url>
     <loc>https://sipba.github.io/people/Francisco_Martinez/index.html</loc>
-    <lastmod>2025-10-17T09:55:55.000Z</lastmod>
+    <lastmod>2025-10-20T07:40:28.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/research/2020-10-02-statistical-agnostic-mapping/index.html</loc>
@@ -98,11 +102,11 @@
   </url>
   <url>
     <loc>https://sipba.github.io/people/Juanma_Gorriz/index.html</loc>
-    <lastmod>2025-10-17T10:06:29.000Z</lastmod>
+    <lastmod>2025-10-20T07:41:23.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/people/Javier_Ramirez/index.html</loc>
-    <lastmod>2025-10-17T10:06:38.000Z</lastmod>
+    <lastmod>2025-10-20T07:41:16.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/people/diego-salas-gonzalez/index.html</loc>
@@ -111,6 +115,10 @@
   <url>
     <loc>https://sipba.github.io/people/jacob-rodriguez-rivero/index.html</loc>
     <lastmod>2025-10-17T10:05:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sipba.github.io/people/cristobal-vazquez-garcia/index.html</loc>
+    <lastmod>2025-10-20T07:37:45.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/about.html</loc>
@@ -122,10 +130,10 @@
   </url>
   <url>
     <loc>https://sipba.github.io/publications.html</loc>
-    <lastmod>2025-10-14T10:17:07.000Z</lastmod>
+    <lastmod>2025-10-20T07:59:57.000Z</lastmod>
   </url>
   <url>
     <loc>https://sipba.github.io/people.html</loc>
-    <lastmod>2025-10-17T10:37:36.000Z</lastmod>
+    <lastmod>2025-10-20T07:41:29.000Z</lastmod>
   </url>
 </urlset>

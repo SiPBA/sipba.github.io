@@ -3,7 +3,9 @@ title: "Publications"
 listing:
   - id: pubs
     template: _ejs/publications.ejs
-    contents: publications/**/*.qmd
+    contents: 
+      - publications/**/*.qmd
+      #- publications/publications.yml
     sort: "pub_number desc"
     page-size: 30
     filter-ui: true

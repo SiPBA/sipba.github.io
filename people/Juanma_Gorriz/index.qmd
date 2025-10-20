@@ -15,7 +15,7 @@ about:
   - icon: envelope
     text: Email
     href: mailto:gorriz@ugr.es
-categories: [team leader, full professor] # self-defined categories
+categories: [Team Leader, Full Professor] # self-defined categories
 ---
 
 

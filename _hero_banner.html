@@ -1,7 +1,10 @@
 <style>
 :root{--hero-bg:#0f172a;--hero-fg:#e2e8f0;--accent:#38bdf8;--accent-contrast:#041318}
 .hero{position:relative;isolation:isolate;background:linear-gradient(135deg,#0f172a,40%,#111827) no-repeat;padding:4rem 1.25rem}
-.hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.25;background:url(/images/recursos/sp_background.png) no-repeat center / contain;}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.25;
+    background:url(/images/recursos/sp_background.png) no-repeat center / contain; /* fallback */
+    background:url(/images/recursos/sp_background.png) no-repeat center / contain, radial-gradient(1200px 600px at 10% -10%,#38bdf8 0%,transparent 60%),radial-gradient(1000px 500px at 120% 10%,#a78bfa 0%,transparent 60%)
+}
 .hero__inner{max-width:1100px;margin:0 auto;color:var(--hero-fg)}
 .hero__eyebrow{display:inline-block;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#a5b4fc;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.35);padding:.35rem .6rem;border-radius:999px}
 .hero__title{margin:.8rem 0 1rem 0;font-size:clamp(2rem,6vw,3.2rem);line-height:1.1;color:#f8fafc}
@@ -20,7 +23,7 @@
 <h1 class="hero__title">Signal Processing and <br>Biomedical Applications</h1>
 <p class="hero__subtitle">The Signal Processing and Biomedical Applications (SiPBA) research group is one of the leading research groups in statistical signal processing, analysis and machine learning applied to medical imaging. With an extensive background in signal processing, we are currently developing several lines of research that include neurodegenerative diseases, autism and cancer.</p>
 <div class="hero__actions">
-<a class="btn btn--primary" href="projects.html" aria-label="Ver proyectos">Ver proyectos</a>
+<a class="btn btn--primary" href="research.html" aria-label="Ver proyectos">Ver proyectos</a>
 <a class="btn btn--ghost" href="contact.html" aria-label="Contactar">Contactar</a>
 </div>
 </div>

@@ -6,19 +6,18 @@ title-block-banner: false
 
 <center>
 
-**Quarto Academic**
+**Signal Processing and Biomedical Applications**
 
-School
+{{< fa map-location-dot >}} Dept. of Signal Theory, Networking and Communications
 
-College
+Informatics and Telecommunications Technical School
 
-University
+C/ Periodista Daniel Saucedo Aranda 2
 
-Address: 
+18071 Granada (Spain)
 
-Phone: 
-
-E-mail: 
+{{< fa envelope >}} `sipba@ugr.es`
 
 
 </center>
+
