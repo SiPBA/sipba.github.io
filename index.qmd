@@ -20,18 +20,27 @@ listing:   # Comment the listing section and delete corresponding lines in the i
       - "title asc"
   - id: recent-pubs
     contents: 
-      - publications
+      - publications/**/*.qmd
+      - publications/publications.yml
     exclude:
       title: ""
     type: grid
     max-items: 3
 #    image-height: 150px
     page-size: 3 #set same as max-times to remove the page number setting
-    fields: [image, date, title, subtitle]
+    fields: [image, title, container-title, author, year]
+    include: 
+      ENTRYTYPE: "article"
+      categories: [featured]
     max-description-length: 75
     sort: 
       - "date desc"
       - "title asc"
+    field-display-names: 
+        title: "Title"
+        author: "Authors"
+        container-title: "Journal"
+        year: "Year"
 ---
 ## News
 :::{#news}
@@ -45,4 +54,4 @@ Check out the latest &nbsp;[Papers](publications.qmd#category=featured)&nbsp;, &
 :::{#recent-pubs}
 :::
 
-<p align="right">[All Posts »](/publications.qmd)</p>
+<p align="right">[All Publications »](/publications.qmd)</p>

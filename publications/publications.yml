@@ -480,7 +480,7 @@
   path: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85132044130&doi=10.1007
   volume: 13258 LNCS
   year: '2022'
-- ENTRYTYPE: article
+- ENTRYTYPE: inproceedings
   ID: López-García2024225
   author: López-García, David and Segovia, Fermín and Rodríguez-Rivero, Jacob and
     Ramírez, Javier and Pérez, David and Serrano, Raúl and Górriz, Juan Manuel

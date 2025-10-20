@@ -1,7 +1,7 @@
 ---
 title: "Bridging Imaging and Clinical Scores in Parkinson's Progression Via Multimodal Self-Supervised Deep Learning"
-ENTRYTYPE: article
-authors: 
+type: Article
+author: 
   - name: 
       given: Francisco J.
       family: Martinez-Murcia

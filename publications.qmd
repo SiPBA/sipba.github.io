@@ -21,7 +21,28 @@ listing:
         funder: "Funder"
         year: "Year"
     include: 
-      ENTRYTYPE: "article"
+      type: "Article"
+  - id: conferences
+    #template: _ejs/publications.ejs
+    contents: 
+      - publications/**/*.qmd
+      - publications/publications.yml
+    page-size: 30
+    filter-ui: true
+    fields: [image, title, container-title, author, year]
+    sort: "year desc"
+    type: table
+    grid-item-align: left
+    grid-columns: 3
+    image-height: 30px
+    field-display-names: 
+        title: "Title"
+        author: "Authors"
+        container-title: "Conference"
+        funder: "Funder"
+        year: "Year"
+    include: 
+      type: "Conference paper"
 page-layout: full
 ---
 
@@ -30,4 +51,9 @@ page-layout: full
 ## Journal Articles
 
 :::{#journal}
+:::
+
+## Conferences
+
+:::{#conferences}
 :::
