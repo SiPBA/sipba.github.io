@@ -1,21 +1,23 @@
 ---
-title: "SiPBA Research Lab"
+title: "SiPBA Research Group"
 image: images/logos/SinFondoClaro.png
 toc: false
 format: 
   html: 
-    include-in-header: hero-image.html
+    include-in-header: _hero_banner.html
     include-after-body: _footer.html
-about: 
-  template: jolla
-  image-shape: rectangle
-  image-width: 10em
-  links:
-  - text: GitHub
-    icon: github
-    href: https://github.com/sipba
 
 listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
+  - id: news
+    contents: blog
+    type: grid
+    max-items: 3
+    page-size: 3
+    fields: [image, date, title, subtitle]
+    max-description-length: 75
+    sort: 
+      - "date desc"
+      - "title asc"
   - id: recent-pubs
     contents: 
       - publications
@@ -31,16 +33,16 @@ listing:   # Comment the listing section and delete corresponding lines in the i
       - "date desc"
       - "title asc"
 ---
-
-The Signal Processing and Biomedical Applications (SiPBA) research group is one of the leading research groups in statistical signal processing, analysis and machine learning applied to medical imaging. With an extensive background in signal processing, we are currently developing several lines of research that include neurodegenerative diseases, autism and cancer.
-
+## News
+:::{#news}
+:::
 
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
 ## Recent Publications
 Check out the latest &nbsp;[Papers](publications.qmd#category=featured)&nbsp;, &nbsp;[Conferences](publications.qmd#category=news)&nbsp;, &nbsp;[News](blog.qmd#category=event)&nbsp;, and &nbsp;[More »](/publications.qmd)
 
-:::{#recent-posts}
+:::{#recent-pubs}
 :::
 
 <p align="right">[All Posts »](/publications.qmd)</p>

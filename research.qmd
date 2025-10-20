@@ -26,8 +26,8 @@ listing:
 #  sort-ui: true
 #  filter-ui: true
   contents: 
-    - /research/projects/ 
     - /research/projects.yml 
+    - /research/projects/ 
 format: html
 ---
 
