@@ -1,6 +1,6 @@
 ---
 title: "People"
-include-after-body: ../_footer.html
+include-after-body: _footer.html
 listing: 
   - id: lab-member
     sort: "lastname asc"

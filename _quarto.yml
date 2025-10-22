@@ -6,7 +6,7 @@ website:
   title: "SiPBA Research Lab"
   description: "Demo projects, experiments, debugging data and so on from the [SiPBA Research Lab](https://sipba.github.io/)"
   site-url: https://sipba.github.io/
-  favicon: images/favicon.ico
+  favicon: /images/logo/favicon.webp
   navbar:
     title: ""
     background: primary
@@ -20,7 +20,7 @@ website:
       - href: research.qmd
         text: Research
       - publications.qmd
-      - blog.qmd
+      - posts.qmd
       - icon: github # add icons as navbar buttons
         href: https://github.com/SiPBA
         target: _blank

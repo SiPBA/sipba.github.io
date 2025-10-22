@@ -9,7 +9,7 @@ format:
 
 listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
   - id: news
-    contents: blog
+    contents: posts
     type: grid
     max-items: 3
     page-size: 3
@@ -46,10 +46,13 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 :::{#news}
 :::
 
+<p align="right">[All Posts »](/posts.qmd)</p>
+
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
 ## Recent Publications
-Check out the latest &nbsp;[Papers](publications.qmd#category=featured)&nbsp;, &nbsp;[Conferences](publications.qmd#category=news)&nbsp;, &nbsp;[News](blog.qmd#category=event)&nbsp;, and &nbsp;[More »](/publications.qmd)
+Check out the latest &nbsp;[Papers](publications.qmd#category=featured)&nbsp;, &nbsp;[Conferences](publications.qmd#category=news)&nbsp;, &nbsp;[News](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/publications.qmd)
+
 
 :::{#recent-pubs}
 :::

@@ -2,7 +2,7 @@
 title: "Cristóbal Vázquez García"
 name: "Cristóbal"
 lastname: "Vázquez García"
-include-after-body: _footer.html
+include-after-body: ../../_footer.html
 about: 
   template: trestles
   image-width: 10em
