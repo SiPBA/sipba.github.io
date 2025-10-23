@@ -1,5 +1,6 @@
 ---
 title: "Publications"
+title-block-banner: var(--bs-primary) url(images/recursos/bg_books.jpg)
 listing:
   - id: journal
     #template: _ejs/publications.ejs
@@ -10,9 +11,8 @@ listing:
     filter-ui: true
     fields: [image, title, container-title, author, year]
     sort: "year desc"
+    sort-ui: [title, author, container-title, year]
     type: table
-    grid-item-align: left
-    grid-columns: 3
     image-height: 30px
     field-display-names: 
         title: "Title"

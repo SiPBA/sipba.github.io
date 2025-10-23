@@ -21,3 +21,7 @@
   max-width: 80px;
   object-fit: contain;
 }
+
+.quarto-title-banner{
+  background-blend-mode: multiply;
+}
