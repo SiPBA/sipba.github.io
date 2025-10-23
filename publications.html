@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-container-title','listing-author','listing-year',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-container-title','listing-author','listing-year',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       page: 30,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author"],
@@ -129,6 +129,12 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: var(--bs-primary) url(images/recursos/bg_books.jpg);
+      }
+</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -166,7 +172,7 @@ window.Quarto = {
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -217,7 +223,23 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Publications</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -231,25 +253,10 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Publications</h1>
-</div>
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta column-page-left">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <hr>
@@ -267,6 +274,12 @@ window.Quarto = {
       </option>
       <option value="listing-author" data-direction="asc">
         Authors
+      </option>
+      <option value="listing-container-title" data-direction="asc">
+        Journal
+      </option>
+      <option value="listing-year" data-direction="asc">
+        Year
       </option>
     </select>
   </div>
@@ -288,7 +301,7 @@ window.Quarto = {
 </th>
 
 <th>
-Journal
+<a class="sort" data-sort="listing-container-title" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Journal</a>
 </th>
 
 <th>
@@ -296,7 +309,7 @@ Journal
 </th>
 
 <th>
-Year
+<a class="sort" data-sort="listing-year" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
 </th>
 
 </tr>
@@ -493,7 +506,7 @@ Year
 
 </tr>
 
-<tr data-index="10" data-categories="TEFUaURPUyUyQ25ldXJvZGVnZW5lcmF0aXZlJTIwZGlzZWFzZSUyMHByb2dyZXNzaW9uJTJDQWx6aGVpbWVyJ3MlMjBEaXNlYXNlJTJDZmVhdHVyZWQ=" data-listing-date-sort="1716336000000" data-listing-file-modified-sort="1761217631427" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="689" data-listing-title-sort="Bridging Imaging and Clinical Scores in Parkinson's Progression Via Multimodal Self-Supervised Deep Learning" data-listing-filename-sort="index.qmd">
+<tr data-index="10" data-categories="TEFUaURPUyUyQ25ldXJvZGVnZW5lcmF0aXZlJTIwZGlzZWFzZSUyMHByb2dyZXNzaW9uJTJDQWx6aGVpbWVyJ3MlMjBEaXNlYXNlJTJDZmVhdHVyZWQ=" data-listing-date-sort="1716336000000" data-listing-file-modified-sort="1761220018718" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="689" data-listing-title-sort="Bridging Imaging and Clinical Scores in Parkinson's Progression Via Multimodal Self-Supervised Deep Learning" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img loading="lazy" src="./65b910696b42b9c/publications/2024-05-10-bridging/featured.jpg" style="height: 30px;"></span>
 </td>
@@ -512,7 +525,7 @@ Year
 
 </tr>
 
-<tr data-index="11" data-categories="TEFUaURPUyUyQ25ldXJvZGVnZW5lcmF0aXZlJTIwZGlzZWFzZSUyMHByb2dyZXNzaW9uJTJDQWx6aGVpbWVyJ3MlMjBEaXNlYXNlJTJDZmVhdHVyZWQ=" data-listing-date-sort="1716336000000" data-listing-file-modified-sort="1761217631569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="689" data-listing-title-sort="Bridging Imaging and Clinical Scores in Parkinson's Progression Via Multimodal Self-Supervised Deep Learning" data-listing-filename-sort="index.qmd">
+<tr data-index="11" data-categories="TEFUaURPUyUyQ25ldXJvZGVnZW5lcmF0aXZlJTIwZGlzZWFzZSUyMHByb2dyZXNzaW9uJTJDQWx6aGVpbWVyJ3MlMjBEaXNlYXNlJTJDZmVhdHVyZWQ=" data-listing-date-sort="1716336000000" data-listing-file-modified-sort="1761220018868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="689" data-listing-title-sort="Bridging Imaging and Clinical Scores in Parkinson's Progression Via Multimodal Self-Supervised Deep Learning" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img loading="lazy" src="./publications/2024-05-10-bridging/featured.jpg" style="height: 30px;"></span>
 </td>
