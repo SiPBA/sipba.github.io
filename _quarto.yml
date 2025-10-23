@@ -31,7 +31,9 @@ format:
     css: styles.css
     toc: true
     page-layout: full
-
+    
+execute:
+  freeze: auto
 # navbar: 
 #    background: "#222322"
 #    foreground: "#FFFFFF"
