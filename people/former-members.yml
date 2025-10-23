@@ -9,15 +9,6 @@
       started: "2016"
       ended: "2023"
     - path: https://drganghe.github.io/quarto-academic-website-template
-      image: "/images/profiles/carmen.png"
-      title: "Carmen Jiménez Mesa"
-      lastname: "Jiménez Mesa"
-#      author: 
-      subtitle: "Postdoc"
-      categories: [Postdoc] 
-      started: "2020"
-      ended: "2025"
-    - path: https://drganghe.github.io/quarto-academic-website-template
       title: "Abdelbasset Brahim"
       lastname: "Abdelbasset"
 #      author: 

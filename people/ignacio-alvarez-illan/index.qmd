@@ -1,6 +1,5 @@
 ---
 title: "Ignacio Álvarez Illán"
-date: "2018-07-10"
 image: images/ignacio.png
 categories: [Associate Professor] # self-defined categories
 lastname: "Álvarez Illán"
