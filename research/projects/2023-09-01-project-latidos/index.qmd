@@ -7,6 +7,7 @@ author:
     orcid: 0000-0001-8146-7056
     affiliation: Dpt. of Signal Theory, Networking and Communications. University of Granada & DaSCI. 
     affiliation-url: https://dasci.es/ 
+ip: F.J. Martinez-Murcia
 date: 09-01-2023
 categories: [python, project] # self-defined categories
 citation: 
@@ -21,9 +22,10 @@ funding: 121000€
 tags:
   - proyecto
   - "#latente"
-funder: Agencia Estatal de Investigación (AEI)
-funder-url: https://www.aei.es/
-funder-logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
+funder: 
+  name: "Agencia Estatal de Investigación (AEI)"
+  url: https://www.aei.es/
+  logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
 acronym: LATiDOS
 ---
 

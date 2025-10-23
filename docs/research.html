@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-author','listing-funder','listing-description','listing-funding','listing-started','listing-ended',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-ip','listing-funder.name','listing-description','listing-funding','listing-started','listing-ended',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -225,7 +225,7 @@ window.Quarto = {
   <li><a href="#research-projects" id="toc-research-projects" class="nav-link" data-scroll-target="#research-projects">Research projects</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="bWF0bGFi">matlab <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cHJvamVjdA==">project <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHl0aG9u">python <span class="quarto-category-count">(7)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="bWF0bGFi">matlab <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cHJvamVjdA==">project <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cHl0aG9u">python <span class="quarto-category-count">(7)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -459,8 +459,17 @@ No matching items
          <option value="listing-title-sort" data-direction="asc">
           Title
         </option>
-         <option value="listing-author" data-direction="asc">
-          Team
+         <option value="listing-ip" data-direction="asc">
+          IP
+        </option>
+         <option value="listing-funding" data-direction="asc">
+          Funding
+        </option>
+         <option value="listing-started" data-direction="asc">
+          Start
+        </option>
+         <option value="listing-ended" data-direction="asc">
+          End
         </option>
      </select>
   </div>
@@ -473,12 +482,10 @@ No matching items
 <thead>
 <tr>
 <th>
-</th>
-<th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 <th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Team</a>
+<a class="sort" data-sort="listing-ip" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">IP</a>
 </th>
 <th>
 Funder
@@ -487,29 +494,72 @@ Funder
 Description
 </th>
 <th>
-Funding
+<a class="sort" data-sort="listing-funding" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Funding</a>
 </th>
 <th>
-Start
+<a class="sort" data-sort="listing-started" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Start</a>
 </th>
 <th>
-End
+<a class="sort" data-sort="listing-ended" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">End</a>
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="cHl0aG9uJTJDcHJvamVjdA==" data-listing-date-sort="1693519200000" data-listing-file-modified-sort="1760698306000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="955" data-listing-title-sort="LATiDOS" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-categories="cHJvamVjdA==" data-listing-date-sort="NaN" data-listing-title-sort="ML2BRAIN">
 <td>
-<span class="listing-image"><img loading="lazy" src="./research/projects/2023-09-01-project-latidos/latidos_logo.png" style="height: 30px;"></span>
+<span class="listing-title">ML2BRAIN</span>
 </td>
+<td>
+<span class="listing-ip">F.J. Jesús Martínez Murcia</span>
+</td>
+<td>
+<span class="listing-funder.name">Agencia Estatal de Investigación (AEI)</span>
+</td>
+<td>
+<span class="listing-description">The goal of this project is to investigate the use of machine learning to study music and language in the brain.</span>
+</td>
+<td>
+<span class="listing-funding">112400€</span>
+</td>
+<td>
+<span class="listing-started">2025-04-01</span>
+</td>
+<td>
+<span class="listing-ended">2027-03-31</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="cHJvamVjdA==" data-listing-date-sort="NaN" data-listing-title-sort="DEEP-VAL-SCIENCE">
+<td>
+<span class="listing-title">DEEP-VAL-SCIENCE</span>
+</td>
+<td>
+<span class="listing-ip">I. Álvarez Illán, J. M. Górriz</span>
+</td>
+<td>
+<span class="listing-funder.name">Agencia Estatal de Investigación (AEI)</span>
+</td>
+<td>
+<span class="listing-description">The goal of this project is to validate deep learning models in neuroscience.</span>
+</td>
+<td>
+<span class="listing-funding">204000€</span>
+</td>
+<td>
+<span class="listing-started">2023-09-01</span>
+</td>
+<td>
+<span class="listing-ended">2026-08-31</span>
+</td>
+</tr>
+<tr data-index="2" data-categories="cHl0aG9uJTJDcHJvamVjdA==" data-listing-date-sort="1693519200000" data-listing-file-modified-sort="1761210449000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="955" data-listing-title-sort="LATiDOS" data-listing-filename-sort="index.qmd">
 <td>
 <a href="./research/projects/2023-09-01-project-latidos/index.html" class="title listing-title">LATiDOS</a>
 </td>
 <td>
-<span class="listing-author">F.J. Martinez-Murcia</span>
+<span class="listing-ip">F.J. Martinez-Murcia</span>
 </td>
 <td>
-<span class="listing-funder">Agencia Estatal de Investigación (AEI)</span>
+<span class="listing-funder.name">Agencia Estatal de Investigación (AEI)</span>
 </td>
 <td>
 <span class="listing-description">LATent variable models to Determine the Onset of neurodegenerative Symptoms.</span>

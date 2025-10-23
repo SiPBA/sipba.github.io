@@ -11,23 +11,20 @@ listing:
 - id: projects
   sort: "started desc"
   type: table
-  fields: [image, title, author, funder, description, funding, started, ended]
-  grid-item-align: left
-  grid-columns: 3
-  image-height: 30px
+  fields: [title, ip, funder.name, description, funding, started, ended]
   field-display-names: 
       title: "Title"
-      author: "Team"
-      funder: "Funder"
+      ip: "IP"
+      funder.name: "Funder"
       started: "Start"
       ended: "End"
       funding: "Funding"
-#  categories: true
-#  sort-ui: true
-#  filter-ui: true
+  categories: true
+  sort-ui: [title, ip, funding, started, ended]
+  filter-ui: true
   contents: 
-    - /research/projects.yml 
-    - /research/projects/ 
+    - "/research/projects.yml"
+    - "/research/projects/**/*.qmd" 
 format: html
 ---
 

@@ -16,3 +16,8 @@
   text-overflow: ellipsis;
   max-width: 500px;
 }
+
+.quarto-listing-table .listing-image img{
+  max-width: 80px;
+  object-fit: contain;
+}
