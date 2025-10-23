@@ -1,0 +1,63 @@
+---
+title: "PETRA"
+date: "2018-07-23"
+title-block-banner: images/PETRABANNER.jpg
+image: images/PETRABANNER.jpg
+categories: [python, matlab] # self-defined categories
+about:
+  id: hero-heading
+  template: trestles
+  image: images/Captura-de-pantalla-de-2018-07-23-09-42-36.png
+  links:
+  - icon: github
+    text: GitHub
+    href: https://github.com/SiPBA/petra
+---
+
+:::{#hero-heading}
+
+PETRA is a Matlab toolbox to **manage and analyze** **neuroimaging data** by means of **multivariate techniques**.
+
+PETRA is a Matlab software toolbox for PET and SPECT (even MRI) analysis. It is developed at the SiPBA lab, together with collaborating institutes and Universities worldwide. The development of PETRA was supported by funding from the Spanish Ministry of Science, the UGR, the Consejería de Innovación of Junta de Andalucía and Ingenia and currently receives support from several projects under different competitive calls.
+
+The PETRA software is released as **open source** under the GNU general public license. The toolbox includes algorithms for simple and advanced analysis and classification of PET, SPECT, etc. images with the aim of Alzheimer and Parkinson diseases diagnosis/detection. It supports the data formats of all major functional/anatomical imaging systems (.dcm, .nii, .mat, etc.) and new formats can be added easily.
+
+[{{< fa download >}} DOWNLOAD](https://github.com/SiPBA/petra){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Download the PETRA toolbox"}
+
+:::
+
+PETRA, or the _Platform for the Evaluation of Medical Imaging_, is a toolbox designed to facilitate the access to the recent advances in neuroimaging data analysis based on multivariate approaches. The toolbox, written on Matlab, is freely available and implements a Graphical User Interface that allows managing neuroimaging data in an easy way.
+
+Here's the paper where the PETRA was first presented:
+
+- F. Segovia et al. PETRA: Multivariate analyses for neuroimaging data. **Proceedings IWBBIO** 2014. Granada 7-9 April, 2014.
+
+
+### Installation
+
+mapBrain is now available via `pypi` and can be installed directly from:
+
+```bash
+pip install mapBrain
+```
+
+Otherwise, copy the \*.py files directly to the working directory, and import the library with `import mapBrain`.
+
+### Quickstart
+
+The Statistical Brain Mapping is structured as a class that can be invoked from every script. The simplest approach would be using:
+
+```python
+import mapBrain
+import nibabel as nib
+
+img = nib.load('MRIimage.nii')
+sbm = mapBrain.SphericalBrainMapping()
+map = sbm.doSBM(img.get_data(), measure='average', show=True)
+```
+
+
+Spherical Brain Mapping follows a GNU General Public License v3.0, so the code and all its derivatives are free (as in beer and in speech).
+
+
+[{{< fa download >}} DOWNLOAD THE CODE NOW](https://github.com/SiPBA/mapBrain/blob/master/LICENSE){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Download the code"}

@@ -1,0 +1,84 @@
+---
+title: LATiDOS
+description: "LATent variable models to Determine the Onset of neurodegenerative Symptoms."
+author:
+  - name: F.J. Martinez-Murcia
+    url: https://fjmartinezmurcia.es/
+    orcid: 0000-0001-8146-7056
+    affiliation: Dpt. of Signal Theory, Networking and Communications. University of Granada & DaSCI. 
+    affiliation-url: https://dasci.es/ 
+ip: F.J. Martinez-Murcia
+date: 09-01-2023
+categories: [python, project] # self-defined categories
+citation: 
+  url: https://pakitochus.github.io/research/pakitochus.github.io/research/2023-09-01-project-latidos/
+image: latidos_logo.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+bibliography: latidos_bibliography.bib
+id: PID2022-137629OA-I00
+started: 2023-09-01
+ended: 2026-08-31
+funding: 121000€
+tags:
+  - proyecto
+  - "#latente"
+funder: 
+  name: "Agencia Estatal de Investigación (AEI)"
+  url: https://www.aei.es/
+  logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
+acronym: LATiDOS
+---
+
+![Overview of the LATiDOS methodology](overview_methodology.png)
+
+**LATiDOS** is a proposal oriented to solve a particular problem: to create data-driven models of the progression of neurodegeneration and use them to determine the individual age of symptom onset.
+
+```{=html}
+<!--[{{< fa file-lines >}} Documentation](http://mapbrain.readthedocs.io/en/latest/quickstart.html){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the documentation"}
+[{{< fa download >}} Download](https://github.com/SiPBA/mapBrain){.btn .btn-primary .btn role="button" data-toggle="tooltip" title="Download the package"}-->
+```
+# The project
+
+Research has recently shown that the neuropathological processes of neurodegenerative diseases (NDDs) begin years or even decades before symptoms appear. There are several initiatives worldwide that study the progression of subjects at risk of developing these diseases, some even from a very early age, and that collect a wide variety of longitudinal data such as symptomatology, biochemical markers or neuroimaging. This would provide insight into pathological processes long before their "conversion", or the appearance of the first symptoms.
+
+This proposal aims to combine neuroimaging, biochemical, genetic, neuropsychological and epidemiological data using data fusion and machine learning strategies to study and model the progression of NDDs and predict the individual age of symptom onset. This will be done using feature extraction and fusion methodologies using mainly latent variable models based on deep neural networks. The latent information can be combined with other associated genetic and biochemical data as well as different environmental factors to generate a series of models of NDD progression. Different individual and ensemble models of progression will be proposed, which will be validated qualitatively and quantitatively by experts in statistics and neurology, as well as by assessing their generalisability to other existing databases. On the one hand, it is hoped to obtain a better understanding of the processes of neurodegeneration that will make it possible to characterise the degree of individual affectation at a specific time and how different biological, biochemical and environmental variables affect the speed of progression of the disease. It is also hoped to obtain a computational model to predict the age of symptom onset in individual patients from the above data. On the other hand, significant advances are expected to be made in the study of current deep learning methods applied to medical imaging and data fusion, favouring the paradigm of interpretable machine learning.
+
+![How a Disease Progression Model (DPM) works.](overview_progression.png)
+
+# Objectives
+
+LATiDOS has one **general objective: to build and evaluate data-driven models of the progression of neurodegenerative diseases**. These models should be able to determine the individual disease state and progression rate, as well as determining the Age of Symptom Onset (ASO), accounting for variability due to sex, age, etc. This can be realized by achieving the following **specific objectives**:
+
+1.  **Download, merge and organize a large dataset of NDDs patient data, including medical history, neuroimaging and biomarkers**. Modalities include PET-PIB, PET-FDG functional images and Magnetic Resonance Imaging (MRI) -structural and functional-, as well as epidemiological, genetic, biochemical and population data that can help in NDD stratification.
+2.  **Obtain an accurate and generalizable latent representation of each NDD data cohort with maximum clinical validity**. Specific probabilistic neural architectures for manifold learning will be used for this process.
+3.  **To derive causal and non-causal model(s) of DP at different levels of accuracy that primarily use neuroimaging-driven latent variables, but also take into account clinical, environmental and genetic background**. Use them to accurately redefine ASO.
+4.  **Test and validate the developed models using a diverse set of patients and compare their performance to existing models. Ensure that the DPMs are interpretable by expert neurologists** at different levels of accuracy.
+5.  **Explore the potential for using these models to identify new biomarkers and drug targets for neurodegenerative diseases.**
+6.  **Investigate and communicate the use of these models in clinical settings, such as for early diagnosis and treatment planning**. Effective communication of the methodology and results of the project to the scientific community, specialized audience (clinical staff, policymakers, as well as affected subjects and their environment) and the public.
+
+# Results
+
+The project is already running. The current status is:
+
+## Publications:
+-   A novel framework to evaluate regression performance, called Statistical Agnostic Regression (SAR) by @gorriz2024statistical.
+-   We published a paper in the *International Journal of Neural Systems* about a [cross-modality latent variable framework using joint Variational Autoencoders](/publications/2024-05-10-bridging/index.qmd), by @martinez-murcia2024.
+-   We published a novel paper within the [GENFI](https://www.genfi.org) initiative, in collaboration with the team at the LMU University in Munich, entitled *Frequency and Longitudinal Course of Behavioral and Neuropsychiatric Symptoms in Participants with Genetic Frontotemporal Dementia* by @schönecker2024
+-   We presented a series of publications at the *International Work-Conference on the Interplay Between Artificial and Natural Computation* (IWINAC 2024):
+    -   *A Cross-Modality Latent Representation for the Prediction of Clinical Symptomatology in Parkinson’s Disease* by @vázquez-garcía2024
+    -   *PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models* by @lópez2024a
+-   We collaborated with the Deutsche Zentrum für Neurodegenerative Erkrankungen (DZNE) in an analysis published in the *Alzheimer's & Dementia* journal about the exploratory analysis of the proteomic profile in plasma in adults with Down syndrome in the context of Alzheimer's Disease by @wagemann2025exploratory. These novel biomarkers could be used to stratify patients into different groups and predict the disease progression.
+
+## Talks
+-   IWINAC 2024: [Cross-Modality Latent Variable Framework for the Prediction of Clinical Symptomatology in Parkinson’s Disease]
+-   IWINAC 2024: [PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models]
+-   *Actividad*: Música e IA at the European Researcher's Night 2024 (27/09/2024)
+-   *Taller*: ¡Las máquinas nos quitan el trabajo! (14/03/2024), en el proyecto *Mujer y Niña en la Ciencia* de la Unidad de Cultura Científica de la Universidad de Granada.
+
+## Software
+-   We released the [PDBIGDATA](https://github.com/PDBIGDATA/PDBIGDATA) database, a new database for Parkinsonism Research focused on Large Models.
+
+# Funding 
+This project PID2022-137629OA-I00 is funded by MICIU/AEI/10.13039/501100011033 and by ERDF/EU (European Regional Development Fund).
+
+![Funding body](MICIU+Cofinanciado+AEI.jpg)

@@ -1,0 +1,36 @@
+- image: /images/logos/ml2brain.png
+  title: "ML2BRAIN"
+  funder: 
+    name: "Agencia Estatal de Investigación (AEI)"
+    url: https://www.aei.es/
+    logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
+  description: "The goal of this project is to investigate the use of machine learning to study music and language in the brain."
+  started: "2025-04-01"
+  ended: "2027-03-31"
+  date: last-modified
+  funding: "112400€"
+  categories: [project]
+  tags:
+    - proyecto
+    - plazas
+    - consolidación
+    - R3
+    - "#concedido"
+  acronym: ML2BRAIN
+  ip: F.J. Jesús Martínez Murcia
+- image: 
+  title: "DEEP-VAL-SCIENCE"
+  funder: 
+    name: "Agencia Estatal de Investigación (AEI)"
+    url: https://www.aei.es/
+    logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
+  description: "The goal of this project is to validate deep learning models in neuroscience."
+  started: "2023-09-01"
+  ended: "2026-08-31"
+  date: last-modified
+  funding: "204000€"
+  categories: [project]
+  tags:
+    - proyecto
+  acronym: DEEP-VAL-SCIENCE
+  ip: I. Álvarez Illán, J. M. Górriz
