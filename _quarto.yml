@@ -20,9 +20,14 @@ website:
         text: Research
       - publications.qmd
       - posts.qmd
+    tools: 
       - icon: github # add icons as navbar buttons
         href: https://github.com/SiPBA
         target: _blank
+      - icon: envelope-fill
+        text: ""
+        href: contact.qmd
+        aria-label: Contact
 
 format:
   html:

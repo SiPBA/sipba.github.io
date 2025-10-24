@@ -1,6 +1,10 @@
 ---
 title: "Publications"
 title-block-banner: var(--bs-primary) url(images/recursos/bg_books.jpg)
+format:
+  html:
+    include-in-header: |
+          <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 listing:
   - id: journal
     #template: _ejs/publications.ejs

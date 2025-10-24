@@ -3,6 +3,7 @@ title: "Contact"
 description-meta: "Reach out to me with questions and comments"
 title-block-banner: false
 about:
+    id: contact-info
     template: jolla
     image: /images/logos/SinFondoClaro.png
     image-shape: rectangle
@@ -16,7 +17,7 @@ about:
       href: https://www.linkedin.com/in/sipba-ugr-198729281
 ---
 
-<center>
+:::{#contact-info .text-center}
 
 **Signal Processing and Biomedical Applications**
 
@@ -26,7 +27,7 @@ about:
 *C/ Periodista Daniel Saucedo Aranda 2*<br>
 *18071 Granada (Spain)*<br>
 
-</center>
+:::
 
 ```{r}
 #| column: screen-inset-shaded
