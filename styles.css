@@ -25,3 +25,67 @@
 .quarto-title-banner{
   background-blend-mode: multiply;
 }
+
+
+
+.fancylist ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0
+}
+
+.fancylist ul li{
+  position: relative;
+  padding: .75rem 0 .75rem 2rem;
+  margin-bottom: .75rem;
+  transition: all .3s ease
+}
+
+.fancylist ul li::before{
+  content: "▸";
+  position: absolute;
+  left: .5rem;
+  color: rgba(51,51,51,.5);
+  font-size: 1rem;
+  transition: all .3s ease
+}
+
+.fancylist ul li:hover{
+  padding-left: 2.25rem;
+  color: #333
+}
+
+.fancylist ul li:hover::before {
+  color: #333;
+  left: .25rem
+}
+
+.fancylist ul li p{
+  margin: 0
+}
+
+.fancylist ul li p strong {
+  color: #333;
+  font-weight: 600
+}
+
+.fancylist section.level2 ul li p em{
+  color: rgba(51,51,51,.7)
+}
+
+.fancylist ul li{
+  background-color: rgba(51,51,51,.02);
+  border-left: 2px solid rgba(51,51,51,.15);
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1rem 1rem 2rem
+}
+
+.fancylist ul li:hover {
+  background-color: rgba(51,51,51,.05);
+  border-left-color: rgba(51,51,51,.3)
+}
+
+.fancylist ul li strong:last-of-type {
+  color: rgba(51,51,51,.7);
+  font-size: .95em
+}
