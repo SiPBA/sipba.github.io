@@ -5,7 +5,14 @@ website:
   title: "SiPBA Research Lab"
   description: "Demo projects, experiments, debugging data and so on from the [SiPBA Research Lab](https://sipba.github.io/)"
   site-url: https://sipba.github.io/
-  favicon: /images/logo/favicon.webp
+  favicon: images/logos/favicon.webp
+  twitter-card: true
+  page-footer: 
+    left: |
+      <a href="https://creativecommons.org">SiPBA</a> © 2025 by <a href="https://creativecommons.org">SiPBA</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+    right: "This website is built with [Quarto](https://quarto.org/). [Terms of Use](https://www.ugr.es/condiciones-legales)"
+    background: warning
+    foreground: white
   navbar:
     title: ""
     background: primary
