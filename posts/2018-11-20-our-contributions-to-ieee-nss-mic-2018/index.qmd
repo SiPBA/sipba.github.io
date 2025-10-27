@@ -13,8 +13,11 @@ tags:
   - "poster"
   - "sipba"
   - "sydney"
-coverImage: "DSC07035.jpg"
+lightbox: true
+title-block-banner: url(images/DSC07035.jpg) no-repeat 50% 50% / cover
 ---
+
+![NSS/MIC 2018](images/DSC07035.jpg)
 
 The SiPBA research group presented 7 works at the 2018 [IEEE Nuclear Science Symposium and Medical Imaging Conference in Sydney](http://www.nssmic.org/2018/), Australia. The topics covered Alzheimer's and Parkinson's Diseases, using a wide range of methodologies. Find here, ready to download, some of the posters that were presented at the conference:
 
@@ -27,4 +30,22 @@ The SiPBA research group presented 7 works at the 2018 [IEEE Nuclear Science Sym
 
 And here is a bunch os photos of our intervention:
 
-\[gallery type="slideshow" ids="2446,2447,2448,2449,2450,2451,2452,2453" orderby="rand"\]
+::: {layout-ncol=3}
+
+![alt text](images/DSC07035.jpg) 
+
+![alt text](images/WhatsApp-Image-2018-11-15-at-00.56.12.jpeg) 
+
+![alt text](images/WhatsApp-Image-2018-11-15-at-00.56.13.jpeg) 
+
+![alt text](images/WhatsApp-Image-2018-11-15-at-00.57.41.jpeg) 
+
+![alt text](images/WhatsApp-Image-2018-11-15-at-01.14.38.jpeg) 
+
+![alt text](images/WhatsApp-Image-2018-11-16-at-01.28.48.jpeg) 
+
+![alt text](images/WhatsApp-Image-2018-11-16-at-01.41.11-1.jpeg) 
+
+![alt text](images/WhatsApp-Image-2018-11-16-at-01.41.11.jpeg)
+
+:::

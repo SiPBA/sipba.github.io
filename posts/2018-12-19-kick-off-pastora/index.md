@@ -1,8 +1,10 @@
 ---
 title: "Kick-off PASTORA"
 date: "2018-12-19"
-coverImage: "Clipboard01.jpg"
+title-block-banner: url(images/Clipboard01.jpg) no-repeat 50% 50% / cover
 ---
+
+![PASTORA](images/Clipboard01.jpg)
 
 News from ENEL-ENDESA and SiPBA collaboration:
 

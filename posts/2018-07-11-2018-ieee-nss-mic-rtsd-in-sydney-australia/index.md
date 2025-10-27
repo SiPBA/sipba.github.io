@@ -1,6 +1,8 @@
 ---
 title: "2018 IEEE NSS/MIC/RTSD in Sydney, Australia"
 date: "2018-07-11"
+title-block-banner: url(/images/recursos/sydney-opera-house-354375-768x513.jpg) no-repeat 50% 50% / cover
+image: /images/recursos/sydney-opera-house-354375-768x513.jpg
 ---
 
 The 2018 Nuclear Science Symposium (NSS) and Medical Imaging Conference (MIC) will be held at the International Convention Centre Sydney, in Sydney, Australia, from the 10th to 17th of November.
