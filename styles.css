@@ -102,3 +102,7 @@ td .listing-author{
   overflow: hidden;
   max-width: 200px;
 }
+
+td > span.listing-container-title{
+  font-style: italic;
+}
