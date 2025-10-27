@@ -217,10 +217,19 @@
   year: '2026'
 - ENTRYTYPE: article
   ID: Jiménez-Mesa2023
-  author: Jiménez-Mesa, Carmen and Arco, Juan E. and Valentí-Soler, Meritxell and
-    Frades-Payo, Belén and Zea-Sevilla, María A. and Ortiz, Andrés and Ávila-Villanueva,
-    Marina and Castillo-Barnes, Diego and Ramírez, Javier and Del Ser-Quijano, Teodoro
-    and Carnero-Pardo, Cristóbal and Górriz, Juan M.
+  author: 
+  - Jiménez-Mesa, Carmen
+  - Arco, Juan E.
+  - Valentí-Soler, Meritxell
+  - Frades-Payo, Belén
+  - Zea-Sevilla, María A.
+  - Ortiz, Andrés
+  - Ávila-Villanueva, Marina
+  - Castillo-Barnes, Diego
+  - Ramírez, Javier
+  - Del Ser-Quijano, Teodoro
+  - Carnero-Pardo, Cristóbal
+  - Górriz, Juan M.
   doi: 10.1142/S0129065723500156
   container-title: International Journal of Neural Systems
   note: 'Cited by: 20; All Open Access, Green Open Access'

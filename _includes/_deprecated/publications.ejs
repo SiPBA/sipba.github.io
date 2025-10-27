@@ -1,0 +1,49 @@
+```{=html}
+<ol class="list publication-list" reversed>
+  <% for (const item of items) { %>
+    <li <%= metadataAttrs(item) %>>
+      <div class="publication-info">
+        <span class="listing-date">(<%= item.year %>)</span>
+        <span class="listing-author"><%= item.author %></span>.
+        <a href="https://doi.org/<%- item.doi %>"">
+          <span class="listing-title"><%= item.title %></span>
+          <% if (item.subtitle) { %>: <span class="listing-subtitle subtitle"><%= item.subtitle %></span><% } %>
+        </a>.
+      </div>
+
+      <% const citation = item.citation || {}; %>
+
+      <% if (item["container-title"]) { %>
+        <span class="listing-publication fst-italic"><%= item["container-title"] %></span>
+      <% } else if (citation["container-title"]) { %>
+        <span class="listing-publication fst-italic"><%= citation["container-title"] %></span>
+      <% } %>
+
+      <% if (item.volume) { %>
+        <span class="listing-volume"><%= item.volume %></span>
+      <% } else if (citation["volume"]) { %>
+        <span class="listing-volume"><%= citation["volume"] %></span>
+      <% } %>
+
+      <% if (item.number) { %>
+        <span class="listing-issue">(<%= item.number %>)</span>.
+      <% } else if (citation["issue"]) { %>
+        <span class="listing-issue">(<%= citation["issue"] %>)</span>.
+      <% } %>
+
+      <% if (item.pages) { %>
+        <span class="listing-pages"><%= item.pages %></span>.
+      <% } else if (citation["pages"]) { %>
+        <span class="listing-pages"><%= citation["pages"] %></span>.
+      <% } %>
+
+      <% if (item.doi) { %>
+        <span class="__dimensions_badge_embed__" data-doi="<%= item.doi %>" data-hide-zero-citations="true" data-style="small_rectangle"></span>
+        <div data-badge-popover="right" data-badge-type="2" data-doi="<%= item.doi %>" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+
+      <% } else if (citation["doi"]) { %>
+        <span class="listing-doi"><%= citation["doi"] %></span>.
+      <% } %>
+    </li>
+  <% } %>
+</ol>

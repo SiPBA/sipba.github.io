@@ -89,3 +89,16 @@
   color: rgba(51,51,51,.7);
   font-size: .95em
 }
+
+td > span, td > a{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+td .listing-author{
+  /*white-space: nowrap;*/
+  overflow: hidden;
+  max-width: 200px;
+}

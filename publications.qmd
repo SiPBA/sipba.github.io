@@ -3,19 +3,23 @@ title: "Publications"
 title-block-banner: var(--bs-primary) url(images/recursos/bg_books.jpg)
 format:
   html:
-    include-in-header: |
+    include-in-header:
+      - file: "_includes/parse_doi.html"
+      - text: |
           <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+    include-after-body: 
+      text: |
+          <script type='text/javascript' src='https://embed.altmetric.com/assets/embed.js'></script>
 listing:
   - id: journal
-    #template: _ejs/publications.ejs
     contents: 
       - publications/**/*.qmd
       - publications/publications.yml
     page-size: 30
     filter-ui: true
-    fields: [image, title, container-title, author, year]
+    fields: [year, author, title, container-title, doi]
     sort: "year desc"
-    sort-ui: [title, author, container-title, year]
+    sort-ui: [title, author, container-title, year, doi]
     type: table
     image-height: 30px
     field-display-names: 
@@ -24,17 +28,18 @@ listing:
         container-title: "Journal"
         funder: "Funder"
         year: "Year"
+        doi: "Metrics"
     include: 
       type: "Article"
   - id: conferences
-    #template: _ejs/publications.ejs
     contents: 
       - publications/**/*.qmd
       - publications/publications.yml
     page-size: 30
     filter-ui: true
-    fields: [image, title, container-title, author, year]
+    fields: [year, author, title, container-title, doi]
     sort: "year desc"
+    sort-ui: [title, author, container-title, year, doi]
     type: table
     grid-item-align: left
     grid-columns: 3
@@ -45,6 +50,7 @@ listing:
         container-title: "Conference"
         funder: "Funder"
         year: "Year"
+        doi: "Metrics"
     include: 
       type: "Conference paper"
 page-layout: full
@@ -55,9 +61,11 @@ page-layout: full
 ## Journal Articles
 
 :::{#journal}
+
 :::
 
 ## Conferences
 
 :::{#conferences}
+
 :::

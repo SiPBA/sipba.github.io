@@ -1,0 +1,9 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.listing-doi').forEach(function(el) {
+      cadena = '<span class="__dimensions_badge_embed__" data-doi="' + el.textContent.trim() + '" data-hide-zero-citations="true" data-style="small_rectangle"></span>'
+      cadena += '<div data-badge-popover="right" data-badge-type="2" data-doi="' + el.textContent.trim() + '" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>'
+      el.innerHTML = cadena
+    });
+  });
+</script>
