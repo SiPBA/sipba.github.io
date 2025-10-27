@@ -28,7 +28,7 @@ listing:
     - "/research/projects/**/*.qmd" 
 format: 
   html:
-    include-after-body: _footer.html
+    include-after-body: _includes/_footer.html
 ---
 
 # Tools

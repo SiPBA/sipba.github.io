@@ -99,7 +99,6 @@ td > span, td > a{
 
 td .listing-author{
   /*white-space: nowrap;*/
-  overflow: hidden;
   max-width: 200px;
 }
 
