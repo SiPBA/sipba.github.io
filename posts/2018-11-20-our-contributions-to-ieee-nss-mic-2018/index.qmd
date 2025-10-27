@@ -14,7 +14,7 @@ tags:
   - "sipba"
   - "sydney"
 lightbox: true
-title-block-banner: url(images/DSC07035.jpg) no-repeat 50% 50% / cover
+title-block-banner: url(images/DSC07035.jpg) no-repeat 50% 45% / cover
 ---
 
 ![NSS/MIC 2018](images/DSC07035.jpg)
