@@ -1,6 +1,6 @@
 ---
 title: "Posts"
-include-after-body: _footer.html
+include-after-body: _includes/_footer.html
 format: html
 listing: 
   contents: posts # all Quarto docs in the `blog` directory will be included on your listing page

@@ -2,7 +2,7 @@
 title: "Francisco J. Martinez-Murcia"
 name: "Francisco J."
 lastname: "Martinez-Murcia"
-include-after-body: ../../_footer.html
+include-after-body: ../../_includes/_footer.html
 image: paco.jpg
 about: 
   template: trestles

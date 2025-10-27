@@ -4,8 +4,8 @@ image: images/logos/SinFondoClaro.png
 toc: false
 format: 
   html: 
-    include-in-header: _hero_banner.html
-    include-after-body: _footer.html
+    include-in-header: _includes/_hero_banner.html
+    include-after-body: _includes/_footer.html
 
 listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
   - id: news

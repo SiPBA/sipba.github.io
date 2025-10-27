@@ -2,7 +2,7 @@
 title: "Alejandro Segura Hernández"
 name: "Alejandro"
 lastname: "Segura Hernández"
-include-after-body: ../../_footer.html
+include-after-body: ../../_includes/_footer.html
 about: 
   template: trestles
   image-width: 10em
