@@ -9,18 +9,18 @@ about:
   image: paco.jpg
   image-width: 10em
   links:
-  - icon: linkedin
-    text: LinkedIn
-    href: https://www.linkedin.com/in/fjesusmartinez/
-  - icon: twitter
-    text: Twitter
-    href: https://twitter.com/pakitochus
-  - icon: github
-    text: GitHub
-    href: https://github.com/pakitochus
-  - icon: envelope
-    text: Email
-    href: mailto:fjesusmartinez@ugr.es
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/fjesusmartinez/
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/pakitochus.bsky.social
+    - text: GitHub
+      icon: github
+      href: https://github.com/pakitochus
+    - icon: envelope
+      text: Email
+      href: mailto:fjesusmartinez@ugr.es
 categories: [Postdoc] # self-defined categories
 ---
 
