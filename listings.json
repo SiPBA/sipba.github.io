@@ -16,15 +16,9 @@
     ]
   },
   {
-    "listing": "/research.html",
+    "listing": "/publications.html",
     "items": [
-      "/research/2020-10-02-statistical-agnostic-mapping/index.html",
-      "/research/2018-07-23-petra/index.html",
-      "/research/2017-11-30-project-brainsimulator/index.html",
-      "/research/2016-10-24-project-swpca/index.html",
-      "/research/2016-09-15-project-sbm/index.html",
-      "/research/2014-01-01-petra-toolbox/index.html",
-      "/research/projects/2023-09-01-project-latidos/index.html"
+      "/publications/2024-05-10-bridging/index.html"
     ]
   },
   {
@@ -45,9 +39,16 @@
     ]
   },
   {
-    "listing": "/publications.html",
+    "listing": "/research.html",
     "items": [
-      "/publications/2024-05-10-bridging/index.html"
+      "/research/2020-10-02-statistical-agnostic-mapping/index.html",
+      "/research/2018-07-23-petra/index.html",
+      "/research/2017-11-30-project-brainsimulator/index.html",
+      "/research/2016-10-24-project-swpca/index.html",
+      "/research/2016-09-15-project-sbm/index.html",
+      "/research/2014-01-01-petra-toolbox/index.html",
+      "/research/projects/2025-04-01-project-ml2brain/index.html",
+      "/research/projects/2023-09-01-project-latidos/index.html"
     ]
   },
   {
