@@ -1,6 +1,6 @@
 ---
 title: "Research"
-title-block-banner: var(--bs-primary) url(images/recursos/network.jpg) no-repeat 50% 50% / cover
+title-block-banner: var(--bs-secondary) url(images/recursos/network.jpg) no-repeat 50% 50% / cover
 listing: 
 - id: research
   contents: /research # all Quarto docs in the `posts` directory will be included on your listing page

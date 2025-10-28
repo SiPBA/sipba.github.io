@@ -1,6 +1,6 @@
 ---
 title: "People"
-title-block-banner: var(--bs-primary) url(images/recursos/business-team-standing-row-looking.webp) no-repeat 50% 50% / cover
+title-block-banner: var(--bs-secondary) url(images/recursos/business-team-standing-row-looking.webp) no-repeat 50% 50% / cover
 include-after-body: _includes/_footer.html
 listing: 
   - id: lab-member

@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-title-block-banner: var(--bs-primary) url(images/recursos/bg_books.jpg) no-repeat 50% 50% / cover
+title-block-banner: var(--bs-secondary) url(images/recursos/bg_books.jpg) no-repeat 50% 50% / cover
 format:
   html:
     include-in-header:

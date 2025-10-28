@@ -27,6 +27,7 @@ funder:
   url: https://www.aei.es/
   logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
 acronym: LATiDOS
+title-block-banner: var(--bs-secondary) url(overview_methodology.png) no-repeat center center / cover
 ---
 
 ![Overview of the LATiDOS methodology](overview_methodology.png)

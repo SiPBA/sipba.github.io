@@ -14,6 +14,7 @@ citation:
 image: schema.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 bibliography: brainsimulator.bib
+title-block-banner: var(--bs-secondary) url(schema.jpg) no-repeat center center / cover
 ---
 
 ![Schema of Brain Simulator](schema.jpg)
