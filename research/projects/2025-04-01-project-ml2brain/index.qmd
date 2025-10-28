@@ -1,0 +1,73 @@
+---
+title: "ML2BRAIN"
+description: "Machine Learning to study Music and Language in the Brain."
+ip: F.J. Martinez-Murcia
+date: 04-01-2025
+categories: [python, project] # self-defined categories
+citation: 
+  url: https://sipba.github.io/research/projects/2025-04-01-project-ml2brain/
+image: ml2brain_featured.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+started: 2025-04-01
+ended: 2027-03-31
+funding: 112400€
+tags:
+  - proyecto
+  - plazas
+  - consolidación
+  - R3
+  - "#concedido"
+funder: 
+  name: "Agencia Estatal de Investigación (AEI)"
+  url: https://www.aei.es/
+  logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
+acronym: ML2BRAIN
+id: CNS2024-154296
+title-block-banner: var(--bs-secondary) url(overview_methodology.png) no-repeat center center / cover
+---
+
+![Overview of the ML2BRAIN methodology](overview_methodology.png)
+
+
+**ML2BRAIN** is a project aimed at investigating the complex interplay between music and language perception in the human brain.
+
+```{=html}
+<!--[{{< fa file-lines >}} Documentation](http://mapbrain.readthedocs.io/en/latest/quickstart.html){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the documentation"}
+[{{< fa download >}} Download](https://github.com/SiPBA/mapBrain){.btn .btn-primary .btn role="button" data-toggle="tooltip" title="Download the package"}-->
+```
+
+# The project
+The **ML2BRAIN** project aims to investigate the complex interplay between music and language perception in the human brain. Using EEG as the primary technique, research will seek to overcome the limitations of traditional EEG analysis by combining innovative methods, including explicable machine learning and bio-inspired models, to provide new insights into how the brain responds to auditory stimuli in music and language. The objectives of the study include investigating brain patterns associated with language and music processing, developing interpretable machine learning algorithms for EEG data analysis, evaluating and improving feature extraction methods, and communicating the results to the scientific community and the public. In particular, traditional and advanced EEG feature extraction methods will be evaluated, including recent cross-frequency coupling measurements and models based on neural field theory. Both generative artificial intelligence and bio-inspired models will be used to address the challenges of EEG signal processing and analysis. Generative AI will be used to build data-driven representations of the latent spaces underlying EEG data, as well as for brain decoding of stimulus parameters and/or signals. Bio-inspired algorithms such as spiking and oscillatory neural networks will be trained to model the brain's behaviour under language and music stimuli. In all these cases, interpretability will be key, as Explainable Artificial Intelligence (XAI) should be at the heart of any science-based research.
+
+The expected outcomes of the ML2BRAIN project are twofold. First, the research will reveal specific brain patterns, activations and oscillatory dynamics associated with language and music processing. Second, the interpretable machine learning and bio-inspired algorithms developed are expected to provide accurate predictions of rhythm and pitch variables from EEG data, thus providing a deeper understanding of the neural processes involved in auditory perception. The potential impact of the project is significant, contributing to the advancement of neuroscience research, the open-source accessibility of advanced EEG analysis techniques, and a better understanding of brain processing in language and music. The impact of the research extends beyond neuroscience, encouraging interdisciplinary collaboration between neuroscience researchers and machine learning experts. The project's open source code and implementations will make advanced EEG analysis techniques available to researchers worldwide, facilitating their adoption in diverse research settings. The interdisciplinary nature of the project will strengthen and diversify the research activities of the host institution and foster collaborations with leading international research groups.
+
+![Examples of EEG data and analysis proceduures](examples.png)
+
+# Objectives
+
+ML2BRAIN has one general objective: **to develop new machine learning techniques for EEG analysis that facilitate the understanding of how the brain perceives language and music**. This can be realized by achieving the following specific objectives:
+
+1. To study specific **patterns**, **activations**, and **oscillatory dynamics** that are indicative of the brain's processing of language and music. This will be mainly based in the analysis of already acquired data (e.g. OpenNeuro ds004356) as well as collecting EEG data from participants performing different language and music tasks for validation.
+2. To develop and refine **interpretable ML and bioinspired algorithms for EEG analysis** to predict variables/timeseries of interest (rhythm, pitch) at the group and subject level. 
+3. To evaluate and improve state-of-the-art **feature extraction methods for EEG**, including PAC, NFTs, etc., and compare these to traditional EEG features (ERP, power spectrum…).
+4. To **communicate** the methods and results to the scientific community, specialized audience and the public. Additionally, to identify potential uses of the developed methodology and findings in other domains.
+
+# Results
+
+The project is already running. 
+
+## Publications:
+
+-  
+
+## Talks
+
+-   
+
+## Software
+
+# Funding
+
+This project CNS2024-154296 is funded by MICIU/AEI/10.13039/501100011033.
+
+![Funding body](MICIU+AEI.jpg)
