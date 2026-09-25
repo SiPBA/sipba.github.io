@@ -6,8 +6,15 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Juan M. Gorriz">
+<meta name="author" content="Javier Ramirez">
+<meta name="author" content="Fermin Segovia">
+<meta name="author" content="Carmen Jimenez-Mesa">
+<meta name="author" content="Francisco J. Martinez-Murcia">
+<meta name="author" content="John Suckling">
+<meta name="dcterms.date" content="2025-05-01">
 
-<title>Research – SiPBA Research Lab</title>
+<title>Statistical Agnostic Regression: A Machine Learning Method to Validate Regression Models – SiPBA Research Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,26 +36,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/logos/favicon.webp" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ed8bddb43974993bc095703a9a648259.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logos/favicon.webp" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ed8bddb43974993bc095703a9a648259.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,69 +81,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-research .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-research'] = new List('listing-research', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-projects .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-ip','listing-funder.name','listing-description','listing-funding','listing-started','listing-ended',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background: var(--bs-secondary) url(images/recursos/network.jpg) no-repeat 50% 50% / cover;
-      }
-</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -170,24 +112,43 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
-<meta name="twitter:title" content="Research – SiPBA Research Lab">
-<meta name="twitter:image" content="https://sipba.github.io/research/2020-10-02-statistical-agnostic-mapping/images/BannerSAM.jpg">
+<link rel="stylesheet" href="../../styles.css">
+<meta name="twitter:title" content="Statistical Agnostic Regression: A Machine Learning Method to Validate Regression Models – SiPBA Research Lab">
+<meta name="twitter:description" content="Regression analysis is a central topic in statistical modeling. Classical methods for solving linear regression problems, such as Ordinary Least Squares (OLS), often form the foundation for more advanced machine learning (ML) techniques. However, ML models have been successfully applied without a formal definition of statistical significance, often relying on empirical measures or permutation testing on small samples. In this paper, we introduce Statistical Agnostic Regression (SAR) for evaluating the statistical significance of ML-based linear regression models. This is achieved by analyzing concentration inequalities of the actual risk (expected loss) and considering the worst-case scenario. SAR introduces a threshold ensuring evidence of a linear relationship in the population with a high probability under non-parametric assumptions. Simulations demonstrate that SAR emulates the classical multivariate F-test without relying on classical assumptions (like Gaussianity or homoscedasticity) and effectively controls the overinflated false positive rate found in standard ML methods like K-fold cross-validation.">
+<meta name="twitter:image" content="https://sipba.github.io/publications/2026-04-26-sar/featured.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="citation_title" content="Statistical Agnostic Regression: A Machine Learning Method to Validate Regression Models">
+<meta name="citation_abstract" content="Regression analysis is a central topic in statistical modeling. Classical methods for solving linear regression problems, such as Ordinary Least Squares (OLS), often form the foundation for more advanced machine learning (ML) techniques. However, ML models have been successfully applied without a formal definition of statistical significance, often relying on empirical measures or permutation testing on small samples. In this paper, we introduce Statistical Agnostic Regression (SAR) for evaluating the statistical significance of ML-based linear regression models. This is achieved by analyzing concentration inequalities of the actual risk (expected loss) and considering the worst-case scenario. SAR introduces a threshold ensuring evidence of a linear relationship in the population with a high probability under non-parametric assumptions. Simulations demonstrate that SAR emulates the classical multivariate F-test without relying on classical assumptions (like Gaussianity or homoscedasticity) and effectively controls the overinflated false positive rate found in standard ML methods like K-fold cross-validation.">
+<meta name="citation_author" content="Juan M. Gorriz">
+<meta name="citation_author" content="Javier Ramirez">
+<meta name="citation_author" content="Fermin Segovia">
+<meta name="citation_author" content="Carmen Jimenez-Mesa">
+<meta name="citation_author" content="Francisco J. Martinez-Murcia">
+<meta name="citation_author" content="John Suckling">
+<meta name="citation_publication_date" content="2025-05-01">
+<meta name="citation_cover_date" content="2025-05-01">
+<meta name="citation_year" content="2025">
+<meta name="citation_online_date" content="2025-05-01">
+<meta name="citation_fulltext_html_url" content="https://doi.org/10.1016/j.jare.2025.04.026">
+<meta name="citation_doi" content="10.1016/j.jare.2025.04.026">
+<meta name="citation_volume" content="80">
+<meta name="citation_language" content="en">
+<meta name="citation_firstpage" content="503">
+<meta name="citation_journal_title" content="Journal of Advanced Research">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logos/SinFondoClaro.png" alt="" class="navbar-logo light-content">
-    <img src="./images/logos/SinFondoClaro.png" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logos/SinFondoClaro.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/logos/SinFondoClaro.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">SiPBA Research Lab</span>
     </a>
   </div>
@@ -198,52 +159,36 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
     <a href="https://github.com/SiPBA" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-github"></i></a>
-    <a href="./contact.html" title="Contact" class="quarto-navigation-tool px-1" aria-label="Contact"><i class="bi bi-envelope-fill"></i></a>
+    <a href="../../contact.html" title="Contact" class="quarto-navigation-tool px-1" aria-label="Contact"><i class="bi bi-envelope-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Research</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -251,375 +196,217 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tools" id="toc-tools" class="nav-link active" data-scroll-target="#tools">Tools</a></li>
-  <li><a href="#research-projects" id="toc-research-projects" class="nav-link" data-scroll-target="#research-projects">Research projects</a></li>
+  <li><a href="#the-problem-is-cross-validation-failing-us" id="toc-the-problem-is-cross-validation-failing-us" class="nav-link active" data-scroll-target="#the-problem-is-cross-validation-failing-us">1. THE PROBLEM: IS CROSS-VALIDATION FAILING US?</a></li>
+  <li><a href="#the-solution-statistical-agnostic-regression-sar" id="toc-the-solution-statistical-agnostic-regression-sar" class="nav-link" data-scroll-target="#the-solution-statistical-agnostic-regression-sar">2. THE SOLUTION: STATISTICAL AGNOSTIC REGRESSION (SAR)</a>
+  <ul class="collapse">
+  <li><a href="#key-advantages-of-sar" id="toc-key-advantages-of-sar" class="nav-link" data-scroll-target="#key-advantages-of-sar">KEY ADVANTAGES OF SAR</a></li>
+  </ul></li>
+  <li><a href="#experimental-validation-neuroimaging-applications" id="toc-experimental-validation-neuroimaging-applications" class="nav-link" data-scroll-target="#experimental-validation-neuroimaging-applications">3. EXPERIMENTAL VALIDATION &amp; NEUROIMAGING APPLICATIONS</a>
+  <ul class="collapse">
+  <li><a href="#results-the-adni-dataset" id="toc-results-the-adni-dataset" class="nav-link" data-scroll-target="#results-the-adni-dataset">3.1. RESULTS: THE ADNI DATASET</a></li>
+  </ul></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">4. CONCLUSIONS</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="bWF0bGFi">matlab <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cHJvamVjdA==">project <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cHl0aG9u">python <span class="quarto-category-count">(8)</span></div></div></div>
-<!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
-
-<section id="tools" class="level1">
-<h1>Tools</h1>
-<div id="listing-research" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cHl0aG9u" data-listing-date-sort="1601596800000" data-listing-file-modified-sort="1790335781244" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1023">
-<a href="./research/2020-10-02-statistical-agnostic-mapping/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2020-10-02-statistical-agnostic-mapping/images/BannerSAM.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="tools">
-Statistical Agnostic Mapping
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
-
-</div>
-<div class="card-text listing-description delink">
-SAM (<em>Statistical Agnostic Mapping</em>) is a framework based on statistical learning theory (SLT) that provides similar activation maps than the ones obtained by the voxel-wise…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Oct 2, 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cHl0aG9uJTJDbWF0bGFi" data-listing-date-sort="1532304000000" data-listing-file-modified-sort="1790335781242" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="322">
-<a href="./research/2018-07-23-petra/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2018-07-23-petra/images/PETRABANNER.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-PETRA
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0bGFi'); return false;">matlab</div>
-
-</div>
-<div class="card-text listing-description delink">
-PETRA is a Matlab toolbox to <strong>manage and analyze</strong>&nbsp;<strong>neuroimaging data</strong> by means of <strong>multivariate techniques</strong>.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Jul 23, 2018
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cHl0aG9u" data-listing-date-sort="1512000000000" data-listing-file-modified-sort="1790335781240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="193">
-<a href="./research/2017-11-30-project-brainsimulator/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2017-11-30-project-brainsimulator/schema.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-BrainSimulator
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Functional brain image synthesis using the KDE or MVN distribution.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-F.J. Martinez-Murcia
-</div>
-<div class="listing-date">
-Nov 30, 2017
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="cHl0aG9u" data-listing-date-sort="1477267200000" data-listing-file-modified-sort="1790335781238" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
-<a href="./research/2016-10-24-project-swpca/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2016-10-24-project-swpca/promo-swpca.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Significance Weighted Principal Component Analysis (SWPCA)
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Significance Weighted Principal Component Analysis (SWPCA) is a technique (1) developed to parse out the influence of a categorical variable that introduces variability in a…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-F.J. Martinez-Murcia
-</div>
-<div class="listing-date">
-Oct 24, 2016
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="cHl0aG9uJTJDbWF0bGFi" data-listing-date-sort="1473897600000" data-listing-file-modified-sort="1790335781237" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="269">
-<a href="./research/2016-09-15-project-sbm/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2016-09-15-project-sbm/sbm-logo.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Spherical Brain Mapping
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0bGFi'); return false;">matlab</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>The Spherical Brain Mapping (SBM) is a feature extraction and visualization framework intended to map the internal structures and features of the brain onto a 2D image that…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Sep 15, 2016
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="cHl0aG9uJTJDbWF0bGFi" data-listing-date-sort="1388534400000" data-listing-file-modified-sort="1790335781236" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="213">
-<a href="./research/2014-01-01-petra-toolbox/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/2014-01-01-petra-toolbox/petrav2.webp" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-PETRA
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0bGFi'); return false;">matlab</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>PETRA is a Matlab toolbox to manage and analyze neuroimaging data by means of multivariate techniques.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-F.J. Martinez-Murcia
-</div>
-<div class="listing-date">
-Jan 1, 2014
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="research-projects" class="level1">
-<h1>Research projects</h1>
-<div id="listing-projects" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-projects-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-projects'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-ip" data-direction="asc">
-        IP
-      </option>
-      <option value="listing-funding" data-direction="asc">
-        Funding
-      </option>
-      <option value="listing-started" data-direction="asc">
-        Start
-      </option>
-      <option value="listing-ended" data-direction="asc">
-        End
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
     </div>
+<!-- main -->
+<main class="content page-columns page-full column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Statistical Agnostic Regression: A Machine Learning Method to Validate Regression Models</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Statistical Learning Theory</div>
+    <div class="quarto-category">Machine Learning</div>
+    <div class="quarto-category">Regression Validation</div>
+    <div class="quarto-category">Neuroimaging</div>
+    <div class="quarto-category">featured</div>
+  </div>
+  </div>
+
+
+<div class="quarto-title-meta-author column-body">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Juan M. Gorriz </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Dept. of Psychiatry, University of Cambridge
+          </p>
+        <p class="affiliation">
+            DaSCI Institute, University of Granada
+          </p>
+        <p class="affiliation">
+            ibs.Granada
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Javier Ramirez </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            DaSCI Institute, University of Granada
+          </p>
+        <p class="affiliation">
+            ibs.Granada
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Fermin Segovia </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            DaSCI Institute, University of Granada
+          </p>
+        <p class="affiliation">
+            ibs.Granada
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Carmen Jimenez-Mesa </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            DaSCI Institute, University of Granada
+          </p>
+        <p class="affiliation">
+            ibs.Granada
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Francisco J. Martinez-Murcia </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            DaSCI Institute, University of Granada
+          </p>
+        <p class="affiliation">
+            ibs.Granada
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">John Suckling </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Dept. of Psychiatry, University of Cambridge
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-body">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 1, 2025</p>
+    </div>
+  </div>
+  
+    
+    <div>
+    <div class="quarto-title-meta-heading">Doi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/10.1016/j.jare.2025.04.026">10.1016/j.jare.2025.04.026</a>
+      </p>
+    </div>
+  </div>
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    Regression analysis is a central topic in statistical modeling. Classical methods for solving linear regression problems, such as Ordinary Least Squares (OLS), often form the foundation for more advanced machine learning (ML) techniques. However, ML models have been successfully applied without a formal definition of statistical significance, often relying on empirical measures or permutation testing on small samples. In this paper, we introduce Statistical Agnostic Regression (SAR) for evaluating the statistical significance of ML-based linear regression models. This is achieved by analyzing concentration inequalities of the actual risk (expected loss) and considering the worst-case scenario. SAR introduces a threshold ensuring evidence of a linear relationship in the population with a high probability under non-parametric assumptions. Simulations demonstrate that SAR emulates the classical multivariate F-test without relying on classical assumptions (like Gaussianity or homoscedasticity) and effectively controls the overinflated false positive rate found in standard ML methods like K-fold cross-validation.
+  </div>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
 
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
 
-<th>
-<a class="sort" data-sort="listing-ip" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">IP</a>
-</th>
+</header>
 
-<th>
-Funder
-</th>
 
-<th>
-Description
-</th>
-
-<th>
-<a class="sort" data-sort="listing-funding" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Funding</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-started" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Start</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-ended" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">End</a>
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="cHl0aG9uJTJDcHJvamVjdA==" data-listing-date-sort="1743465600000" data-listing-file-modified-sort="1790335781262" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="618" data-listing-title-sort="ML2BRAIN" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./research/projects/2025-04-01-project-ml2brain/index.html" class="title listing-title">ML2BRAIN</a>
-</td>
-<td>
-<span class="listing-ip">F.J. Martinez-Murcia</span>
-</td>
-<td>
-<span class="listing-funder.name">Agencia Estatal de Investigación (AEI)</span>
-</td>
-<td>
-<span class="listing-description">Machine Learning to study Music and Language in the Brain.</span>
-</td>
-<td>
-<span class="listing-funding">112400€</span>
-</td>
-<td>
-<span class="listing-started">2025-04-01</span>
-</td>
-<td>
-<span class="listing-ended">2027-03-31</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="cHJvamVjdA==" data-listing-date-sort="NaN" data-listing-title-sort="DEEP-VAL-SCIENCE">
-<td>
-<span class="listing-title">DEEP-VAL-SCIENCE</span>
-</td>
-<td>
-<span class="listing-ip">I. Álvarez Illán, J. M. Górriz</span>
-</td>
-<td>
-<span class="listing-funder.name">Agencia Estatal de Investigación (AEI)</span>
-</td>
-<td>
-<span class="listing-description">The goal of this project is to validate deep learning models in neuroscience.</span>
-</td>
-<td>
-<span class="listing-funding">204000€</span>
-</td>
-<td>
-<span class="listing-started">2023-09-01</span>
-</td>
-<td>
-<span class="listing-ended">2026-08-31</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-categories="cHl0aG9uJTJDcHJvamVjdA==" data-listing-date-sort="1693526400000" data-listing-file-modified-sort="1790335781247" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="955" data-listing-title-sort="LATiDOS" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./research/projects/2023-09-01-project-latidos/index.html" class="title listing-title">LATiDOS</a>
-</td>
-<td>
-<span class="listing-ip">F.J. Martinez-Murcia</span>
-</td>
-<td>
-<span class="listing-funder.name">Agencia Estatal de Investigación (AEI)</span>
-</td>
-<td>
-<span class="listing-description">LATent variable models to Determine the Onset of neurodegenerative Symptoms.</span>
-</td>
-<td>
-<span class="listing-funding">121000€</span>
-</td>
-<td>
-<span class="listing-started">2023-09-01</span>
-</td>
-<td>
-<span class="listing-ended">2026-08-31</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
+<section id="the-problem-is-cross-validation-failing-us" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-is-cross-validation-failing-us">1. THE PROBLEM: IS CROSS-VALIDATION FAILING US?</h2>
+<p>Ordinary Least Squares (OLS) is the gold standard for linear regression due to its optimal statistical properties. On the other hand, modern Machine Learning (ML) techniques—such as Ridge, Lasso, and Support Vector Regression (SVR)—excel at minimizing expected loss and handling complexity.</p>
+<p>However, current AI approaches share a critical flaw: a <strong>lack of rigorous statistical significance analysis</strong>. Most ML researchers rely on empirical measures like <span class="math inline">\(K\)</span>-fold cross-validation (CV) or permutations to evaluate their models. As highlighted in recent neuroimaging literature, utilizing CV on limited sample sizes can lead to massive variability and an <strong>inflated false positive rate</strong>, finding spurious correlations where none exist.</p>
+</section>
+<section id="the-solution-statistical-agnostic-regression-sar" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution-statistical-agnostic-regression-sar">2. THE SOLUTION: STATISTICAL AGNOSTIC REGRESSION (SAR)</h2>
+<p>To bridge the gap between classical OLS statistics and advanced ML methods, this work introduces <strong>Statistical Agnostic Regression (SAR)</strong>.</p>
+<p>SAR provides a formal, non-parametric statistical test for assessing the significance of ML regression models. Rooted in <strong>Statistical Learning Theory (SLT)</strong> and PAC-Bayesian theory, SAR establishes an upper bound on the actual risk (expected loss) of a linear support vector regressor under the worst-case scenario.</p>
+<p>By comparing this bounded actual risk to the expected loss under the null hypothesis <span class="math inline">\(H_0\)</span> (no linear relationship), SAR calculates a robust threshold. If the corrected risk falls below this threshold, <span class="math inline">\(H_0\)</span> is rejected, providing mathematical evidence of a true linear relationship with a probability of at least <span class="math inline">\(1-\eta\)</span>.</p>
+<section id="key-advantages-of-sar" class="level3 p-5 text-bg-dark rounded-3">
+<h3 class="anchored" data-anchor-id="key-advantages-of-sar">KEY ADVANTAGES OF SAR</h3>
+<ul>
+<li><strong>Agnostic &amp; Non-Parametric:</strong> Does not rely on rigid classical assumptions like Gaussianity or homoscedasticity.</li>
+<li><strong>Controls False Positives:</strong> Radically outperforms K-fold and Leave-One-Out (LOO) CV in controlling Type I errors in small sample sizes.</li>
+<li><strong>Robust to Heteroscedasticity:</strong> Through the Breusch-Pagan test, SAR residuals prove superior in detecting varying variance in data.</li>
+<li><strong>Bridging the Gap:</strong> Provides a perfect trade-off between the stability of OLS and the powerful fitting capabilities of ML methods.</li>
+</ul>
+</section>
+</section>
+<section id="experimental-validation-neuroimaging-applications" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="experimental-validation-neuroimaging-applications">3. EXPERIMENTAL VALIDATION &amp; NEUROIMAGING APPLICATIONS</h2>
+<p>The SAR framework was rigorously tested across three distinct scenarios:</p>
+<ol type="1">
+<li><strong>Synthetic Gaussian &amp; Non-Gaussian Data:</strong> Evaluated against simulated datasets featuring scaling, rotation transforms, and forced heteroscedasticity.</li>
+<li><strong>Multivariate Cancer Dataset:</strong> Real-world socio-economic predictors tested against cancer mortality rates.</li>
+<li><strong>The ADNI Dataset (Alzheimer’s Disease):</strong> Evaluating the correlation between cognitive decline (MMSE scores) and 3D structural MRI brain changes (Grey Matter) across Healthy Controls (NC), Mild Cognitive Impairment (MCI), and Alzheimer’s (AD) patients.</li>
+</ol>
+<div class="page-columns page-full">
+<div id="fig-graphical-abstract" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-graphical-abstract-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="graphical_abstract.jpg" class="img-fluid figure-img column-screen-inset">
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-graphical-abstract-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Graphical Abstract: The SAR framework methodology bridging OLS and ML regressions.
+</figcaption>
+</figure>
+</div>
+</div>
+<section id="results-the-adni-dataset" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="results-the-adni-dataset">3.1. RESULTS: THE ADNI DATASET</h3>
+<p>When applying standard ML cross-validation to the Healthy Control (NC) group—where no strong correlation between brain structure and cognitive decline should exist—ML models falsely reported significant correlations. This <strong>overfitting</strong> ruins the validity of the baseline when comparing against MCI and AD groups.</p>
 
-
-
+<div class="no-row-height column-margin column-container"><div class="">
+<div id="fig-adni-hyperplanes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-adni-hyperplanes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig-adni-hyperplanes.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-adni-hyperplanes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: 3D regression hyperplanes using SAR and OLS for MMSE vs PCA predictors.
+</figcaption>
+</figure>
+</div>
+</div></div><p><strong>SAR corrected this anomaly.</strong> By applying the SAR test, the false positive rates were suppressed, accurately confirming that no significant relationship existed in the healthy baseline. However, when evaluating the entire dataset (AD, MCI, NC), SAR successfully detected true linearity with a lower sample requirement, penalizing dimensionality appropriately.</p>
+</section>
+</section>
+<section id="conclusions" class="level2 p-5 text-bg-primary rounded-3">
+<h2 class="anchored" data-anchor-id="conclusions">4. CONCLUSIONS</h2>
+<p>The proposed <strong>Statistical Agnostic Regression (SAR)</strong> provides a much-needed formal foundation for hypothesis testing within Artificial Intelligence.</p>
+<ul>
+<li>Standard ML validation methods (like K-fold CV) tend to overinflate false positives with small samples.</li>
+<li>SAR features effectively detect true linearity and seamlessly integrate into classical statistical frameworks (like the multivariate F-test).</li>
+<li>It acts as a safety net: informing researchers when there is <em>insufficient evidence</em> to establish a linear relationship, preventing the publication of non-replicable scientific results.</li>
+</ul>
+<p>This methodology is poised to become a vital tool in medical research, neuroimaging, and any field where data scarcity and model reliability are critical.</p>
 </section>
 
-</main> <!-- /main -->
 
-<div class="grid container align-items-center">
-      <p class="g-col-12">The SiPBA Research Lab is part of the <a href="https://www.ugr.es">University of Granada</a>, Spain.
-      </p>
-      <a href="https://www.ugr.es" class="g-col-4 align-middle">
-        <img src="./images/logos/ugr_horizontal.png" class="img-fluid" alt="University of Granada logo">
-        
-        </a>
-      <a href="https://dasci.es/" class="g-col-4 align-middle">
-        <img src="./images/logos/logo_dasci_h_JPG.jpg" class="img-fluid" alt="DaSCI logo">
-        
-        </a>
-      <a href="https://citic.ugr.es/" class="g-col-4 align-middle">
-        <img src="./images/logos/logoCITIC_horizontal.png" class="img-fluid" alt="CITIC logo">
-        
-        </a>
-</div>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-gorriz2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Gorriz, Juan M., Javier Ramirez, Fermin Segovia, Carmen Jimenez-Mesa,
+Francisco J. Martinez-Murcia, and John Suckling. 2025.
+<span>“Statistical Agnostic Regression: A Machine Learning Method to
+Validate Regression Models.”</span> <em>Journal of Advanced
+Research</em> 80 (May): 503. <a href="https://doi.org/10.1016/j.jare.2025.04.026">https://doi.org/10.1016/j.jare.2025.04.026</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
