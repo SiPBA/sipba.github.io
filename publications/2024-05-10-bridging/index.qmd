@@ -127,7 +127,8 @@ patterns.
 ![Interpretability of the manifold](image34806.png){#fig-interpretation}
 :::
 
-For top performing 20-D XGB model of UPDRS (total), SHAP reveals:                                         
+For top performing 20-D XGB model of UPDRS (total), SHAP reveals:        
+                                 
 - top-3 features that contribute to the output of the algorithm are latent variables 2, 10 and 0.               
 - Approx. linear dependency between importance to the algorithm output and values of the latent variables.        
 - Composition of variables 2 and 10 accounts for relevant characteristics of Ioflupane SPECT imaging: the general intensity of the striata, the separation between them and the uptake ratio between its anterior and posterior parts.                                          
