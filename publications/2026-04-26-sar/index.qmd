@@ -62,7 +62,7 @@ url_source: "https://doi.org/10.1016/j.jare.2025.04.026"
 doi: 10.1016/j.jare.2025.04.026
 date: 05/01/2025
 year: 2026
-image: "featured.jpg"
+image: "graphical_abstract.jpg"
 pub_number: 88
 abstract:
   "Regression analysis is a central topic in statistical modeling. Classical methods for solving linear regression problems, such as Ordinary Least Squares (OLS), often form the foundation for more advanced machine learning (ML) techniques. However, ML models have been successfully applied without a formal definition of statistical significance, often relying on empirical measures or permutation testing on small samples. In this paper, we introduce Statistical Agnostic Regression (SAR) for evaluating the statistical significance of ML-based linear regression models. This is achieved by analyzing concentration inequalities of the actual risk (expected loss) and considering the worst-case scenario. SAR introduces a threshold ensuring evidence of a linear relationship in the population with a high probability under non-parametric assumptions. Simulations demonstrate that SAR emulates the classical multivariate F-test without relying on classical assumptions (like Gaussianity or homoscedasticity) and effectively controls the overinflated false positive rate found in standard ML methods like K-fold cross-validation."
