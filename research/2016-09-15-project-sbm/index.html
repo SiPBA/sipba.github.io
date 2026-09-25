@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>Spherical Brain Mapping – SiPBA Research Lab</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -26,7 +32,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -55,15 +60,14 @@ div.csl-indent {
 <link href="../../images/logos/favicon.webp" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-dc012515c87e74ca5884ba3f9514dad5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ed8bddb43974993bc095703a9a648259.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -222,7 +226,7 @@ background-size: cover;
 <p><a href="http://mapbrain.readthedocs.io/en/latest/quickstart.html" class="btn btn-outline-primary" role="button" data-toggle="tooltip" title="Read the documentation"><i class="fa-solid fa-file-lines" aria-label="file-lines"></i> Documentation</a> <a href="https://github.com/SiPBA/mapBrain" class="btn btn-primary" role="button" data-toggle="tooltip" title="Download the package"><i class="fa-solid fa-download" aria-label="download"></i> Download</a></p>
 <section id="what-is-the-spherical-brain-mapping" class="level1">
 <h1>What is the Spherical Brain Mapping?</h1>
-<p>The <strong>Spherical Brain Mapping</strong> (SBM) is a framework intended to map the internal structures and features of the brain onto a 2D image that summarizes all this information, as described in <span class="citation" data-cites="martinez2016spherical">(<a href="#ref-martinez2016spherical" role="doc-biblioref">F. J. Martinez-Murcia et al. 2016</a>)</span> and previously presented in <span class="citation" data-cites="martinez2014projecting">(<a href="#ref-martinez2014projecting" role="doc-biblioref">F. J. Martinez-Murcia et al. 2014</a>)</span> and <span class="citation" data-cites="martinez2015volumetric">(<a href="#ref-martinez2015volumetric" role="doc-biblioref">Francisco Jesus Martinez-Murcia et al. 2015</a>)</span>. 3D brain imaging, such as MRI or PET produces a huge amount of data that is currently analysed using uni or multivariate approaches.</p>
+<p>The <strong>Spherical Brain Mapping</strong> (SBM) is a framework intended to map the internal structures and features of the brain onto a 2D image that summarizes all this information, as described in <span class="citation" data-cites="martinez2016spherical">(<a href="#ref-martinez2016spherical" role="doc-biblioref">F. J. Martinez-Murcia et al. 2016</a>)</span> and previously presented in <span class="citation" data-cites="martinez2014projecting">(<a href="#ref-martinez2014projecting" role="doc-biblioref">Martinez-Murcia et al. 2014</a>)</span> and <span class="citation" data-cites="martinez2015volumetric">(<a href="#ref-martinez2015volumetric" role="doc-biblioref">Martinez-Murcia et al. 2015</a>)</span>. 3D brain imaging, such as MRI or PET produces a huge amount of data that is currently analysed using uni or multivariate approaches.</p>
 <p>A new structural parametrization of MRI images has been added, using a modified hidden markov model to trace routes that follow minimal intensity change paths inside the brain, instead of the rectilinear paths used in typical SBM <span class="citation" data-cites="martinez2016structural">(<a href="#ref-martinez2016structural" role="doc-biblioref">Francisco J. Martinez-Murcia et al. 2016</a>)</span>. This file, currently only working in MATLAB, is contained in the file hmmPaths.m.</p>
 </section>
 <section id="features" class="level1">
@@ -256,7 +260,7 @@ background-size: cover;
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-martinez2014projecting" class="csl-entry" role="listitem">
 Martinez-Murcia, F. J., J. M. Górriz, J. Ramı́rez, Ignacio Alvarez ILLAN, and Diego SALAS-GONZALEZ. 2014. <span>“Projecting Mri Brain Images for the Detection of Alzheimer’s Disease.”</span> <em>Innovation in Medicine and Healthcare</em> 207: 225.
 </div>
@@ -264,7 +268,7 @@ Martinez-Murcia, F. J., J. M. Górriz, J. Ramı́rez, Ignacio Alvarez ILLAN, and
 Martinez-Murcia, F. J., J. M. Górriz, J. Ramı́rez, A. Ortiz, and Alzheimer’s Disease Neuroimaging Initiative. 2016. <span>“A Spherical Brain Mapping of MR Images for the Detection of Alzheimer’s Disease.”</span> <em>Current Alzheimer Research</em> 13 (5): 575–88.
 </div>
 <div id="ref-martinez2015volumetric" class="csl-entry" role="listitem">
-Martinez-Murcia, Francisco Jesus, Andres Ortiz, Juan Manuel Gorriz, Javier Ramirez, and IA Illán. 2015. <span>“A Volumetric Radial LBP Projection of MRI Brain Images for the Diagnosis of Alzheimer’s Disease.”</span> In <em>Artificial Computation in Biology and Medicine: International Work-Conference on the Interplay Between Natural and Artificial Computation, IWINAC 2015, Elche, Spain, June 1-5, 2015, Proceedings, Part i 6</em>, 19–28. Springer.
+Martinez-Murcia, Francisco Jesus, Andres Ortiz, Juan Manuel Gorriz, Javier Ramirez, and IA Illán. 2015. <span>“A Volumetric Radial LBP Projection of MRI Brain Images for the Diagnosis of Alzheimer’s Disease.”</span> <em>Artificial Computation in Biology and Medicine: International Work-Conference on the Interplay Between Natural and Artificial Computation, IWINAC 2015, Elche, Spain, June 1-5, 2015, Proceedings, Part i 6</em>, 19–28.
 </div>
 <div id="ref-martinez2016structural" class="csl-entry" role="listitem">
 Martinez-Murcia, Francisco J, Juan M Górriz, Javier Ramı́rez, and Andres Ortiz. 2016. <span>“A Structural Parametrization of the Brain Using Hidden Markov Models-Based Paths in Alzheimer’s Disease.”</span> <em>International Journal of Neural Systems</em> 26 (07): 1650024.
@@ -277,7 +281,7 @@ Martinez-Murcia, Francisco J, Juan M Górriz, Javier Ramı́rez, and Andres Orti
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2016" class="csl-entry quarto-appendix-citeas" role="listitem">
-<span>“Spherical Brain Mapping.”</span> 2016. September 15, 2016. <a href="https://pakitochus.github.io/fjmartinezmurcia.es/posts/2016-09-15-project-sbm/">https://pakitochus.github.io/fjmartinezmurcia.es/posts/2016-09-15-project-sbm/</a>.
+<span>“Spherical Brain Mapping.”</span> 2016. September 15. <a href="https://pakitochus.github.io/fjmartinezmurcia.es/posts/2016-09-15-project-sbm/">https://pakitochus.github.io/fjmartinezmurcia.es/posts/2016-09-15-project-sbm/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
