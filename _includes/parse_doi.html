@@ -1,9 +1,43 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.listing-doi').forEach(function(el) {
-      cadena = '<span class="__dimensions_badge_embed__" data-doi="' + el.textContent.trim() + '" data-hide-zero-citations="true" data-style="small_rectangle"></span>'
-      cadena += '<div data-badge-popover="right" data-badge-type="2" data-doi="' + el.textContent.trim() + '" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>'
-      el.innerHTML = cadena
-    });
-  });
+    
+    // 1. Encapsulamos la lógica en una función
+    function updateBadges() {
+        document.querySelectorAll('.listing-doi').forEach(function(el) {
+            // Evitamos volver a procesar un elemento que ya tiene las insignias
+            if (el.querySelector('.altmetric-embed')) return;
+            
+            let doi = el.textContent.trim();
+            if (doi) {
+                let cadena = '<span class="__dimensions_badge_embed__" data-doi="' + doi + '" data-hide-zero-citations="true" data-style="small_rectangle"></span>';
+                cadena += '<div data-badge-popover="right" data-badge-type="2" data-doi="' + doi + '" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>';
+                el.innerHTML = cadena;
+            }
+        });
+
+        // Forzamos a las APIs de Dimensions y Altmetric a renderizar los nuevos elementos inyectados
+        if (window.__dimensions_embed) {
+            window.__dimensions_embed.addBadges();
+        }
+        if (window._altmetric && window._altmetric.embed_init) {
+            window._altmetric.embed_init();
+        }
+    }
+
+    // 2. Ejecutamos la función para la primera página (carga inicial)
+    updateBadges();
+
+    // 3. Observamos los contenedores de las listas generadas por Quarto
+    const listContainers = document.querySelectorAll('.list');
+    if (listContainers.length > 0) {
+        const observer = new MutationObserver(function(mutations) {
+            // Cada vez que List.js modifique los hijos (al cambiar de página), actualizamos las insignias
+            updateBadges();
+        });
+        
+        listContainers.forEach(function(listNode) {
+            observer.observe(listNode, { childList: true });
+        });
+    }
+});
 </script>
