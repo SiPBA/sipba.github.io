@@ -9,7 +9,7 @@ about:
   links:
   - icon: linkedin
     text: LinkedIn
-    href: https://www.linkedin.com/in/ignacio-alvarez-illan-543210123
+    href: https://www.linkedin.com/in/ignacio-alvarez-illan-48406181/
   - icon: envelope
     text: Email
     href: mailto:illan@ugr.es
