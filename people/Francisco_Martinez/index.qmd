@@ -24,12 +24,38 @@ about:
 categories: [Postdoc] # self-defined categories
 ---
 
+:::{#fjesus-info}
 ### {{< fa circle-user >}} Bio
 
-Francisco J. Martinez-Murcia es ingeniero de telecomunicación por la Universidad de Granada. 
+Telecommunications Engineer and PhD in Information and Communication Technologies from the University of Granada. Currently, Ramon y Cajal researcher at the University of Granada, specialising in signal processing and analysis and medical brain imaging. Finalist in Famelab 2018 and winner of 3-Minute Thesis Granada 2017. Musician and hopeless geek.
+
+## {{< fa graduation-cap >}} Education {.fancylist}
+- **Telecommunications Engineer**, **2005-2010**  
+  [*University of Granada*](https://www.ugr.es), Spain
+- **MsC in Computer and Network Engineering**, **2010-2011**  
+  [*University of Granada*](https://www.ugr.es), Spain
+- **PhD in Information and Communications Technology**, **2014-2017**  
+  [*University of Granada*](https://www.ugr.es), Spain
+
+
+## {{< fa briefcase >}} Experience {.fancylist}
+- **Ramon y Cajal** fellow, **2023-**  
+  [*University of Granada*](https://www.ugr.es), Spain
+- **CAS Research Group Fellow**, **2023-2024**  
+  [*Ludwig-Maximilien Universität München*](https://www.lmu.de/en/), Germany
+- **Juan de la Cierva – incorporación** fellow, **2020-2022**  
+  [*University of Granada*](https://www.ugr.es), Spain
+- **Jose Castillejo** fellow, **2019**  
+  [*Ludwig-Maximilien Universität München*](https://www.lmu.de/en/), Germany
+- **Juan de la Cierva – formación** fellow, **2019-2020**  
+  [*University of Malaga*](https://www.uma.es), Spain
+- **Postdoctoral researcher**, **2018-2019**  
+  [*DaSCI – Andalusian Institute on Data Science and Computational Intelligence*](https://www.dasci.es), Spain
+- **Predoctoral researcher**, **2014-2017**  
+  [*University of Granada*](https://www.ugr.es), Spain
+- **Website manager, front-end development**, **2010-2011**  
+  [*Language4you education S.L.*](https://www.language4you.com/), Spain
 
 
 
-::: {.card title="Life Expectancy" padding="3px"}
-This is the content.
 :::
