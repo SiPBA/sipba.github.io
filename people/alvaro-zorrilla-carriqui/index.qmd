@@ -1,12 +1,12 @@
 ---
 title: "Álvaro Zorrilla Carriqui"
-image: images/alvaro.png
+image: images/alvaro.jpg
 lastname: "Zorrilla Carriqui"
 categories: [Predoc] 
 started: "2025"
 about:
   template: trestles
-  image: images/alvaro.png
+  image: images/alvaro.jpg
   links:
   - icon: linkedin
     text: LinkedIn
@@ -16,7 +16,7 @@ about:
     href: mailto:alzorrcarri@ugr.es
 ---
 
-Álvaro Zorrilla Carriqui is a Predoc student at Universidad de Granada about Technologies of Communication and Information, belonging to the group for Signal Processing and Biomedical Applications (SiPBA). His research focuses mainly on studying and developing algorithms and systems to ensure the resilience of the electric power grid, supported by the chair Endesa-UGR in Artificial Intelligence.
+Álvaro Zorrilla Carriquí is a Predoc student at Universidad de Granada about Technologies of Communication and Information, belonging to the group for Signal Processing and Biomedical Applications (SiPBA). His research focuses mainly on studying and developing algorithms and systems to ensure the resilience of the electric power grid, supported by the chair Endesa-UGR in Artificial Intelligence.
 
 He is a Data Science and Artificial Intelligence specialist with a rigorous academic background in Physics and Mathematics from the University of Granada. He holds a Master’s Degree in Data Science and Computer Engineering, where his research on diffusion generative models applied to medical imaging was recognized with the Best Master’s Thesis Award.
 
