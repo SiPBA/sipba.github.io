@@ -1,0 +1,23 @@
+---
+title: "Álvaro Zorrilla Carriqui"
+image: /images/alvaro.JPG
+lastname: "Zorrilla Carriqui"
+categories: [Predoc] 
+started: "2025"
+about:
+  template: trestles
+  image: /images/alvaro.JPG
+  links:
+  - icon: linkedin
+    text: LinkedIn
+    href: https://www.linkedin.com/in/alzorrcarri/ 
+  - icon: envelope
+    text: Email
+    href: mailto:alzorrcarri@ugr.es
+---
+
+Álvaro Zorrilla Carriqui is a Predoc student at Universidad de Granada about Technologies of Communication and Information, belonging to the group for Signal Processing and Biomedical Applications (SiPBA). His research focuses mainly on studying and developing algorithms and systems to ensure the resilience of the electric power grid, supported by the chair Endesa-UGR in Artificial Intelligence.
+
+He is a Data Science and Artificial Intelligence specialist with a rigorous academic background in Physics and Mathematics from the University of Granada. He holds a Master’s Degree in Data Science and Computer Engineering, where his research on diffusion generative models applied to medical imaging was recognized with the Best Master’s Thesis Award.
+
+Professionally, he has excelled as a researcher at GENYO, focusing on the development of innovative AI models for personalized medicine. During this time, he developed a classification algorithm for prostate cancer treatment stratification, which is currently under patent application. His expertise includes designing bioinformatics pipelines, handling large-scale data, and utilizing High-Performance Computing (HPC).
