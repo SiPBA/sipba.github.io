@@ -149,4 +149,6 @@ td > span.listing-container-title{
 .org-card.org-lead { border-top: 4px solid var(--bs-primary); width: 240px; }
 .org-side-title { text-align: center; font-weight: 600; margin-top: 1.5rem; }
 .org-logos { display: flex; justify-content: center; align-items: center; gap: 2.5rem; margin: 1rem 0 1.5rem; }
-.org-logos img { max-height: 70px; width: auto; }
+.org-logos img { width: auto; max-width: none; }
+.org-logos .logo-ugr { height: 110px; }
+.org-logos .logo-endesa { height: 48px; }
