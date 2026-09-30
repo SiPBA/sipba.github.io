@@ -1,12 +1,12 @@
 ---
 title: "Álvaro Zorrilla Carriqui"
-image: /images/alvaro.JPG
+image: images/alvaro.png
 lastname: "Zorrilla Carriqui"
 categories: [Predoc] 
 started: "2025"
 about:
   template: trestles
-  image: /images/alvaro.JPG
+  image: images/alvaro.png
   links:
   - icon: linkedin
     text: LinkedIn
