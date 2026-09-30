@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Multi-criteria prioritization of remote-control (telemando) repairs on a graph-based digital twin of the medium-voltage network of Granada.">
+
+<title>Optimization of Telemando Maintenance Costs and Impact on Service Quality – SiPBA Research Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logos/favicon.webp" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ed8bddb43974993bc095703a9a648259.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta name="twitter:title" content="Optimization of Telemando Maintenance Costs and Impact on Service Quality – SiPBA Research Lab">
+<meta name="twitter:description" content="Multi-criteria prioritization of remote-control (telemando) repairs on a graph-based digital twin of the medium-voltage network of Granada.">
+<meta name="twitter:image" content="https://sipba.github.io/transfer/endesa-ugr-chair/images/graph-granada.jpg">
+<meta name="twitter:image:alt" content="Graph representation of the medium-voltage network of Granada">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logos/SinFondoClaro.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/logos/SinFondoClaro.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SiPBA Research Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../people.html"> 
+<span class="menu-text">People</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../transfer.html"> 
+<span class="menu-text">Transfer</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/SiPBA" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="../../contact.html" title="Contact" class="quarto-navigation-tool px-1" aria-label="Contact"><i class="bi bi-envelope-fill"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#context" id="toc-context" class="nav-link active" data-scroll-target="#context">Context</a></li>
+  <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
+  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a>
+  <ul class="collapse">
+  <li><a href="#digital-twin-of-the-network" id="toc-digital-twin-of-the-network" class="nav-link" data-scroll-target="#digital-twin-of-the-network">Digital twin of the network</a></li>
+  <li><a href="#importance-criteria" id="toc-importance-criteria" class="nav-link" data-scroll-target="#importance-criteria">Importance criteria</a></li>
+  <li><a href="#data-quality-and-acquisition" id="toc-data-quality-and-acquisition" class="nav-link" data-scroll-target="#data-quality-and-acquisition">Data quality and acquisition</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next steps</a></li>
+  </ul></li>
+  <li><a href="#publication" id="toc-publication" class="nav-link" data-scroll-target="#publication">Publication</a></li>
+  <li><a href="#dissemination" id="toc-dissemination" class="nav-link" data-scroll-target="#dissemination">Dissemination</a></li>
+  <li><a href="#team" id="toc-team" class="nav-link" data-scroll-target="#team">Team</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Optimization of Telemando Maintenance Costs and Impact on Service Quality</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Endesa-UGR Chair</div>
+    <div class="quarto-category">Maintenance</div>
+    <div class="quarto-category">Graphs</div>
+    <div class="quarto-category">Explainable AI</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Multi-criteria prioritization of remote-control (telemando) repairs on a graph-based digital twin of the medium-voltage network of Granada.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
+<p>Telemandos are remote-control devices that allow the distribution company to supervise and operate the medium-voltage (MT) network from a distance, for instance to restore supply to a section after a fault. When telemandos fail, the order in which they are repaired determines how much power is left without remote support and for how long.</p>
+</section>
+<section id="goal" class="level2">
+<h2 class="anchored" data-anchor-id="goal">Goal</h2>
+<p>Decide <strong>which telemandos to repair first</strong> so that, with the same repair resources, the time customers spend without telemando support is minimized. In 2026 the activity moved from a preliminary model, based only on the installed power left without support, to a complete multi-criteria prioritization methodology validated by simulation on the real MT network of Granada.</p>
+</section>
+<section id="approach" class="level2">
+<h2 class="anchored" data-anchor-id="approach">Approach</h2>
+<section id="digital-twin-of-the-network" class="level3">
+<h3 class="anchored" data-anchor-id="digital-twin-of-the-network">Digital twin of the network</h3>
+<p>The network is modelled as an undirected graph (implemented with NetworkX) whose vertices are substations, transformation centers and telemandos, and whose edges are the line sections that connect them. The digital twin of the MT network of Granada contains <strong>24,900 nodes, 25,463 line sections, 1,487 telemandos, 9,339 transformation centers and 50 substations</strong>. Priorities are recalculated dynamically after each failure, because the impact of a device depends on the instantaneous topology of the remaining network.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/graph-granada.jpg" class="img-fluid figure-img" alt="Graph representation of the medium-voltage network of Granada"></p>
+<figcaption>The MT network of Granada modelled as a graph.</figcaption>
+</figure>
+</div>
+</section>
+<section id="importance-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="importance-criteria">Importance criteria</h3>
+<p>The final importance score is a linear combination of four criteria, whose weights were obtained with the Analytic Hierarchy Process (AHP) from pairwise comparisons (Saaty 1–9 scale) made by e-distribución experts:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criterion</th>
+<th>Description</th>
+<th>AHP weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dynamic linked power</td>
+<td>Power left without control given the current state of the network</td>
+<td>0.398</td>
+</tr>
+<tr class="even">
+<td>Distance to the operational unit</td>
+<td>Response time of the repair crew</td>
+<td>0.316</td>
+</tr>
+<tr class="odd">
+<td>Shapley value</td>
+<td>Static topological importance of the telemando</td>
+<td>0.148</td>
+</tr>
+<tr class="even">
+<td>Number of customers</td>
+<td>Social impact of the failure</td>
+<td>0.138</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Shapley value</strong> treats the network as a cooperative game in which each telemando is a player. Its exact computation is generally intractable, but the topological particularities of power networks made it possible to derive a computable expression. <strong>Boundary telemandos</strong> receive special attention, since losing them means losing the ability to restore the corresponding section.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ahp.jpg" class="img-fluid figure-img" alt="Slide describing the AHP combination of four criteria"></p>
+<figcaption>Combination of criteria with AHP.</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-quality-and-acquisition" class="level3">
+<h3 class="anchored" data-anchor-id="data-quality-and-acquisition">Data quality and acquisition</h3>
+<p>The network graph was first built from KMZ files, where mis-named sections and overlapping lines were found. The UGR developed an automatic procedure to detect mis-named sections and reported the cases found in the province of Almería. Following a pilot extraction for the Guadix and Aldeire substations (July 2026), tabular extractions of network connectivity, installed power and number of customers proved better suited than the KMZ files. On 1 September 2026 e-distribución delivered the extraction for the whole Andalusia and Extremadura area, and the algorithm is being adapted to build the graph from these tables.</p>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>The methodology was validated in three failure scenarios: (1) fixed failure and repair probabilities estimated from historical data; (2) a Weibull-Pareto model of weekly failures and repairs; and (3) the simultaneous failure of all the telemandos of an operational unit, repaired one by one. Restored power and the SAIDI index were measured for each repair strategy:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Repair strategy</th>
+<th>SAIDI (fixed probabilities)</th>
+<th>SAIDI (Weibull-Pareto)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Random</td>
+<td>0.80</td>
+<td>24.5</td>
+</tr>
+<tr class="even">
+<td>Linked power</td>
+<td>0.48</td>
+<td>8.5</td>
+</tr>
+<tr class="odd">
+<td>Shapley value</td>
+<td>0.51</td>
+<td>9.0</td>
+</tr>
+<tr class="even">
+<td>Proximity</td>
+<td>0.60</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Number of customers</td>
+<td>0.47</td>
+<td>8.4</td>
+</tr>
+<tr class="even">
+<td><strong>Total AHP score</strong></td>
+<td><strong>0.47</strong></td>
+<td><strong>6.5</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/simulation-results.jpg" class="img-fluid figure-img" alt="Boxplot of restored power fraction by repair strategy"></p>
+<figcaption>Weibull-Pareto scenario: restored power and SAIDI by strategy.</figcaption>
+</figure>
+</div>
+<p>Main conclusions:</p>
+<ul>
+<li>All criticality-based strategies clearly outperform random repair: the <strong>order of repairs matters</strong>, not only the repair capacity.</li>
+<li>The combined AHP criterion is among the most effective in all simulations and metrics, and is the only one that explicitly integrates response time and social impact.</li>
+<li>With the same resources and only changing the repair order, the algorithm reduces by <strong>40% to 70%</strong> the time customers spend without telemando support in simulation.</li>
+</ul>
+<section id="next-steps" class="level3">
+<h3 class="anchored" data-anchor-id="next-steps">Next steps</h3>
+<ul>
+<li>Integration of the tool into e-distribución systems and extension to the whole Andalusia and Extremadura area.</li>
+<li>Inclusion of external telemando reliability data.</li>
+<li>Extension of the IWINAC-ICINAC 2026 paper to a Q1 journal article.</li>
+<li>New activity: minimum number and optimal location of telemandos to maximize control of the MT network.</li>
+</ul>
+</section>
+</section>
+<section id="publication" class="level2">
+<h2 class="anchored" data-anchor-id="publication">Publication</h2>
+<p><strong>Prioritizing Telecontrol Repairs in Electrical Distribution Networks Using Graph-Based Impact Analysis.</strong> Á. Zorrilla, F. Segovia, J. Ramírez, I. J. Aguilera, A. M. Vargas, J. Bello and J. M. Górriz. <em>IWINAC-ICINAC 2026</em>, Fuerteventura (Spain). LNCS 16575, pp.&nbsp;359–368, Springer (2026). <a href="https://doi.org/10.1007/978-3-032-27317-8">DOI</a></p>
+<p>The paper uses data of the province of Granada provided by e-Distribución Redes Digitales. It shows that only a small subset of telemandos, located at structurally critical points, is responsible for the largest load interruptions, and that simple structural metrics such as node degree are not enough to determine operational criticality.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/telemando-paper.jpg" class="img-fluid figure-img" alt="Panels showing SHAP-like importance values of telemandos"></p>
+<figcaption>Analysis of telemando importance (figure from the paper).</figcaption>
+</figure>
+</div>
+</section>
+<section id="dissemination" class="level2">
+<h2 class="anchored" data-anchor-id="dissemination">Dissemination</h2>
+<ul>
+<li>Presentation at the SHIFT special session of IWINAC-ICINAC 2026 (27 May 2026) and <a href="https://canal.ugr.es/noticia/la-catedra-endesa-ugr-participa-en-el-congreso-iwinac-icinac-donde-aporta-conocimiento-y-soluciones-para-la-fiabilidad-y-seguridad-de-la-infraestructura-electrica/">press release in Canal UGR</a>.</li>
+<li>Explanatory video <em>Prioritization of telemando repairs in distribution networks: concept, design and test on the MT network of Granada</em> (September 2026).</li>
+</ul>
+</section>
+<section id="team" class="level2">
+<h2 class="anchored" data-anchor-id="team">Team</h2>
+<p>SiPBA Research Lab: Álvaro Zorrilla, Fermín Segovia, Javier Ramírez and Juan Manuel Górriz, in collaboration with Isidro J. Aguilera, Antonio M. Vargas and José Bello (e-Distribución Redes Digitales).</p>
+<p>Part of the <a href="../../transfer/endesa-ugr-chair/index.html">Endesa-UGR Chair in Artificial Intelligence</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+
+<div class="grid container align-items-center">
+      <p class="g-col-12">The SiPBA Research Lab is part of the <a href="https://www.ugr.es">University of Granada</a>, Spain.
+      </p>
+      <a href="https://www.ugr.es" class="g-col-4 align-middle">
+        <img src="../../images/logos/ugr_horizontal.png" class="img-fluid" alt="University of Granada logo">
+        
+        </a>
+      <a href="https://dasci.es/" class="g-col-4 align-middle">
+        <img src="../../images/logos/logo_dasci_h_JPG.jpg" class="img-fluid" alt="DaSCI logo">
+        
+        </a>
+      <a href="https://citic.ugr.es/" class="g-col-4 align-middle">
+        <img src="../../images/logos/logoCITIC_horizontal.png" class="img-fluid" alt="CITIC logo">
+        
+        </a>
+</div>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sipba\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="https://creativecommons.org">SiPBA</a> © 2025 by <a href="https://creativecommons.org">SiPBA</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This website is built with <a href="https://quarto.org/">Quarto</a>. <a href="https://www.ugr.es/condiciones-legales">Terms of Use</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
