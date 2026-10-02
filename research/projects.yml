@@ -1,0 +1,370 @@
+- image: 
+  acronym: "DEEP-VAL-SCIENCE"
+  funder: 
+    name: "Agencia Estatal de Investigación (AEI)"
+    url: https://www.aei.es/
+    logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
+  title: "Statistical Signal Processing Tools to Validate Deep Learning Models in Neuroscience."
+  started: "2023-09-01"
+  ended: "2026-08-31"
+  date: last-modified
+  funding: "204.000€"
+  categories: [project]
+  tags:
+    - proyecto
+  id: PID2022-137451OB-I00
+  ip: 
+    - I. Álvarez Illán
+    - J. M. Górriz
+  participants: 
+    - I. A. Illán
+    - J. M. Górriz
+    - J. E. Arco
+    - C. García Puntonet
+    - A. Hernández Segura
+    - C. Jiménez Mesa
+    - J. Ramírez Pérez de Inestrosa
+    - D. Salas González
+    - F. Segovia Román
+    - D. López García
+    - A. Zorrilla Carriquí
+- title: "Toolbox for Biomedical Signal and Image Processing Based on Information Theory"
+  id: HD2008-0029
+  acronym: HD2008-0029
+  ip: 
+    - "Juan Manuel Górriz Sáez"
+  funder:
+    name: "Ministerio de Ciencia y Tecnología"
+  funding: "11.720€"
+  started: "2009-01-01"
+  ended: "2010-12-31"
+  participants: 
+    - "Juan Manuel Górriz Sáez"
+    - "Francisco Jesús Martínez Murcia"
+
+- title: "Nuevas Tecnicas de Reconstruccion, Procesado, Clasificacion y Fusion de Imagenes Medicas para Diagnostico Precoz de la Enfermedad de Alzheimer"
+  id: TEC2008-02113
+  acronym: TEC2008-02113
+  ip: 
+    - "Javier Ramírez Pérez de Inestrosa"
+  funder:
+    name: "Plan Nacional de Investigación Científica, Desarrollo e Innovación Tecnológica"
+  funding: "54.800€"
+  started: "2009-01-01"
+  ended: "2012-06-01"
+  participants: 
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Juan Manuel Górriz Sáez"
+    - "José Manuel Llamas Elvira"
+    - "Diego Salas González"
+    - "Manuel María Gómez Río"
+
+- title: "Diagnóstico Avanzado de Enfermedades Neurológicas mediante Técnicas de Reconstrucción y Modelado de Imágenes Tomográficas Cerebrales"
+  id: P07-TIC-02566
+  acronym: P07-TIC-02566
+  ip: 
+    - "Javier Ramírez Pérez de Inestrosa"
+  funder:
+    name: "Consejería de Economía, Innovación y Ciencia. Junta de Andalucía"
+  description: "Diagnóstico Avanzado de Enfermedades Neurológicas mediante Técnicas de Reconstrucción y Modelado de Imágenes Tomográficas Cerebrales"
+  funding: "159.668€"
+  started: "2009-05-01"
+  ended: "2012-12-31"
+  participants: 
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Ignacio Álvarez Illán"
+    - "María Luz García Martínez"
+    - "Juan Manuel Górriz Sáez"
+    - "Pablo Padilla de la Torre"
+    - "Diego Salas González"
+    - "Fermín"
+
+- acronym: "PAPI-ADAN"
+  id: P09-TIC-4530
+  ip: 
+    - "Juan Manuel Górriz Sáez"
+  funder:
+    name: "Consejería de Economía, Innovación y Ciencia"
+  title: "Plataforma Abierta de Procesamiento de Imágenes para Ayuda al Diagnóstico de Alteraciones Neurológicas."
+  funding: "297.939,68€"
+  started: "2010-02-03"
+  ended: "2014-12-31"
+  participants: 
+    - "Juan Manuel Górriz Sáez"
+    - "Ignacio Álvarez Illán"
+    - "Francisco Jesús Martínez Murcia"
+    - "Pablo Padilla de la Torre"
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Diego Salas González"
+    - "Fermín"
+    
+- acronym: "DIAGNOSIS"
+  id: TEC2012-34306
+  ip: 
+    - "Juan Manuel Górriz Sáez"
+  funder:
+    name: "Ministerio de Ciencia e Innovacion"
+  title: "Diagnostico mediante Modelos Estadisticos e Inteligentes"
+  funding: "80.730€"
+  started: "2013-01-01"
+  ended: "2015-12-31"
+  participants: 
+    - "Juan Manuel Górriz Sáez"
+    - "Ignacio Álvarez Illán"
+    - "Francisco Jesús Martínez Murcia"
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Diego Salas González"
+    - "Fermín"
+
+- acronym: "STM-NEUROCAD"
+  id: P11-TIC-7103
+  ip: 
+    - "Javier Ramírez Pérez de Inestrosa"
+  funder:
+    name: "Consejería de Economía, Innovación y Ciencia"
+  title: "[Motriz] Modelos Estadísticos de Neurodegeneración para Sistemas de Ayuda al Diagnóstico. Aplicación al Diagnóstico Precoz de las Enfermedades de Alzheimer y Parkinson"
+  funding: "175.940,80€"
+  started: "2013-03-27"
+  ended: "2018-03-31"
+  participants: 
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Ignacio Álvarez Illán"
+    - "Carlos García Puntonet"
+    - "Manuel María Gómez Río"
+    - "Juan Manuel Górriz Sáez"
+    - "José Manuel Llamas Elvira"
+    - "Pablo Padilla de la Torre"
+    - "Diego Salas González"
+    - "Fermín Segovia Román"
+    - "Francisco Jesús Martínez Murcia"
+
+- acronym: "SMARTMAMMACAD"
+  id: 656886
+  ip: 
+    - "Ignacio Álvarez Illán"
+    - "Javier Ramírez Pérez de Inestrosa"
+  funder:
+    name: "-"
+  title: "Intelligent Automated System for Detecting Diagnostically Challenging Breast Cancers"
+  funding: "-"
+  started: "2015-09-01"
+  ended: "2018-08-31"
+  participants: 
+    - "Ignacio Álvarez Illán"
+    - "Javier Ramírez Pérez de Inestrosa"
+
+- acronym: "LAGRANGE"
+  id: TEC2015-64718-R
+  ip: 
+    - "Pablo Padilla de la Torre"
+    - "Javier Ramírez Pérez de Inestrosa"
+  funder:
+    name: "Ministerio de Economía y Competitividad"
+  title: "Analisis Multimodal y Longitudinal de Biomarcadores para el Diagnostico y la Prediccion de la Enfermedad de Alzheimer y de Parkinson"
+  funding: "175.450€"
+  started: "2016-01-01"
+  ended: "2019-09-30"
+  participants: 
+    - "Pablo Padilla de la Torre"
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Ignacio Álvarez Illán"
+    - "Diego Castillo Barnes"
+    - "Carlos García Puntonet"
+    - "Juan Manuel Górriz Sáez"
+    - "José Manuel Llamas Elvira"
+    - "Francisco Jesús Martínez Murcia"
+    - "Fermín Segovia Román"
+    - "Diego Salas González"
+
+# - acronym: "PASTORA"
+#  ip: 
+#    - "-"
+#  funder:
+#    name: "Endesa Distribución Eléctrica S.L."
+#  description: "Proyecto de Investigación PASTORA"
+#  funding: "55.660,00€"
+#  started: "2018-01-01"
+#  ended: "2020-12-31"
+#  participants: 
+#    - "Francisco Jesús Martínez Murcia"
+
+- title: "Neuroimagen Profunda Basada en Aprendizaje Máquina: Búsqueda de Patrones Anormales en Autismo y en las Enfermedades de Alzheimer y Parkinson"
+  id: RTI2018-098913-B-I00
+  acronym: "DEEP-NEURO"
+  ip: 
+    - "Juan Manuel Górriz Sáez"
+    - "Javier Ramírez Pérez de Inestrosa"
+  funder:
+    name: "Ministerio de Ciencia, Innovación y Universidades"
+  description: "Neuroimagen Profunda Basada en Aprendizaje Máquina: Búsqueda de Patrones Anormales en Autismo y en las Enfermedades de Alzheimer y Parkinson"
+  funding: "67.276€"
+  started: "2019-01-01"
+  ended: "2022-12-31"
+  participants: 
+    - "Juan Manuel Górriz Sáez"
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Ignacio Álvarez Illán"
+    - "Diego Castillo Barnes"
+    - "Carlos García Puntonet"
+    - "Carmen Jiménez Mesa"
+    - "David López García"
+    - "Francisco Jesús Martínez Murcia"
+    - "Diego Salas González"
+    - "Fermín Segovia Román"
+    - "Juan Eloy Arco Martín"
+    - "José Miguel Mateos Ramos"
+
+- title: "Aprendizajes Extremos en Neuroimagen: Aplicación a Modelos de Degeneración y Condición del Espectro Autista"
+  id: A-TIC-080-UGR18
+  acronym: A-TIC-080-UGR18
+  ip: 
+    - "Juan Manuel Górriz Sáez"
+    - "Javier Ramírez Pérez de Inestrosa"
+  funder:
+    name: "Consejería Economía, Conocimiento, Empresas y Universidades. Junta de Andalucía"
+  description: "Aprendizajes Extremos en Neuroimagen: Aplicación a Modelos de Degeneración y Condición del Espectro Autista"
+  funding: "14.900€"
+  started: "2020-01-01"
+  ended: "2022-06-30"
+  participants: 
+    - "Juan Manuel Górriz Sáez"
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Ignacio Álvarez Illán"
+    - "Juan Eloy Arco Martín"
+    - "Carmen Jiménez Mesa"
+    - "José Manuel Llamas Elvira"
+    - "Diego Salas González"
+    - "Fermín Segovia Román"
+    - "Diego Castillo Barnes"
+    - "Francisco Jesús Martínez Murcia"
+    - "José Miguel Mateos Ramos"
+
+- title: "Aprendizaje Profundo Máquina Aplicado al Análisis de Imágenes Multimodales para la Evaluación del Síndrome Respiratorio Agudo Grave"
+  acronym: CV20-45250
+  ip: 
+    - "Juan Manuel Górriz Sáez"
+  id: CV20-45250
+  funder:
+    name: "Consejería de Economía, Innovación y Ciencia"
+  description: "Aprendizaje Profundo Máquina Aplicado al Análisis de Imágenes Multimodales para la Evaluación del Síndrome Respiratorio Agudo Grave"
+  funding: "76.000€"
+  started: "2020-11-14"
+  ended: "2022-05-13"
+  participants: 
+    - "Juan Manuel Górriz Sáez"
+    - "Ignacio Álvarez Illán"
+    - "Diego Castillo Barnes"
+    - "Carlos García Puntonet"
+    - "Manuel María Gómez Río"
+    - "Carmen Jiménez Mesa"
+    - "José Manuel Llamas Elvira"
+    - "Francisco Jesús Martínez Murcia"
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Jacob Rodríguez Rivero"
+    - "Diego Salas González"
+    - "Fermín Segovia Román"
+    - "Juan Eloy Arco Martín"
+    - "José Miguel Mateos Ramos"
+
+- title: "Statistical Agnostic Mapping: Herramienta para la Generación y Evaluaciónde Procesos Estadísticos Espaciales de Datos de Imagen Médica"
+  id: B-TIC-586-UGR20
+  acronym: B-TIC-586-UGR20
+  ip: 
+    - "Juan Manuel Górriz Sáez"
+    - "Fermín Segovia Román"
+  funder:
+    name: "-"
+  funding: "-"
+  started: "2021-07-01"
+  ended: "2023-06-30"
+  participants: 
+    - "Juan Manuel Górriz Sáez"
+    - "Fermín Segovia Román"
+    - "Ignacio Álvarez Illán"
+    - "Juan Eloy Arco Martín"
+    - "Carlos García Puntonet"
+    - "Carmen Jiménez Mesa"
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Diego Salas González"
+    - "Pablo Manresa Nebot"
+
+- acronym: "DISPAS"
+  id: P20_00525
+  ip: 
+    - "Javier Ramírez Pérez de Inestrosa"
+  funder:
+    name: "Consejería de Transformación Económica, Industria, Conocimiento y Universidades. Junta de Andalucía"
+  title: "Diagnóstico por Imagen de Síndromes Parkinsonianos Basado en Aprendizaje Supervisado. Evaluación de la Función Pre/Post Sináptica mediante Trazadores PET y SPECT"
+  funding: "61.250€"
+  started: "2021-10-04"
+  ended: "2023-06-30"
+  participants: 
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Francisco José Alcaide Mariscal"
+    - "Ignacio Álvarez Illán"
+    - "Juan Eloy Arco Martín"
+    - "Juan Manuel Górriz Sáez"
+    - "Carmen Jiménez Mesa"
+    - "Francisco Jesús Martínez Murcia"
+    - "Diego Salas González"
+    - "Fermín Segovia Román"
+    - "Diego Castillo Barnes"
+
+- title: "Aplicación de Técnicas de Aprendizaje Agnóstico en el Estudio de la Preparación en el Cerebro Humano mediante Electroencefalografía"
+  id: PPJIB2021-14
+  acronym: PPJIB2021-14
+  ip: 
+    - "José María González Peñalver"
+    - "Carmen Jiménez Mesa"
+  funder:
+    name: "-"
+  description: "Aplicación de Técnicas de Aprendizaje Agnóstico en el Estudio de la Preparación en el Cerebro Humano mediante Electroencefalografía"
+  funding: "-"
+  started: "2022-01-01"
+  ended: "2022-12-31"
+  participants: 
+    - "José María González Peñalver"
+    - "Carmen Jiménez Mesa"
+    - "Juan Manuel Górriz Sáez"
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "María"
+
+- title: "Deep Learning Probabilístico para la Caracterización de la Progresión de la Enfermedad de Alzheimer Hereditaria"
+  id: PPJIA2021-17
+  acronym: DEEP-HADON
+  ip: 
+    - "Francisco Jesús Martínez Murcia"
+  funder:
+    name: "Universidad de Granada"
+  description: "Deep Learning Probabilístico para la Caracterización de la Progresión de la Enfermedad de Alzheimer Hereditaria"
+  funding: "1.500€"
+  started: "2022-01-01"
+  ended: "2022-12-31"
+  participants: 
+    - "Francisco Jesús Martínez Murcia"
+    - "Juan Manuel"
+
+- title: "Sistemas de Ayuda al Diagnóstico de la Enfermedad de Alzheimer Basados en el Cálculo de Isolíneas en Imágenes Cerebrales"
+  id: C-ING-183-UGR23
+  acronym: C-ING-183-UGR23
+  ip: 
+    - "Diego Salas González"
+    - "Fermín Segovia Román"
+  funder:
+    name: "Proyectos de Investigación Aplicada del Plan Propio 2023. Junta de Andalucía"
+  description: "Sistemas de Ayuda al Diagnóstico de la Enfermedad de Alzheimer Basados en el Cálculo de Isolíneas en Imágenes Cerebrales"
+  funding: "-"
+  started: "2024-01-01"
+  ended: "2026-12-31"
+  participants: 
+    - "Diego Salas González"
+    - "Fermín Segovia Román"
+    - "Ignacio Álvarez Illán"
+    - "Diego Castillo Barnes"
+    - "Carlos García Puntonet"
+    - "Juan Manuel Górriz Sáez"
+    - "Carmen Jiménez Mesa"
+    - "Francisco Jesús Martínez Murcia"
+    - "Javier Ramírez Pérez de Inestrosa"
+    - "Juan Eloy Arco Martín"
+    - "David López García"
