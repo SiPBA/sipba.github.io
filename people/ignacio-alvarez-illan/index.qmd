@@ -10,6 +10,9 @@ about:
   - icon: linkedin
     text: LinkedIn
     href: https://www.linkedin.com/in/ignacio-alvarez-illan-48406181/
+  - icon: mortarboard-fill
+    text: Scholar
+    href: https://scholar.google.es/citations?user=w5SA92AAAAAJ
   - icon: envelope
     text: Email
     href: mailto:illan@ugr.es

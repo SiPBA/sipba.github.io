@@ -1,0 +1,108 @@
+---
+title: VAL-DEEP-SCIENCE
+description: "Statistical signal processing tools to VALidate DEEP learning models in neuroSCIENCE."
+author:
+  - name: Juan Manuel Górriz Sáez
+    affiliation: Dpt. of Signal Theory, Networking and Communications. University of Granada & DaSCI.
+    affiliation-url: https://dasci.es/
+  - name: Ignacio Álvarez Illán
+    affiliation: Dpt. of Signal Theory, Networking and Communications. University of Granada & DaSCI.
+    affiliation-url: https://dasci.es/
+ip: Juan Manuel Górriz Sáez, Ignacio Álvarez Illán
+date: 2026-10-01 # TODO: ajustar a la fecha de publicación del post
+categories: [python, project] # self-defined categories
+citation:
+  url: https://sipba.github.io/research/ # TODO: ajustar a la URL final
+image: val_deep_science_logo.png # TODO: añadir el logo del proyecto
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+# bibliography: val_deep_science_bibliography.bib # TODO: descomentar si añades el .bib y citas con @clave
+id: PID2022-XXXXXXXXX-XXX # TODO: código de concesión del proyecto
+started: 2023-01-01 # TODO: fecha de inicio real (el proyecto dura 36 meses)
+ended: 22026-08-31" # TODO: fecha de fin real
+funding: "204000€"
+tags:
+  - proyecto
+  - "#estadística"
+  - "#deeplearning"
+funder:
+  name: "Agencia Estatal de Investigación (AEI)"
+  url: https://www.aei.es/
+  logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
+acronym: VAL-DEEP-SCIENCE
+title-block-banner: var(--bs-secondary) url(overview_framework.png) no-repeat center center / cover
+---
+
+![General framework of VAL-DEEP-SCIENCE](overview_framework.png)
+
+**VAL-DEEP-SCIENCE** is a proposal oriented to solve a particular problem: to formalise and validate the results obtained with machine learning (ML) and deep learning (DL) models in group analyses in neuroscience, using tools from Statistical Learning Theory (SLT) and modern statistics.
+
+```{=html}
+<!--[{{< fa file-lines >}} Documentation](https://example.com){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the documentation"}
+[{{< fa download >}} Download](https://github.com/SiPBA){.btn .btn-primary .btn role="button" data-toggle="tooltip" title="Download the package"}-->
+```
+# The project
+
+The possibilities for innovating meaningful metrics from biomedical data represent both opportunities and challenges. New analyses are expanding our view of the human brain, but the wide variety of approaches has led to inconsistencies in the literature. The reasons are multifactorial: heterogeneous datasets, multiple scanning sites and settings, differing acquisition protocols and processing methods, and diagnostic criteria. Even studies using putatively similar metrics and statistical tools can differ substantially from one another.
+
+From the point of view of statistical learning theory, the root of this unsolved problem is the large ratio of the number of predictors (*d*) over the sample size (*N*), the so-called *d>>N* problem. It is particularly acute when translating neuroscience advances into clinical practice, where inferences are directly applicable to individual care through computer-aided diagnosis (CAD) tools.
+
+Classical statistical inference is limited by its use of *p*-values, and issues such as inflated type I error rates, *p*-hacking or poor experimental designs have affected reproducibility and replicability. This project builds on the **concept of prevalence** and proposes a **novel framework using SLT** for estimating statistical significance through both univariate and multivariate tests. Instead of the probability of observing the data given no effect, it estimates the likelihood that the effect is present, evaluating the *worst-case scenario* of the classification error through concentration inequalities and data-dependent generalisation bounds. With limited sample sizes, this approach is hypothesised to be more conservative and effective than Bayesian methods, without requiring computationally demanding parameter estimation.
+
+The proposed algorithms will be applied to group analyses such as Alzheimer's disease (AD) vs. control or Autism Spectrum Condition (ASC) vs. neurotypical, with three goals: (i) formalise the use of ML by means of SLT, (ii) reduce the high variability of the outcomes provided by ML researchers in this field, and (iii) implement robust software tools based on modern statistics for diagnostics. VAL-DEEP-SCIENCE continues the work of our previous national project (Deep-Neuromaps).
+
+![General framework: biomarker datasets are harmonised, pre-processed and analysed (statistical inference for group comparison), and validated under several putative task designs.]
+
+# Objectives
+
+VAL-DEEP-SCIENCE has one **general objective: to formalise algorithms proposed in ML, including DL architectures, in order to develop a robust tool for statistical inference in neuroscience**. This is organised in the following **specific objectives**.
+
+**At the theoretical level (models + validation):**
+
+1.  **Formalise the use of ML models in classical statistical inference** (hypothesis testing and Bayesian inference) in neuroscience, assessing multiple classification/regression tasks in hierarchical observation models within the framework of SLT.
+2.  **Derive and validate complex ML classifiers (DL)** by means of (i) univariate inference approaches based on *p*-tests combined with classical techniques for the multiple comparison problem, and (ii) multivariate inference approaches based on feature extraction and selection (FES), avoiding *ad-hoc* and conservative corrections such as Bonferroni or Random Field Theory.
+
+**At the application level (neurological diseases and conditions):**
+
+1.  **Design and validate efficient DL algorithms** with discriminative and predictive power on the Vallecas Dataset and other international initiatives (ADNI, DIAN, PPMI, ABIDE), based on variables easy to obtain in any clinical setting, able to detect and predict cognitive decline, AD and other non-neurotypical patterns.
+2.  **Characterise the structural/functional pattern of ASC stratified by sex, age and other groups**, using our own large mixed-site (f)MRI datasets in autism and ensemble DL architectures for statistical inference.
+3.  **Demonstrate, using a rigorous statistical framework, that DL methods** evaluated on biomarker datasets are more efficient at extracting relevant patterns of neurological diseases/conditions through complex classifiers.
+4.  **Implement the devised processing pipelines in a high-level general-purpose language** (e.g. Python) as reliable diagnostic tools that produce reproducible and replicable outcomes.
+
+# Methodology
+
+The project follows the traditional scientific method: hypothesis formulation, experiments, statistical comparison to the state of the art, and validation of the results. The main lines are:
+
+-   **Inference models and ML.** We explore the connection between the univariate General Linear Model (GLM) and ML regressions, deriving a refined statistical test based on the parameters obtained by a linear Support Vector Regression in the inverse problem (SVR-iGLM). Significance can then be assessed by Random Field Theory or by permutation tests, and CV-based test statistics (prediction tests) are improved with robust error estimates derived from concentration inequalities, as CV is unstable in limited samples.
+-   **FES with DL.** Explainable DL architectures (CNNs, autoencoders, ResNet, U-Net, etc.) are used for feature extraction and selection, and combined with prevalence-based prediction tests.
+-   **Statistical validation of DL models.** CAD systems (DL-based FES plus (non)linear regression/classification) are validated within permutation tests or concentration inequalities, analysing power, type I errors, false/true positives and Familywise Error (FWE) rate under putative task designs.
+-   **CAD software implementation.** The tools will be implemented in Python (or similar) and released to the scientific community.
+
+
+# Expected results
+
+The primary contribution will be a set of methodologies that can be readily used to investigate and assess current (and past) research findings in neuroscience. The project plans to deliver:
+
+-   Harmonised multimodal databases (Vallecas, ADNI, PPMI, DIAN, ABIDE, AIMS, brain tumour, EEG).
+-   DL architectures for the estimation of complex hierarchical models and for FES in neuroimaging and CDT (clock drawing test).
+-   SLT algorithms based on multimodal data and concentration inequalities, and univariate/multivariate inference techniques.
+-   CAD systems based on DL with parametric and non-parametric statistical tests.
+-   A statistical validation framework with FWE and power analysis of ML approaches in group studies (ASC, AD, MCI, PD).
+-   Open-source software, a graphical interface and a web/mobile platform for clinical use, to be validated by researchers and clinicians (including HT Médica in a realistic scenario).
+
+
+
+# Team
+
+The project is led by the **SiPBA** (Signal Processing and Biomedical Applications) group at the Data Science and Computational Intelligence (DaSCI) Research Institute, University of Granada (UGR). The full-time team includes J.M. Górriz, J. Ramírez, D. Salas-González, I. Álvarez-Illán and F. Segovia, with a Alejandro Hernandez and David Lopez.
+
+Collaborators:
+
+-   Neuroscience in Psychiatry group, **University of Cambridge** (UCAM), coordinated by J. Suckling (imaging datasets and research collaboration).
+-   **Ludwig-Maximilians-Universität München**, led by J. Levin (imaging datasets).
+-   **University of Leicester**, Y. Zhang and S.-H. Wang's group (methods).
+-   FCIEN and Neurocenter clinic, and international initiatives (DIAN, ADNI, PPMI, ABIDE).
+
+# Funding
+This project is funded by MICIU/AEI/10.13039/501100011033 and by ERDF/EU (European Regional Development Fund). <!-- TODO: confirmar el texto de financiación y el código de proyecto -->
+
+![Funding body](MICIU+Cofinanciado+AEI.jpg)
