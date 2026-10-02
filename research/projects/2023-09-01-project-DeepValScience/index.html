@@ -8,10 +8,9 @@
 
 <meta name="author" content="Juan Manuel Górriz Sáez">
 <meta name="author" content="Ignacio Álvarez Illán">
-<meta name="dcterms.date" content="2026-10-01">
-<meta name="description" content="Statistical signal processing tools to VALidate DEEP learning models in neuroSCIENCE.">
+<meta name="dcterms.date" content="2026-10-02">
 
-<title>VAL-DEEP-SCIENCE – SiPBA Research Lab</title>
+<title>Statistical Signal Processing Tools to Validate Deep Learning Models in Neuroscience. – SiPBA Research Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -30,7 +29,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -89,8 +107,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../../styles.css">
-<meta name="twitter:title" content="VAL-DEEP-SCIENCE – SiPBA Research Lab">
-<meta name="twitter:description" content="Statistical signal processing tools to VALidate DEEP learning models in neuroSCIENCE.">
+<meta name="twitter:title" content="Statistical Signal Processing Tools to Validate Deep Learning Models in Neuroscience. – SiPBA Research Lab">
+<meta name="twitter:description" content="Demo projects, experiments, debugging data and so on from the SiPBA Research Lab">
 <meta name="twitter:image" content="https://sipba.github.io/research/projects/2023-09-01-project-DeepValScience/val_deep_science_logo.png">
 <meta name="twitter:image-height" content="872">
 <meta name="twitter:image-width" content="1186">
@@ -155,13 +173,8 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">VAL-DEEP-SCIENCE</h1>
-                  <div>
-        <div class="description">
-          Statistical signal processing tools to VALidate DEEP learning models in neuroSCIENCE.
-        </div>
-      </div>
-                          <div class="quarto-categories">
+      <h1 class="title">Statistical Signal Processing Tools to Validate Deep Learning Models in Neuroscience.</h1>
+                                <div class="quarto-categories">
                 <div class="quarto-category">python</div>
                 <div class="quarto-category">project</div>
               </div>
@@ -200,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 1, 2026</p>
+        <p class="date">October 2, 2026</p>
       </div>
     </div>
     
@@ -218,8 +231,12 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#the-project" id="toc-the-project" class="nav-link active" data-scroll-target="#the-project">The project</a></li>
   <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
-  <li><a href="#expected-results" id="toc-expected-results" class="nav-link" data-scroll-target="#expected-results">Expected results</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications:</a></li>
+  <li><a href="#talks" id="toc-talks" class="nav-link" data-scroll-target="#talks">Talks</a></li>
+  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
+  </ul></li>
   <li><a href="#team" id="toc-team" class="nav-link" data-scroll-target="#team">Team</a></li>
   <li><a href="#funding" id="toc-funding" class="nav-link" data-scroll-target="#funding">Funding</a></li>
   </ul>
@@ -265,31 +282,38 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Implement the devised processing pipelines in a high-level general-purpose language</strong> (e.g.&nbsp;Python) as reliable diagnostic tools that produce reproducible and replicable outcomes.</li>
 </ol>
 </section>
-<section id="methodology" class="level1">
-<h1>Methodology</h1>
-<p>The project follows the traditional scientific method: hypothesis formulation, experiments, statistical comparison to the state of the art, and validation of the results. The main lines are:</p>
+<section id="results" class="level1">
+<h1>Results</h1>
+<p>The project is already running. The current status is:</p>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications:</h2>
 <ul>
-<li><strong>Inference models and ML.</strong> We explore the connection between the univariate General Linear Model (GLM) and ML regressions, deriving a refined statistical test based on the parameters obtained by a linear Support Vector Regression in the inverse problem (SVR-iGLM). Significance can then be assessed by Random Field Theory or by permutation tests, and CV-based test statistics (prediction tests) are improved with robust error estimates derived from concentration inequalities, as CV is unstable in limited samples.</li>
-<li><strong>FES with DL.</strong> Explainable DL architectures (CNNs, autoencoders, ResNet, U-Net, etc.) are used for feature extraction and selection, and combined with prevalence-based prediction tests.</li>
-<li><strong>Statistical validation of DL models.</strong> CAD systems (DL-based FES plus (non)linear regression/classification) are validated within permutation tests or concentration inequalities, analysing power, type I errors, false/true positives and Familywise Error (FWE) rate under putative task designs.</li>
-<li><strong>CAD software implementation.</strong> The tools will be implemented in Python (or similar) and released to the scientific community.</li>
+<li>A novel framework to evaluate regression performance, called Statistical Agnostic Regression (SAR) by <span class="citation" data-cites="gorriz2024statistical">Gorriz et al. (<a href="#ref-gorriz2024statistical" role="doc-biblioref">2024</a>)</span>.</li>
+<li>We published a paper in the <em>International Journal of Neural Systems</em> about a <a href="../../../publications/2024-05-10-bridging/index.html">cross-modality latent variable framework using joint Variational Autoencoders</a>, by <span class="citation" data-cites="martinez-murcia2024">Martinez-Murcia et al. (<a href="#ref-martinez-murcia2024" role="doc-biblioref">2024</a>)</span>.</li>
+<li>We presented a series of publications at the <em>International Work-Conference on the Interplay Between Artificial and Natural Computation</em> (IWINAC 2024):
+<ul>
+<li><em>A Cross-Modality Latent Representation for&nbsp;the&nbsp;Prediction of&nbsp;Clinical Symptomatology in&nbsp;Parkinson’s Disease</em> by <span class="citation" data-cites="vázquez-garcía2024">Vázquez-García et al. (<a href="#ref-vázquez-garcía2024" role="doc-biblioref">2024</a>)</span></li>
+<li></li>
+</ul></li>
 </ul>
 </section>
-<section id="expected-results" class="level1">
-<h1>Expected results</h1>
-<p>The primary contribution will be a set of methodologies that can be readily used to investigate and assess current (and past) research findings in neuroscience. The project plans to deliver:</p>
+<section id="talks" class="level2">
+<h2 class="anchored" data-anchor-id="talks">Talks</h2>
 <ul>
-<li>Harmonised multimodal databases (Vallecas, ADNI, PPMI, DIAN, ABIDE, AIMS, brain tumour, EEG).</li>
-<li>DL architectures for the estimation of complex hierarchical models and for FES in neuroimaging and CDT (clock drawing test).</li>
-<li>SLT algorithms based on multimodal data and concentration inequalities, and univariate/multivariate inference techniques.</li>
-<li>CAD systems based on DL with parametric and non-parametric statistical tests.</li>
-<li>A statistical validation framework with FWE and power analysis of ML approaches in group studies (ASC, AD, MCI, PD).</li>
-<li>Open-source software, a graphical interface and a web/mobile platform for clinical use, to be validated by researchers and clinicians (including HT Médica in a realistic scenario).</li>
+<li>IWINAC 2024: [Cross-Modality Latent Variable Framework for the Prediction of Clinical Symptomatology in Parkinson’s Disease]</li>
+<li>IWINAC 2024: [PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models]</li>
 </ul>
+</section>
+<section id="software" class="level2">
+<h2 class="anchored" data-anchor-id="software">Software</h2>
+<ul>
+<li>We released the <a href="https://github.com/SiPBA/sar">SAR</a> library, a Statistical Agnostic Regression Library that provides tools for statistical analysis, regression modeling, sample size analysis, and visualization. It includes OLS and SAR models, as well as utilities for data preprocessing and plotting.</li>
+</ul>
+</section>
 </section>
 <section id="team" class="level1">
 <h1>Team</h1>
-<p>The project is led by the <strong>SiPBA</strong> (Signal Processing and Biomedical Applications) group at the Data Science and Computational Intelligence (DaSCI) Research Institute, University of Granada (UGR). The full-time team includes J.M. Górriz, J. Ramírez, D. Salas-González, I. Álvarez-Illán and F. Segovia, with a Alejandro Hernandez and David Lopez.</p>
+<p>The project is led by the <strong>SiPBA</strong> (Signal Processing and Biomedical Applications) group at the Data Science and Computational Intelligence (DaSCI) Research Institute, University of Granada (UGR). The full-time team includes J.M. Górriz, J. Ramírez, D. Salas-González, I. Álvarez-Illán, F. Segovia, C. García-Puntonet, C. Jimenez-Mesa, A. Zorrilla with a Alejandro Hernandez and David Lopez.</p>
 <p>Collaborators:</p>
 <ul>
 <li>Neuroscience in Psychiatry group, <strong>University of Cambridge</strong> (UCAM), coordinated by J. Suckling (imaging datasets and research collaboration).</li>
@@ -309,18 +333,31 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{manuel_górriz_sáez2026,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-gorriz2024statistical" class="csl-entry" role="listitem">
+Gorriz, Juan M, J Ramirez, F Segovia, FJ Martinez-Murcia, C Jiménez-Mesa, and J Suckling. 2024. <span>“Statistical Agnostic Regression: A Machine Learning Method to Validate Regression Models.”</span> <em>arXiv Preprint arXiv:2402.15213</em>.
+</div>
+<div id="ref-martinez-murcia2024" class="csl-entry" role="listitem">
+Martinez-Murcia, Francisco J., Juan Eloy Arco, Carmen Jimenez-Mesa, et al. 2024. <span>“Bridging Imaging and Clinical Scores in Parkinson<span>’</span>s Progression via Multimodal Self-Supervised Deep Learning.”</span> <em>International Journal of Neural Systems</em> 34 (08): 2450043. <a href="https://doi.org/10.1142/S0129065724500436">https://doi.org/10.1142/S0129065724500436</a>.
+</div>
+<div id="ref-vázquez-garcía2024" class="csl-entry" role="listitem">
+Vázquez-García, Cristóbal, F. J. Martinez-Murcia, Juan E. Arco, et al. 2024. <span>“A Cross-Modality Latent Representation for&nbsp;the&nbsp;Prediction of&nbsp;Clinical Symptomatology in&nbsp;Parkinson<span>’</span>s Disease.”</span> Edited by José Manuel Ferrández Vicente, Mikel Val Calvo, and Hojjat Adeli. Springer Nature Switzerland. <a href="https://doi.org/10.1007/978-3-031-61140-7_8">https://doi.org/10.1007/978-3-031-61140-7_8</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{manuel_górriz_sáez2026,
   author = {Manuel Górriz Sáez, Juan and Álvarez Illán, Ignacio},
-  title = {VAL-DEEP-SCIENCE},
-  date = {2026-10-01},
-  url = {https://sipba.github.io/research/},
+  title = {Statistical {Signal} {Processing} {Tools} to {Validate}
+    {Deep} {Learning} {Models} in {Neuroscience.}},
+  date = {2026-10-02},
+  url = {https://sipba.github.io/research/projects/2023-09-01-project-DeepValScience/},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-manuel_górriz_sáez2026" class="csl-entry quarto-appendix-citeas" role="listitem">
 Manuel Górriz Sáez, Juan, and Ignacio Álvarez Illán. 2026.
-<span>“VAL-DEEP-SCIENCE.”</span> October 1. <a href="https://sipba.github.io/research/">https://sipba.github.io/research/</a>.
+<span>“Statistical Signal Processing Tools to Validate Deep Learning
+Models in Neuroscience.”</span> October 2. <a href="https://sipba.github.io/research/projects/2023-09-01-project-DeepValScience/">https://sipba.github.io/research/projects/2023-09-01-project-DeepValScience/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
