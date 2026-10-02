@@ -1,0 +1,127 @@
+---
+title: "Endesa-UGR Chair in Artificial Intelligence"
+description: "Collaboration between Endesa and the University of Granada applying AI to the resilience and operation of the electric power grid."
+title-block-banner: var(--bs-secondary) url(../../images/recursos/network.jpg) no-repeat 50% 50% / cover
+include-after-body: ../../_includes/_footer.html
+listing:
+  id: chair-activities
+  contents:
+    - telemandos-maintenance-optimization.qmd
+    - thermal-monitoring-grid-assets.qmd
+  type: grid
+  grid-columns: 2
+  fields: [title, description]
+format: html
+---
+
+```{=html}
+<div class="org-logos">
+<img class="logo-ugr" src="images/logo-ugr.png" alt="Universidad de Granada">
+<img class="logo-endesa" src="images/logo-endesa.png" alt="Endesa">
+</div>
+```
+
+## About the Chair
+
+The Endesa-UGR Chair in Artificial Intelligence is a collaboration framework between [Endesa](https://www.endesa.com) (through its distribution company e-distribución) and the [University of Granada](https://www.ugr.es). It consolidates more than eight years of joint research between both institutions, previously channelled through the SiPBA Research Lab and the Andalusian Inter-University Institute in Data Science and Computational Intelligence ([DaSCI](https://dasci.es)).
+
+Within the Chair, the SiPBA Research Lab develops algorithms and systems based on Artificial Intelligence to support the resilience and efficient operation of the electric power grid.
+
+## Objectives
+
+The Chair is structured around four lines of action, which are also the headings of its annual budget:
+
+- **Research.** Develop AI methods applied to the electric distribution network, currently along two lines: thermal monitoring of grid assets and optimization of the maintenance of remote-control devices (*telemandos*).
+- **Knowledge transfer.** Bring the results to the operation of the distribution network, validating them on real data and pilots deployed in collaboration with e-distribución. The guiding question is how AI effectively changes the way an electricity distribution company operates.
+- **Training and talent.** Lectures by Endesa and UGR staff in UGR master's programmes, and annual awards for the best Bachelor's thesis (TFG), Master's thesis (TFM) and PhD thesis.
+- **Dissemination.** Seminars, conferences, outreach material and visibility of the results, including the organization of sessions at international conferences such as IWINAC-ICINAC.
+
+## Organization
+
+### Direction
+
+```{=html}
+<div class="org-tier">
+<div class="org-card org-lead">
+<img src="images/juan-manuel-gorriz-saez.jpg" alt="Juan Manuel Górriz Sáez">
+<span class="org-name"><a href="../../people/Juanma_Gorriz/index.html">Juan Manuel Górriz Sáez</a></span>
+<span class="org-role">Director</span>
+<span class="org-affil">Full Professor, Universidad de Granada</span>
+</div>
+<div class="org-card org-lead">
+<img src="images/ignacio-berenguer-garcia.jpg" alt="Ignacio Berenguer García">
+<span class="org-name">Ignacio Berenguer García</span>
+<span class="org-role">Deputy Director</span>
+<span class="org-affil">Chair Coordinator, e-distribución (Endesa)</span>
+</div>
+</div>
+```
+
+### Members
+
+```{=html}
+<p class="org-side-title">Universidad de Granada</p>
+<div class="org-tier">
+<div class="org-card">
+<img src="images/enrique-herrera-viedma.jpg" alt="Enrique Herrera Viedma">
+<span class="org-name">Enrique Herrera Viedma</span>
+<span class="org-role">Vice-Rector for Research and Transfer</span>
+<span class="org-affil">Universidad de Granada</span>
+</div>
+<div class="org-card">
+<img src="images/fermin-segovia-roman.jpg" alt="Fermín Segovia Román">
+<span class="org-name"><a href="../../people/fermin-segovia/index.html">Fermín Segovia Román</a></span>
+<span class="org-role">Associate Professor</span>
+<span class="org-affil">Dept. of Signal Theory, Telematics and Communications</span>
+</div>
+<div class="org-card">
+<img src="images/ignacio-alvarez-illan.jpg" alt="Ignacio Álvarez Illán">
+<span class="org-name"><a href="../../people/ignacio-alvarez-illan/index.html">Ignacio Álvarez Illán</a></span>
+<span class="org-role">Associate Professor</span>
+<span class="org-affil">Dept. of Signal Theory, Telematics and Communications</span>
+</div>
+</div>
+```
+
+```{=html}
+<p class="org-side-title">Endesa</p>
+<div class="org-tier">
+<div class="org-card">
+<img src="images/mario-fernandez-jimenez.jpg" alt="Mario Fernández Jiménez">
+<span class="org-name">Mario Fernández Jiménez</span>
+<span class="org-role">Director of Strategic Projects &amp; Business Improvement</span>
+<span class="org-affil">e-distribución</span>
+</div>
+<div class="org-card">
+<img src="images/emilio-jimenez-criado.jpg" alt="Emilio Jiménez Criado">
+<span class="org-name">Emilio Jiménez Criado</span>
+<span class="org-role">Director, Andalusia and Extremadura Territorial Area</span>
+<span class="org-affil">e-distribución</span>
+</div>
+<div class="org-card">
+<img src="images/rafael-sanchez-duran.jpg" alt="Rafael Sánchez Durán">
+<span class="org-name">Rafael Sánchez Durán</span>
+<span class="org-role">Director, Andalusia and Extremadura</span>
+<span class="org-affil">Endesa</span>
+</div>
+</div>
+```
+
+The Joint Monitoring Committee (*Comisión Mixta de Seguimiento*), made up of representatives of both institutions, approves the annual activity plan and budget and reviews the report of activities and the budget execution of the previous year. The research activities of the Chair are carried out by the SiPBA Research Lab, including [Álvaro Zorrilla Carriquí](../../people/alvaro-zorrilla-carriqui/index.qmd).
+
+## Activities
+
+:::{#chair-activities}
+:::
+
+## 2026 highlights
+
+- **IWINAC-ICINAC 2026 (Fuerteventura, 26–29 May).** The Chair organized the special session *SHIFT: Social and Civil Engineering through Human AI Translations*, where the work on telemando repair prioritization was presented. See the [press release in Canal UGR](https://canal.ugr.es/noticia/la-catedra-endesa-ugr-participa-en-el-congreso-iwinac-icinac-donde-aporta-conocimiento-y-soluciones-para-la-fiabilidad-y-seguridad-de-la-infraestructura-electrica/).
+
+- **Publications.** One journal article in *Integrated Computer-Aided Engineering* on thermal monitoring of power transformers, and one conference paper in Springer LNCS on telemando repair prioritization (details in each activity page).
+
+- **Pilot deployments in Granada.** Thermal camera installed in an urban distribution center on 24 July 2026, and a digital twin of the medium-voltage network of Granada for telemando prioritization.
+
+- **Outreach videos.** Two explanatory videos, one per research line, prepared in September 2026.
+
+- **Premios Nacionales de Innovación Urbana Ciudad de Granada 2026.** Joint candidacy of ATISoluciones, Endesa (e-distribución) and the University of Granada, submitted on 14 September 2026 in the category "Innovación en Gestión Energética Urbana".

@@ -25,6 +25,8 @@ website:
         text: People
       - href: research.qmd
         text: Research
+      - href: transfer.qmd
+        text: Transfer
       - publications.qmd
       - posts.qmd
     tools: 
