@@ -1,6 +1,6 @@
 ---
-title: VAL-DEEP-SCIENCE
-description: "Statistical signal processing tools to VALidate DEEP learning models in neuroSCIENCE."
+title: "Statistical Signal Processing Tools to Validate Deep Learning Models in Neuroscience."
+acronym: "VAL-DEEP-SCIENCE"
 author:
   - name: Juan Manuel Górriz Sáez
     affiliation: Dpt. of Signal Theory, Networking and Communications. University of Granada & DaSCI.
@@ -9,17 +9,29 @@ author:
     affiliation: Dpt. of Signal Theory, Networking and Communications. University of Granada & DaSCI.
     affiliation-url: https://dasci.es/
 ip: Juan Manuel Górriz Sáez, Ignacio Álvarez Illán
-date: 2026-10-01 # TODO: ajustar a la fecha de publicación del post
+date: last-modified
 categories: [python, project] # self-defined categories
 citation:
-  url: https://sipba.github.io/research/ # TODO: ajustar a la URL final
+  url: https://sipba.github.io/research/projects/2023-09-01-project-DeepValScience/ 
 image: val_deep_science_logo.png # TODO: añadir el logo del proyecto
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
-# bibliography: val_deep_science_bibliography.bib # TODO: descomentar si añades el .bib y citas con @clave
-id: PID2022-XXXXXXXXX-XXX # TODO: código de concesión del proyecto
-started: 2023-01-01 # TODO: fecha de inicio real (el proyecto dura 36 meses)
-ended: 22026-08-31" # TODO: fecha de fin real
+bibliography: val_deep_science_bibliography.bib # TODO: descomentar si añades el .bib y citas con @clave
+id: PID2022-137451OB-I00
+started: "2023-09-01"
+ended: "2026-08-31"
 funding: "204000€"
+participants: 
+    - I. A. Illán
+    - J. M. Górriz
+    - J. E. Arco
+    - C. García Puntonet
+    - A. Hernández Segura
+    - C. Jiménez Mesa
+    - J. Ramírez Pérez de Inestrosa
+    - D. Salas González
+    - F. Segovia Román
+    - D. López García
+    - A. Zorrilla Carriquí
 tags:
   - proyecto
   - "#estadística"
@@ -28,7 +40,6 @@ funder:
   name: "Agencia Estatal de Investigación (AEI)"
   url: https://www.aei.es/
   logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
-acronym: VAL-DEEP-SCIENCE
 title-block-banner: var(--bs-secondary) url(overview_framework.png) no-repeat center center / cover
 ---
 
@@ -68,32 +79,27 @@ VAL-DEEP-SCIENCE has one **general objective: to formalise algorithms proposed i
 3.  **Demonstrate, using a rigorous statistical framework, that DL methods** evaluated on biomarker datasets are more efficient at extracting relevant patterns of neurological diseases/conditions through complex classifiers.
 4.  **Implement the devised processing pipelines in a high-level general-purpose language** (e.g. Python) as reliable diagnostic tools that produce reproducible and replicable outcomes.
 
-# Methodology
+# Results
+The project is already running. The current status is:
 
-The project follows the traditional scientific method: hypothesis formulation, experiments, statistical comparison to the state of the art, and validation of the results. The main lines are:
-
--   **Inference models and ML.** We explore the connection between the univariate General Linear Model (GLM) and ML regressions, deriving a refined statistical test based on the parameters obtained by a linear Support Vector Regression in the inverse problem (SVR-iGLM). Significance can then be assessed by Random Field Theory or by permutation tests, and CV-based test statistics (prediction tests) are improved with robust error estimates derived from concentration inequalities, as CV is unstable in limited samples.
--   **FES with DL.** Explainable DL architectures (CNNs, autoencoders, ResNet, U-Net, etc.) are used for feature extraction and selection, and combined with prevalence-based prediction tests.
--   **Statistical validation of DL models.** CAD systems (DL-based FES plus (non)linear regression/classification) are validated within permutation tests or concentration inequalities, analysing power, type I errors, false/true positives and Familywise Error (FWE) rate under putative task designs.
--   **CAD software implementation.** The tools will be implemented in Python (or similar) and released to the scientific community.
-
-
-# Expected results
-
-The primary contribution will be a set of methodologies that can be readily used to investigate and assess current (and past) research findings in neuroscience. The project plans to deliver:
-
--   Harmonised multimodal databases (Vallecas, ADNI, PPMI, DIAN, ABIDE, AIMS, brain tumour, EEG).
--   DL architectures for the estimation of complex hierarchical models and for FES in neuroimaging and CDT (clock drawing test).
--   SLT algorithms based on multimodal data and concentration inequalities, and univariate/multivariate inference techniques.
--   CAD systems based on DL with parametric and non-parametric statistical tests.
--   A statistical validation framework with FWE and power analysis of ML approaches in group studies (ASC, AD, MCI, PD).
--   Open-source software, a graphical interface and a web/mobile platform for clinical use, to be validated by researchers and clinicians (including HT Médica in a realistic scenario).
+## Publications:
+-   A novel framework to evaluate regression performance, called Statistical Agnostic Regression (SAR) by @gorriz2024statistical.
+-   We published a paper in the *International Journal of Neural Systems* about a [cross-modality latent variable framework using joint Variational Autoencoders](/publications/2024-05-10-bridging/index.qmd), by @martinez-murcia2024.
+-   We presented a series of publications at the *International Work-Conference on the Interplay Between Artificial and Natural Computation* (IWINAC 2024):
+    -   *A Cross-Modality Latent Representation for the Prediction of Clinical Symptomatology in Parkinson’s Disease* by @vázquez-garcía2024
+    -  
+    
+## Talks
+-   IWINAC 2024: [Cross-Modality Latent Variable Framework for the Prediction of Clinical Symptomatology in Parkinson’s Disease]
+-   IWINAC 2024: [PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models]
 
 
+## Software
+-   We released the [SAR](https://github.com/SiPBA/sar) library, a Statistical Agnostic Regression Library that provides tools for statistical analysis, regression modeling, sample size analysis, and visualization. It includes OLS and SAR models, as well as utilities for data preprocessing and plotting.
 
 # Team
 
-The project is led by the **SiPBA** (Signal Processing and Biomedical Applications) group at the Data Science and Computational Intelligence (DaSCI) Research Institute, University of Granada (UGR). The full-time team includes J.M. Górriz, J. Ramírez, D. Salas-González, I. Álvarez-Illán and F. Segovia, with a Alejandro Hernandez and David Lopez.
+The project is led by the **SiPBA** (Signal Processing and Biomedical Applications) group at the Data Science and Computational Intelligence (DaSCI) Research Institute, University of Granada (UGR). The full-time team includes J.M. Górriz, J. Ramírez, D. Salas-González, I. Álvarez-Illán, F. Segovia, C. García-Puntonet, C. Jimenez-Mesa, A. Zorrilla with a Alejandro Hernandez and David Lopez.
 
 Collaborators:
 
