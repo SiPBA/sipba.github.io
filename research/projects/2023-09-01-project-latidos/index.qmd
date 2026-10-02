@@ -1,5 +1,4 @@
 ---
-acronym: LATiDOS
 title: "LATent variable models to Determine the Onset of neurodegenerative Symptoms."
 author:
   - name: F.J. Martinez-Murcia
