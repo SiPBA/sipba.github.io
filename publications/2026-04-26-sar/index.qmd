@@ -103,6 +103,12 @@ By comparing this bounded actual risk to the expected loss under the null hypoth
 
 :::
 
+
+
+::: {.column-page-inset-right}
+![Graphical Abstract: The SAR framework methodology bridging OLS and ML regressions.](graphical_abstract.jpg){#fig-graphical-abstract}
+:::
+
 ## 3. EXPERIMENTAL VALIDATION & NEUROIMAGING APPLICATIONS
 
 The SAR framework was rigorously tested across three distinct scenarios:
@@ -111,9 +117,7 @@ The SAR framework was rigorously tested across three distinct scenarios:
 2.  **Multivariate Cancer Dataset:** Real-world socio-economic predictors tested against cancer mortality rates.
 3.  **The ADNI Dataset (Alzheimer's Disease):** Evaluating the correlation between cognitive decline (MMSE scores) and 3D structural MRI brain changes (Grey Matter) across Healthy Controls (NC), Mild Cognitive Impairment (MCI), and Alzheimer's (AD) patients.
 
-::: {.column-screen-inset}
-![Graphical Abstract: The SAR framework methodology bridging OLS and ML regressions.](graphical_abstract.jpg){#fig-graphical-abstract}
-:::
+
 
 ### 3.1. RESULTS: THE ADNI DATASET
 

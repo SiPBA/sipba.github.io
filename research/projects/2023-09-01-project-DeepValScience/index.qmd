@@ -61,9 +61,8 @@ Classical statistical inference is limited by its use of *p*-values, and issues 
 
 The proposed algorithms will be applied to group analyses such as Alzheimer's disease (AD) vs. control or Autism Spectrum Condition (ASC) vs. neurotypical, with three goals: (i) formalise the use of ML by means of SLT, (ii) reduce the high variability of the outcomes provided by ML researchers in this field, and (iii) implement robust software tools based on modern statistics for diagnostics. VAL-DEEP-SCIENCE continues the work of our previous national project (Deep-Neuromaps).
 
-![General framework: biomarker datasets are harmonised, pre-processed and analysed (statistical inference for group comparison), and validated under several putative task designs.]
+![General framework: biomarker datasets are harmonised, pre-processed and analysed (statistical inference for group comparison), and validated under several putative task designs.](overview_framework.png)
 
-![General framework of VAL-DEEP-SCIENCE](overview_framework.png)
 
 # Objectives
 
