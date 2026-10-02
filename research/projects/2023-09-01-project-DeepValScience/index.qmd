@@ -43,7 +43,7 @@ funder:
 title-block-banner: var(--bs-secondary) url(overview_framework.png) no-repeat center center / cover
 ---
 
-![General framework of VAL-DEEP-SCIENCE](overview_framework.png)
+
 
 **VAL-DEEP-SCIENCE** is a proposal oriented to solve a particular problem: to formalise and validate the results obtained with machine learning (ML) and deep learning (DL) models in group analyses in neuroscience, using tools from Statistical Learning Theory (SLT) and modern statistics.
 
@@ -62,6 +62,8 @@ Classical statistical inference is limited by its use of *p*-values, and issues 
 The proposed algorithms will be applied to group analyses such as Alzheimer's disease (AD) vs. control or Autism Spectrum Condition (ASC) vs. neurotypical, with three goals: (i) formalise the use of ML by means of SLT, (ii) reduce the high variability of the outcomes provided by ML researchers in this field, and (iii) implement robust software tools based on modern statistics for diagnostics. VAL-DEEP-SCIENCE continues the work of our previous national project (Deep-Neuromaps).
 
 ![General framework: biomarker datasets are harmonised, pre-processed and analysed (statistical inference for group comparison), and validated under several putative task designs.]
+
+![General framework of VAL-DEEP-SCIENCE](overview_framework.png)
 
 # Objectives
 
@@ -88,7 +90,7 @@ The project is already running. The current status is:
 -   We presented a series of publications at the *International Work-Conference on the Interplay Between Artificial and Natural Computation* (IWINAC 2024):
     -   *A Cross-Modality Latent Representation for the Prediction of Clinical Symptomatology in Parkinson’s Disease* by @vázquez-garcía2024
     -  
-    
+
 ## Talks
 -   IWINAC 2024: [Cross-Modality Latent Variable Framework for the Prediction of Clinical Symptomatology in Parkinson’s Disease]
 -   IWINAC 2024: [PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models]
