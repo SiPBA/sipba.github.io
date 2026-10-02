@@ -12,9 +12,11 @@ listing:
 - id: projects
   sort: "started desc"
   type: table
-  fields: [title, ip, funder.name, description, funding, started, ended]
+  fields: [acronym, ip, funder.name, title, funding, started, ended]
+  page-size: 10
+  table-hover: true
   field-display-names: 
-      title: "Title"
+      acronym: "Acronym"
       ip: "IP"
       funder.name: "Funder"
       started: "Start"

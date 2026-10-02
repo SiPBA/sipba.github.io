@@ -12,6 +12,7 @@ listing:
   grid-columns: 2
   fields: [title, description]
 format: html
+image: "images/featured_catedra.jpeg"
 ---
 
 ```{=html}

@@ -8,7 +8,7 @@ listing:
     - transfer/endesa-ugr-chair/index.qmd
   type: grid
   grid-columns: 2
-  fields: [title, description]
+  fields: [image, title, description]
 format: html
 ---
 

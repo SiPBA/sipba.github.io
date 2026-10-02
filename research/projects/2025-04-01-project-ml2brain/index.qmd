@@ -1,6 +1,6 @@
 ---
-title: "ML2BRAIN"
-description: "Machine Learning to study Music and Language in the Brain."
+acronym: "ML2BRAIN"
+title: "Machine Learning to study Music and Language in the Brain."
 ip: F.J. Martinez-Murcia
 date: 04-01-2025
 categories: [python, project] # self-defined categories
@@ -10,7 +10,7 @@ image: ml2brain_featured.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 started: 2025-04-01
 ended: 2027-03-31
-funding: 112400€
+funding: 112.400€
 tags:
   - proyecto
   - plazas
@@ -21,7 +21,6 @@ funder:
   name: "Agencia Estatal de Investigación (AEI)"
   url: https://www.aei.es/
   logo: https://www.aei.es/wp-content/uploads/2020/03/logo-aei-blanco.png
-acronym: ML2BRAIN
 id: CNS2024-154296
 title-block-banner: var(--bs-secondary) url(overview_methodology.png) no-repeat center center / cover
 ---
