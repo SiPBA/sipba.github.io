@@ -36,15 +36,9 @@
     ]
   },
   {
-    "listing": "/transfer/endesa-ugr-chair/index.html",
-    "items": [
-      "/transfer/endesa-ugr-chair/telemandos-maintenance-optimization.html",
-      "/transfer/endesa-ugr-chair/thermal-monitoring-grid-assets.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
+      "/posts/2026-10-19-juan-manuel-gorriz-participa-en-starmus-2026/index.html",
       "/posts/2025-10-16-bases-de-la-convocatoria-de-los-premios-catedra-endesa-ugr-en-inteligencia-artificial-2025/index.html",
       "/posts/2024-04-01-generador-acks/index.html",
       "/posts/2019-06-05-sipba-at-the-iwinac-2019/index.html",
@@ -61,8 +55,16 @@
     ]
   },
   {
+    "listing": "/transfer/endesa-ugr-chair/index.html",
+    "items": [
+      "/transfer/endesa-ugr-chair/telemandos-maintenance-optimization.html",
+      "/transfer/endesa-ugr-chair/thermal-monitoring-grid-assets.html"
+    ]
+  },
+  {
     "listing": "/posts.html",
     "items": [
+      "/posts/2026-10-19-juan-manuel-gorriz-participa-en-starmus-2026/index.html",
       "/posts/2025-10-16-bases-de-la-convocatoria-de-los-premios-catedra-endesa-ugr-en-inteligencia-artificial-2025/index.html",
       "/posts/2024-04-01-generador-acks/index.html",
       "/posts/2019-06-05-sipba-at-the-iwinac-2019/index.html",
