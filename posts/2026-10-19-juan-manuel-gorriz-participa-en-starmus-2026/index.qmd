@@ -51,6 +51,16 @@ La participación en Starmus pone de relieve la proyección internacional de la 
 
 Su participación cuenta con el apoyo de la Universidad de Granada, la Universidad de Cambridge, el Ayuntamiento de Almería, el Ayuntamiento de Granada, el Convention Bureau, el Palacio de Congresos de Granada, Cosentino, Atis y Endesa.
 
+## Vídeos
+
+**Starmus 2026 (1 de 2)**
+
+{{< video https://www.youtube.com/watch?v=UZIJNRsyWhw >}}
+
+**Starmus 2026 (2 de 2)**
+
+{{< video https://www.youtube.com/watch?v=9AvacXXh2mw >}}
+
 ::: {.callout-note appearance="simple"}
 ## Más información
 
