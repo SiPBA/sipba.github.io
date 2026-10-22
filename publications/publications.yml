@@ -7717,3 +7717,753 @@
   path: https://www.scopus.com/pages/publications/84918785046?origin=resultslist
   volume: '207'
   year: '2014'
+- ENTRYTYPE: article
+  ID: Wansard20143333
+  author:
+    - Wansard, Murielle
+    - Meulemans, Thierry
+    - Gillet, Sophie
+    - Segovia, Fermin
+    - Bastin, Christine
+    - Toba, Monica N.
+    - Bartolomeo, Paolo
+  doi: 10.1007/s00221-014-4028-4
+  container-title: Experimental Brain Research
+  pages: 3333 - 3343
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: 'Visual neglect: Is there a relationship between impaired spatial working
+    memory and re-cancellation?'
+  type: Article
+  path: https://doi.org/10.1007/s00221-014-4028-4
+  volume: '232'
+  number: '10'
+  year: '2014'
+- ENTRYTYPE: article
+  ID: Aly2014145
+  author:
+    - Aly, Mariam
+    - Wansard, Murielle
+    - Segovia, Fermín
+    - Yonelinas, Andrew P.
+    - Bastin, Christine
+  doi: 10.1016/j.neuropsychologia.2014.09.025
+  container-title: Neuropsychologia
+  pages: 145 - 156
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Cortical and subcortical contributions to state- and strength-based perceptual
+    judgments
+  type: Article
+  path: https://doi.org/10.1016/j.neuropsychologia.2014.09.025
+  volume: '64'
+  year: '2014'
+- ENTRYTYPE: article
+  ID: Wansard201514
+  author:
+    - Wansard, Murielle
+    - Bartolomeo, Paolo
+    - Bastin, Christine
+    - Segovia, Fermín
+    - Gillet, Sophie
+    - Duret, Christophe
+    - Meulemans, Thierry
+  doi: 10.1080/02643294.2014.995075
+  container-title: Cognitive Neuropsychology
+  pages: 14 - 28
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: 'Support for distinct subcomponents of spatial working memory: A double dissociation
+    between spatial–simultaneous and spatial–sequential performance in unilateral
+    neglect'
+  type: Article
+  path: https://doi.org/10.1080/02643294.2014.995075
+  volume: '32'
+  number: '1'
+  year: '2015'
+- ENTRYTYPE: conference
+  ID: Fernandez2000365
+  author:
+    - Fernandez, P.G.
+    - Garcia, A.
+    - Ramirez, J.
+    - Lloris, A.
+  doi: 10.1109/sips.2000.886735
+  container-title: 2000 IEEE Workshop on Signal Processing Systems. SiPS 2000. Design
+    and Implementation
+  pages: 365 - 373
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Fast RNS-based 2D-DCT computation on field-programmable devices
+  type: Conference paper
+  path: https://doi.org/10.1109/sips.2000.886735
+  year: '2000'
+- ENTRYTYPE: article
+  ID: Ramirez20001198
+  author:
+    - Ramírez, J.
+    - García, A.
+    - Fernández, P.G.
+    - Parrilla, L.
+    - Lloris, A.
+  doi: 10.1049/el:20000896
+  container-title: Electronics Letters
+  pages: 1198 - 1199
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: RNS-FPL merged architectures for orthogonal DWT
+  type: Article
+  path: https://doi.org/10.1049/el:20000896
+  volume: '36'
+  number: '14'
+  year: '2000'
+- ENTRYTYPE: conference
+  ID: Ramirez20011193
+  author:
+    - Ramirez, J.
+    - Garcia, A.
+    - Meyer Base, U.
+    - Taylor, F.
+    - Fernandez, P.G.
+    - Lloris, A.
+  doi: 10.1109/icassp.2001.941137
+  container-title: 2001 IEEE International Conference on Acoustics, Speech, and Signal
+    Processing. Proceedings
+  pages: 1193 - 1196
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Design of RNS-based distributed arithmetic DWT filterbanks
+  type: Conference paper
+  path: https://doi.org/10.1109/icassp.2001.941137
+  volume: '2'
+  year: '2001'
+- ENTRYTYPE: article
+  ID: Ramirez2002199
+  author:
+    - Ramírez, J.
+    - Meyer-Baese, U.
+  doi: 10.1049/el:20020129
+  container-title: Electronics Letters
+  pages: 199 - 200
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: High performance, reduced complexity programmable RNS-FPL merged FIR filters
+  type: Article
+  path: https://doi.org/10.1049/el:20020129
+  volume: '38'
+  number: '4'
+  year: '2002'
+- ENTRYTYPE: article
+  ID: Ramirez2002266
+  author:
+    - Ramírez, J.
+    - García, A.
+    - López-Buedo, S.
+    - Lloris, A.
+  doi: 10.1049/el:20020192
+  container-title: Electronics Letters
+  pages: 266 - 268
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: RNS-enabled digital signal processor design
+  type: Article
+  path: https://doi.org/10.1049/el:20020192
+  volume: '38'
+  number: '6'
+  year: '2002'
+- ENTRYTYPE: article
+  ID: Ramirez2003171
+  author:
+    - Ramírez, Javier
+    - García, Antonio
+    - Meyer-Bäse, Uwe
+    - Taylor, Fred
+    - Lloris, Antonio
+  doi: 10.1023/a:1021158221825
+  container-title: Journal of VLSI signal processing systems for signal, image and
+    video technology
+  pages: 171 - 190
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Implementation of RNS-Based Distributed Arithmetic Discrete Wavelet Transform
+    Architectures Using Field-Programmable Logic
+  type: Article
+  path: https://doi.org/10.1023/a:1021158221825
+  volume: '33'
+  number: 1-2
+  year: '2003'
+- ENTRYTYPE: article
+  ID: MeyerBase2003248
+  author:
+    - Meyer-Bäse, Uwe
+    - Ramírez, Javier
+  doi: 10.1515/freq.2003.57.11-12.248
+  container-title: Frequenz
+  pages: 248 - 253
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Optimal Multi-Step Linear Feedback Shift Register Design
+  type: Article
+  path: https://doi.org/10.1515/freq.2003.57.11-12.248
+  volume: '57'
+  number: 11-12
+  year: '2003'
+- ENTRYTYPE: article
+  ID: Ramirez2003111
+  author:
+    - Ramírez, Javier
+    - García, Antonio
+  doi: 10.1142/s0218126603000878
+  container-title: Journal of Circuits, Systems and Computers
+  pages: 111 - 123
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: A Fast QRNS-Based Algorithm for the DCT and Its Field-Programmable Logic
+    Implementation
+  type: Article
+  path: https://doi.org/10.1142/s0218126603000878
+  volume: '12'
+  number: '01'
+  year: '2003'
+- ENTRYTYPE: article
+  ID: Ramirez2003227
+  author:
+    - Ramírez, Javier
+    - Meyer-Bäse, Uwe
+    - Taylor, Fred
+    - García, Antonio
+    - Lloris, Antonio
+  doi: 10.1023/a:1023296218588
+  container-title: Journal of VLSI signal processing systems for signal, image and
+    video technology
+  pages: 227 - 237
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Design and Implementation of High-Performance RNS Wavelet Processors Using
+    Custom IC Technologies
+  type: Article
+  path: https://doi.org/10.1023/a:1023296218588
+  volume: '34'
+  number: '3'
+  year: '2003'
+- ENTRYTYPE: article
+  ID: Ramirez2004266
+  author:
+    - Ramirez, J.
+    - Segura, J.C.
+    - Benitez, C.
+    - de la Torre, A.
+    - Rubio, A.J.
+  doi: 10.1109/lsp.2003.821762
+  container-title: IEEE Signal Processing Letters
+  pages: 266 - 269
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: A New Kullback–Leibler VAD for Speech Recognition in Noise
+  type: Article
+  path: https://doi.org/10.1109/lsp.2003.821762
+  volume: '11'
+  number: '2'
+  year: '2004'
+- ENTRYTYPE: article
+  ID: Ramirez2004271
+  author:
+    - Ramírez, Javier
+    - Segura, José C
+    - Benítez, Carmen
+    - de la Torre, Ángel
+    - Rubio, Antonio
+  doi: 10.1016/j.specom.2003.10.002
+  container-title: Speech Communication
+  pages: 271 - 287
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Efficient voice activity detection algorithms using long-term speech information
+  type: Article
+  path: https://doi.org/10.1016/j.specom.2003.10.002
+  volume: '42'
+  number: 3-4
+  year: '2004'
+- ENTRYTYPE: article
+  ID: Segura2004517
+  author:
+    - Segura, J.C.
+    - Benitez, C.
+    - de la Torre, A.
+    - Rubio, A.J.
+    - Ramirez, J.
+  doi: 10.1109/lsp.2004.826648
+  container-title: IEEE Signal Processing Letters
+  pages: 517 - 520
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Cepstral Domain Segmental Nonlinear Feature Transformations for Robust Speech
+    Recognition
+  type: Article
+  path: https://doi.org/10.1109/lsp.2004.826648
+  volume: '11'
+  number: '5'
+  year: '2004'
+- ENTRYTYPE: article
+  ID: Ramirez2005165
+  author:
+    - Ramírez, Javier
+    - Meyer-Bäse, Uwe
+    - García, Antonio
+  doi: 10.1142/s0218126605002131
+  container-title: Journal of Circuits, Systems and Computers
+  pages: 165 - 177
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Efficient RNS-based design of programmable FIR filters targeting FPL technology
+  type: Article
+  path: https://doi.org/10.1142/s0218126605002131
+  volume: '14'
+  number: '01'
+  year: '2005'
+- ENTRYTYPE: article
+  ID: MeyerBaese2005158
+  author:
+    - Meyer-Baese, U.
+    - Rao, S.
+    - Ramírez, J.
+    - García, A.
+  doi: 10.1049/el:20057000
+  container-title: Electronics Letters
+  pages: 158 - 160
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Cost-effective Hogenauer cascaded integrator comb decimator filter design
+    for custom ICs
+  type: Article
+  path: https://doi.org/10.1049/el:20057000
+  volume: '41'
+  number: '3'
+  year: '2005'
+- ENTRYTYPE: article
+  ID: Ramirez2005689
+  author:
+    - Ramirez, J.
+    - Segura, J.C.
+    - Benitez, C.
+    - Garcia, L.
+    - Rubio, A.
+  doi: 10.1109/lsp.2005.855551
+  container-title: IEEE Signal Processing Letters
+  pages: 689 - 692
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Statistical voice activity detection using a multiple observation likelihood
+    ratio test
+  type: Article
+  path: https://doi.org/10.1109/lsp.2005.855551
+  volume: '12'
+  number: '10'
+  year: '2005'
+- ENTRYTYPE: article
+  ID: Ramirez20051119
+  author:
+    - Ramirez, J.
+    - Segura, J.C.
+    - Benitez, C.
+    - de la Torre, A.
+    - Rubio, A.
+  doi: 10.1109/tsa.2005.853212
+  container-title: IEEE Transactions on Speech and Audio Processing
+  pages: 1119 - 1129
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: An effective subband OSF-based VAD with noise reduction for robust speech
+    recognition
+  type: Article
+  path: https://doi.org/10.1109/tsa.2005.853212
+  volume: '13'
+  number: '6'
+  year: '2005'
+- ENTRYTYPE: article
+  ID: Benitez2007138
+  author:
+    - Benitez, M. C.
+    - Ramirez, Javier
+    - Segura, José C.
+    - Ibáñez, Jesús M.
+    - Almendros, Javier
+    - Garcia-Yeguas, Araceli
+    - Cortes, Guillermo
+  doi: 10.1109/tgrs.2006.882264
+  container-title: IEEE Transactions on Geoscience and Remote Sensing
+  pages: 138 - 146
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Continuous HMM-Based Seismic-Event Classification at Deception Island, Antarctica
+  type: Article
+  path: https://doi.org/10.1109/tgrs.2006.882264
+  volume: '45'
+  number: '1'
+  year: '2007'
+- ENTRYTYPE: article
+  ID: deVicente2007867
+  author:
+    - de Vicente, Juan
+    - Ramírez, Javier
+  doi: 10.1016/j.jcis.2007.08.022
+  container-title: Journal of Colloid and Interface Science
+  pages: 867 - 876
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Effect of friction between particles in the dynamic response of model magnetic
+    structures
+  type: Article
+  path: https://doi.org/10.1016/j.jcis.2007.08.022
+  volume: '316'
+  number: '2'
+  year: '2007'
+- ENTRYTYPE: article
+  ID: Chaves2012BMC79
+  author:
+    - Chaves, Rosa
+    - Ramírez, Javier
+    - Górriz, Juan M
+    - Illán, Ignacio A
+    - Gómez-Río, Manuel
+    - Carnero, Cristobal
+    - Alzheimer's Disease Neuroimaging Initiative
+  doi: 10.1186/1472-6947-12-79
+  container-title: BMC Medical Informatics and Decision Making
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Effective diagnosis of Alzheimer's disease by means of large margin-based
+    methodology
+  type: Article
+  path: https://doi.org/10.1186/1472-6947-12-79
+  volume: '12'
+  number: '1'
+  year: '2012'
+- ENTRYTYPE: article
+  ID: RodriguezLopez2015465503
+  author:
+    - Rodríguez-López, Jaime
+    - Blázquez, Pedro Castro
+    - Elvira, Luis
+    - de Espinosa, Francisco Montero
+    - Ramírez, Javier
+    - de Vicente, Juan
+  doi: 10.1088/0022-3727/48/46/465503
+  container-title: 'Journal of Physics D: Applied Physics'
+  pages: '465503'
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: On the yielding behaviour in magnetorheology using ultrasounds, shear and
+    normal stresses, and optical microscopy
+  type: Article
+  path: https://doi.org/10.1088/0022-3727/48/46/465503
+  volume: '48'
+  number: '46'
+  year: '2015'
+- ENTRYTYPE: article
+  ID: GonzalezGarcia2017264
+  author:
+    - González-García, Carlos
+    - Arco, Juan E.
+    - Palenciano, Ana F.
+    - Ramírez, Javier
+    - Ruz, María
+  doi: 10.1016/j.neuroimage.2017.01.037
+  container-title: NeuroImage
+  pages: 264 - 273
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Encoding, preparation and implementation of novel complex verbal instructions
+  type: Article
+  path: https://doi.org/10.1016/j.neuroimage.2017.01.037
+  volume: '148'
+  year: '2017'
+- ENTRYTYPE: article
+  ID: Gorriz2004101
+  author:
+    - Górriz, J. M.
+    - Puntonet, C. G.
+    - Salmerón, M.
+    - de la Rosa, J. J. G.
+  doi: 10.1007/s00521-004-0412-5
+  container-title: Neural Computing & Applications
+  pages: 101 - 111
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: A new model for time-series forecasting using radial basis functions and
+    exogenous data
+  type: Article
+  path: https://doi.org/10.1007/s00521-004-0412-5
+  volume: '13'
+  number: '2'
+  year: '2004'
+- ENTRYTYPE: article
+  ID: delaRosa20041316
+  author:
+    - de la Rosa, J.J.G.
+    - Lloret, I.
+    - Puntonet, C.G.
+    - Górriz, J.M.
+  doi: 10.1049/el:20045664
+  container-title: Electronics Letters
+  pages: 1316 - 1317
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Higher-order statistics to detect and characterise termite emissions
+  type: Article
+  path: https://doi.org/10.1049/el:20045664
+  volume: '40'
+  number: '20'
+  year: '2004'
+- ENTRYTYPE: article
+  ID: delaRosa2006553
+  author:
+    - de la Rosa, Juan José González
+    - Lloret, I.
+    - Moreno, A.
+    - Puntonet, C.G.
+    - Górriz, J.M.
+  doi: 10.1016/j.measurement.2005.11.021
+  container-title: Measurement
+  pages: 553 - 564
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Wavelets and wavelet packets applied to detect and characterize transient
+    alarm signals from termites
+  type: Article
+  path: https://doi.org/10.1016/j.measurement.2005.11.021
+  volume: '39'
+  number: '6'
+  year: '2006'
+- ENTRYTYPE: article
+  ID: Gruber20061485
+  author:
+    - Gruber, P.
+    - Stadlthanner, K.
+    - Böhm, M.
+    - Theis, F.J.
+    - Lang, E.W.
+    - Tomé, A.M.
+    - Teixeira, A.R.
+    - Puntonet, C.G.
+    - Gorriz Saéz, J.M.
+  doi: 10.1016/j.neucom.2005.12.025
+  container-title: Neurocomputing
+  pages: 1485 - 1501
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Denoising using local projective subspace methods
+  type: Article
+  path: https://doi.org/10.1016/j.neucom.2005.12.025
+  volume: '69'
+  number: 13-15
+  year: '2006'
+- ENTRYTYPE: article
+  ID: Gorriz20061442
+  author:
+    - Górriz, J.M.
+    - Puntonet, C.G.
+    - Rojas, F.
+    - Martin, R.
+    - Hornillo, S.
+    - Lang, E.W.
+  doi: 10.1016/j.neucom.2005.12.030
+  container-title: Neurocomputing
+  pages: 1442 - 1457
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Optimizing blind source separation with guided genetic algorithms
+  type: Article
+  path: https://doi.org/10.1016/j.neucom.2005.12.030
+  volume: '69'
+  number: 13-15
+  year: '2006'
+- ENTRYTYPE: article
+  ID: HornilloMellado20061425
+  author:
+    - Hornillo-Mellado, Susana
+    - Martín-Clemente, Rubén
+    - Puntonet, Carlos G.
+    - Acha, José I.
+    - Manuel Górriz-Sáez, Juan
+  doi: 10.1016/j.neucom.2005.12.020
+  container-title: Neurocomputing
+  pages: 1425 - 1434
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Maximization of statistical moments for blind separation of sources revisited
+  type: Article
+  path: https://doi.org/10.1016/j.neucom.2005.12.020
+  volume: '69'
+  number: 13-15
+  year: '2006'
+- ENTRYTYPE: conference
+  ID: Gorriz2006389
+  author:
+    - Górriz, J.M.
+    - Puntonet, C.G.
+  doi: 10.1007/3-540-31662-0_30
+  container-title: Advances in Soft Computing
+  pages: 389 - 398
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: A Genetic Algorithm for Solving BSS-ICA
+  type: Conference paper
+  path: https://doi.org/10.1007/3-540-31662-0_30
+  year: '2006'
+- ENTRYTYPE: article
+  ID: Martin20081190
+  author:
+    - Martín, M.L.
+    - Turias, I.J.
+    - González, F.J.
+    - Galindo, P.L.
+    - Trujillo, F.J.
+    - Puntonet, C.G.
+    - Gorriz, J.M.
+  doi: 10.1016/j.chemosphere.2007.08.039
+  container-title: Chemosphere
+  pages: 1190 - 1195
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Prediction of CO maximum ground level concentrations in the Bay of Algeciras,
+    Spain using artificial neural networks
+  type: Article
+  path: https://doi.org/10.1016/j.chemosphere.2007.08.039
+  volume: '70'
+  number: '7'
+  year: '2008'
+- ENTRYTYPE: article
+  ID: Stadlthanner20082356
+  author:
+    - Stadlthanner, K.
+    - Theis, F.J.
+    - Lang, E.W.
+    - Tomé, A.M.
+    - Puntonet, C.G.
+    - Górriz, J.M.
+  doi: 10.1016/j.neucom.2007.09.017
+  container-title: Neurocomputing
+  pages: 2356 - 2376
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Hybridizing sparse component analysis with genetic algorithms for microarray
+    analysis
+  type: Article
+  path: https://doi.org/10.1016/j.neucom.2007.09.017
+  volume: '71'
+  number: 10-12
+  year: '2008'
+- ENTRYTYPE: article
+  ID: Lang20121
+  author:
+    - Lang, E. W.
+    - Tomé, A. M.
+    - Keck, I. R.
+    - Górriz-Sáez, J. M.
+    - Puntonet, C. G.
+  doi: 10.1155/2012/412512
+  container-title: Computational Intelligence and Neuroscience
+  pages: 1 - 21
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: 'Brain Connectivity Analysis: A Short Survey'
+  type: Article
+  path: https://doi.org/10.1155/2012/412512
+  volume: '2012'
+  year: '2012'
+- ENTRYTYPE: article
+  ID: MeyerBaese20141
+  author:
+    - Meyer-Baese, Anke
+    - Plant, Claudia
+    - Gorriz Saez, Juan Manuel
+  doi: 10.1155/2014/347265
+  container-title: Computational and Mathematical Methods in Medicine
+  pages: 1 - 2
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Advanced Computer Vision Approaches in Biomedical Image Analysis
+  type: Article
+  path: https://doi.org/10.1155/2014/347265
+  volume: '2014'
+  year: '2014'
+- ENTRYTYPE: article
+  ID: AlBaddai2016695
+  author:
+    - Al-Baddai, S.
+    - Neubauer, A.
+    - Tomé, A.M.
+    - Vigneron, V.
+    - Salas-Gonzalez, D.
+    - Górriz, J.M.
+    - Puntonet, C.G.
+    - Lang, E.W.
+  doi: 10.2174/1567205013666160322141726
+  container-title: Current Alzheimer Research
+  pages: 695 - 707
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: 'Functional Biomedical Images of Alzheimer''s Disease: A Green''s Function-Based
+    Empirical Mode Decomposition Study'
+  type: Article
+  path: https://doi.org/10.2174/1567205013666160322141726
+  volume: '13'
+  number: '6'
+  year: '2016'
+- ENTRYTYPE: article
+  ID: Arco2018248
+  author:
+    - Arco, Juan E.
+    - González-García, Carlos
+    - Díaz-Gutiérrez, Paloma
+    - Ramírez, Javier
+    - Ruz, María
+  doi: 10.1016/j.jneumeth.2018.06.017
+  container-title: Journal of Neuroscience Methods
+  pages: 248 - 260
+  publication_stage: Final
+  categories: []
+  source: Crossref
+  title: Influence of activation pattern estimates and statistical significance tests
+    in fMRI decoding analysis
+  type: Article
+  path: https://doi.org/10.1016/j.jneumeth.2018.06.017
+  volume: '308'
+  year: '2018'
