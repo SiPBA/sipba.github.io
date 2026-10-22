@@ -1,0 +1,67 @@
+---
+title: "SigBio Lab"
+description: "Servicio común de investigación de la Universidad de Granada (Instituto DaSCI) de apoyo técnico, metodológico y formativo en adquisición, procesamiento y modelado de datos biomédicos."
+title-block-banner: var(--bs-secondary) url(../../images/recursos/network.jpg) no-repeat 50% 50% / cover
+image: ../../images/recursos/network.jpg
+include-after-body: ../../_includes/_footer.html
+format: html
+---
+
+*El Laboratorio de Procesado de Señal y Biomedicina (SigBio lab) de la Universidad de Granada actúa como un servicio común de investigación destinado a ofrecer soporte técnico, metodológico y formativo en adquisición, procesamiento y modelado de datos biomédicos a investigadores, grupos y entidades clínicas o industriales. Se focaliza en el análisis de señales fisiológicas, su integración con modalidades de imagen, especialmente cuando se introduzca la nueva infraestructura de resonancia magnética de bajo campo, y el desarrollo de métodos avanzados de la IA.*
+
+## Servicios disponibles
+
+El laboratorio SigBio del Instituto DaSCI ofrece los siguientes servicios:
+
+### Adquisición de señales bioeléctricas y biométricas
+
+- EEG, ECG, EMG, EOG (hasta 64 canales)
+- fNIRS (NIRSport 64 canales, 16×16 fuentes/detectores)
+- Sensores biomédicos (presión, temperatura, oxígeno, etc.)
+
+### Procesado y análisis de datos
+
+- Filtrado, cancelación de artefactos, análisis espectral
+- Conectividad funcional y estructural
+- Reconstrucción de imagen y fusión multimodal (EEG-fMRI, fNIRS-MRI)
+- Aprendizaje automático y estadística avanzada
+
+### Computación de alto rendimiento (HPC/GPU)
+
+- Servidores paralelos (UGR)
+- Clúster GPU (UGR – SiPBA3)
+- Software especializado: MATLAB, Python, EEGLAB, FSL, SPM, FreeSurfer, etc.
+
+### Formación y transferencia
+
+- Talleres, cursos prácticos, asesoramiento a empresas
+- Participación en proyectos colaborativos
+
+## Tarifas orientativas 2025
+
+| Código | Concepto                                                  | Precio (€) |
+|:------:|:----------------------------------------------------------|-----------:|
+| 1      | Hora de trabajo Técnico Especialista                      |        120 |
+| 2      | Adquisición de señales (EEG, ECG, EMG, fNIRS) + Técnico   |        180 |
+| 3      | Procesado y análisis de datos biomédicos                  |        150 |
+| 4      | Uso de infraestructura HPC/GPU (por hora)                 |        100 |
+| 5      | Asesoramiento metodológico y diseño experimental          |        120 |
+| 6      | Formación personalizada (por sesión)                      |        100 |
+| 7      | Almacenamiento y gestión de datos (por proyecto)          |         80 |
+
+***Nota: Los precios no incluyen IVA.***
+
+***Descuentos aplicables:***
+
+- Usuarios UGR: 70% descuento.
+- Usuarios OPIs: 50% descuento.
+- Usuarios PRI (privados): sin descuento.
+
+## Acceso al servicio
+
+El acceso se realiza mediante solicitud oficial a través del formulario disponible en la web del laboratorio SigBio o la Oficina de Servicios Comunes de la UGR. Se requiere planificación previa, evaluación técnica y firma de compromiso de uso responsable.
+
+## Contacto
+
+- Correo electrónico: [sipba@ugr.es](mailto:sipba@ugr.es)
+- Web: <https://dasci.es/infraestructura/sede-central-dasci-pts>

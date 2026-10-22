@@ -1,0 +1,36 @@
+---
+title: "MVPAlab"
+description: "MVPAlab is a machine learning decoding toolbox for multidimensional electroencephalography data."
+date: 06-07-2022
+categories: [matlab] # self-defined categories
+image: mvpalab_logo.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+about:
+  template: trestles
+  image: MVPAlab.png
+  image-width: 15em
+  links:
+  - icon: github
+    text: GitHub
+    href: https://github.com/dlopezg/mvpalab
+---
+
+**MVPAlab** is a MATLAB toolbox for decoding analyses of **multidimensional electroencephalography (EEG) data** based on machine learning. It implements multivariate pattern analysis (MVPA) and multivariate cross-classification, and it comes with a graphical user interface for users with little coding experience, as well as high- and low-level routines for those who want to build their own projects.
+
+[{{< fa download >}} Download](https://github.com/dlopezg/mvpalab){.btn .btn-primary .btn role="button" data-toggle="tooltip" title="Download the toolbox"}
+
+# Features
+
+- Multivariate pattern analysis (MVPA) and multivariate cross-classification.
+- Temporal generalization matrices.
+- Feature and frequency contribution analyses.
+- Configurable analysis: trial averaging, balanced datasets, normalization, smoothing, channel selection, dimensionality reduction, classification models, cross-validation, performance metrics and parallel computation.
+- Cluster-based permutation testing.
+- Graphical user interface and tools to plot the results.
+- Demo scripts and a sample EEG dataset.
+
+MVPAlab is released as open source under the GNU General Public License v3.0.
+
+# Reference
+
+D. López-García, J. M. G. Peñalver, J. M. Górriz and M. Ruz. *MVPAlab: A machine learning decoding toolbox for multidimensional electroencephalography data*. **Computer Methods and Programs in Biomedicine**, 214, 106549 (2022). DOI: [10.1016/j.cmpb.2021.106549](https://doi.org/10.1016/j.cmpb.2021.106549)

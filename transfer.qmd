@@ -6,6 +6,7 @@ listing:
   id: transfer-areas
   contents:
     - transfer/endesa-ugr-chair/index.qmd
+    - transfer/sigbio-lab/index.qmd
   type: grid
   grid-columns: 2
   fields: [image, title, description]
