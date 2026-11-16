@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,14 +41,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2df14062fcc65acc83d09cc54d2f03a4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f0a3041da1c2f95c3bc31e78684c5b0d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -101,12 +102,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -129,12 +124,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <style>
 :root{--hero-bg:#0f172a;--hero-fg:#e2e8f0;--accent:#38bdf8;--accent-contrast:#041318}
@@ -158,10 +147,8 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:title" content="SiPBA Research Group – SiPBA Research Lab">
 <meta name="twitter:description" content="Demo projects, experiments, debugging data and so on from the SiPBA Research Lab">
 <meta name="twitter:image" content="https://sipba.github.io/images/logos/SinFondoClaro.png">
-<meta name="twitter:image-height" content="443">
-<meta name="twitter:image-width" content="585">
 <meta name="twitter:card" content="summary_large_image">
-</head><body class="nav-fixed quarto-light"><section class="hero" role="banner" aria-label="Presentación">
+</head><body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><section class="hero" role="banner" aria-label="Presentación">
 <div class="hero__inner">
 <span class="hero__eyebrow">SiPBA</span>
 <h1 class="hero__title">Signal Processing and <br>Biomedical Applications</h1>
@@ -213,7 +200,7 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
@@ -224,8 +211,7 @@ window.Quarto = {
     <span class="navbar-title">SiPBA Research Lab</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -260,6 +246,7 @@ window.Quarto = {
     <a href="https://github.com/SiPBA" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-github"></i></a>
     <a href="./contact.html" title="Contact" class="quarto-navigation-tool px-1" aria-label="Contact"><i class="bi bi-envelope-fill"></i></a>
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -269,7 +256,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -294,8 +281,8 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206e6577737061706572203e7d7d-news"><span class="badge bg-success"><i class="fa-solid fa-newspaper" aria-label="newspaper"></i> News</span></h2>
 <div id="listing-news" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29uZmVyZW5jZXMlMkNvdXRyZWFjaCUyQ2ludGVsaWdlbmNpYSUyMGFydGlmaWNpYWw=" data-listing-date-sort="1792368000000" data-listing-file-modified-sort="1792569275295" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="756">
-<a href="./posts/2026-10-19-juan-manuel-gorriz-participa-en-starmus-2026/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="Y29uZmVyZW5jZXMlMkNvdXRyZWFjaCUyQ2ludGVsaWdlbmNpYSUyMGFydGlmaWNpYWw=" data-listing-date-sort="1792368000000" data-listing-file-modified-sort="1794822625619" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="756">
+<a href="./posts/2026-10-19-juan-manuel-gorriz-participa-en-starmus-2026/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./posts/2026-10-19-juan-manuel-gorriz-participa-en-starmus-2026/images/gorriz-starmus-2026.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -312,8 +299,8 @@ Oct 19, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="cHJlbWlvcyUyQ2ludGVsaWdlbmNpYSUyMGFydGlmaWNpYWw=" data-listing-date-sort="1760572800000" data-listing-file-modified-sort="1792569275294" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="578">
-<a href="./posts/2025-10-16-bases-de-la-convocatoria-de-los-premios-catedra-endesa-ugr-en-inteligencia-artificial-2025/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="cHJlbWlvcyUyQ2ludGVsaWdlbmNpYSUyMGFydGlmaWNpYWw=" data-listing-date-sort="1760572800000" data-listing-file-modified-sort="1794822625618" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="578">
+<a href="./posts/2025-10-16-bases-de-la-convocatoria-de-los-premios-catedra-endesa-ugr-en-inteligencia-artificial-2025/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./posts/2025-10-16-bases-de-la-convocatoria-de-los-premios-catedra-endesa-ugr-en-inteligencia-artificial-2025/images/WhatsApp-Image-2025-10-14-at-10.00.11.jpeg" class="thumbnail-image card-img" style="height: 150px;">
@@ -330,8 +317,8 @@ Oct 16, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Y2llbmNpYSUyQ3RlY25vbG9naWE=" data-listing-date-sort="1711929600000" data-listing-file-modified-sort="1792569275293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
-<a href="./posts/2024-04-01-generador-acks/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="Y2llbmNpYSUyQ3RlY25vbG9naWE=" data-listing-date-sort="1711929600000" data-listing-file-modified-sort="1794822625617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
+<a href="./posts/2024-04-01-generador-acks/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img loading='lazy' src="posts/2024-04-01-generador-acks/images/paste-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
@@ -359,8 +346,8 @@ Apr 1, 2024
 <p>Check out the latest &nbsp;<a href="./publications.html#journal-articles">Papers</a>&nbsp;, &nbsp;<a href="./publications.html#conferences">Conferences</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">News</a>&nbsp;, and &nbsp;<a href="./publications.html">More »</a></p>
 <div id="listing-recent-pubs" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="U3RhdGlzdGljYWwlMjBMZWFybmluZyUyMFRoZW9yeSUyQ01hY2hpbmUlMjBMZWFybmluZyUyQ1JlZ3Jlc3Npb24lMjBWYWxpZGF0aW9uJTJDTmV1cm9pbWFnaW5nJTJDZmVhdHVyZWQ=" data-listing-date-sort="1746057600000" data-listing-file-modified-sort="1792569275306" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="601">
-<a href="./publications/2026-04-26-sar/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="U3RhdGlzdGljYWwlMjBMZWFybmluZyUyMFRoZW9yeSUyQ01hY2hpbmUlMjBMZWFybmluZyUyQ1JlZ3Jlc3Npb24lMjBWYWxpZGF0aW9uJTJDTmV1cm9pbWFnaW5nJTJDZmVhdHVyZWQ=" data-listing-date-sort="1746057600000" data-listing-file-modified-sort="1794822625630" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="601">
+<a href="./publications/2026-04-26-sar/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./publications/2026-04-26-sar/featured_sar.jpeg" class="thumbnail-image card-img" style="height: 150px;">
@@ -398,8 +385,8 @@ Year
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="TEFUaURPUyUyQ25ldXJvZGVnZW5lcmF0aXZlJTIwZGlzZWFzZSUyMHByb2dyZXNzaW9uJTJDQWx6aGVpbWVyJ3MlMjBEaXNlYXNlJTJDZmVhdHVyZWQ=" data-listing-date-sort="1716336000000" data-listing-file-modified-sort="1792569275296" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="689">
-<a href="./publications/2024-05-10-bridging/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="TEFUaURPUyUyQ25ldXJvZGVnZW5lcmF0aXZlJTIwZGlzZWFzZSUyMHByb2dyZXNzaW9uJTJDQWx6aGVpbWVyJ3MlMjBEaXNlYXNlJTJDZmVhdHVyZWQ=" data-listing-date-sort="1716336000000" data-listing-file-modified-sort="1794822625620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="689">
+<a href="./publications/2024-05-10-bridging/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./publications/2024-05-10-bridging/featured.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -544,7 +531,8 @@ Year
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -553,8 +541,69 @@ Year
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -568,6 +617,7 @@ Year
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -730,44 +780,54 @@ Year
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -865,6 +925,9 @@ Year
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 <footer class="footer">
