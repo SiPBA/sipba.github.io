@@ -1,8 +1,10 @@
 ---
-title: "SiPBA Research Group"
+pagetitle: "SiPBA Research Group"
 image: images/logos/SinFondoClaro.png
 toc: false
-format: html
+format:
+  html: 
+    include-in-header: _includes/_hero_banner.html
 
 listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
   - id: news
