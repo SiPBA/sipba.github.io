@@ -2,7 +2,6 @@
 title: "Javier Ramírez"
 name: "Javier"
 lastname: "Ramírez"
-include-after-body: ../../_includes/_footer.html
 image: javierrp.jpg
 about: 
   id: javierrp-info

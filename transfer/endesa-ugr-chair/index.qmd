@@ -2,7 +2,6 @@
 title: "Endesa-UGR Chair in Artificial Intelligence"
 description: "Collaboration between Endesa and the University of Granada applying AI to the resilience and operation of the electric power grid."
 title-block-banner: var(--bs-secondary) url(../../images/recursos/network.jpg) no-repeat 50% 50% / cover
-include-after-body: ../../_includes/_footer.html
 listing:
   id: chair-activities
   contents:

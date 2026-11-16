@@ -2,7 +2,6 @@
 title: "Juan Manuel Górriz"
 name: "Juan Manuel"
 lastname: "Górriz"
-include-after-body: ../../_includes/_footer.html
 image: juanma.jpg
 about: 
   template: solana

@@ -2,7 +2,6 @@
 title: "Optimization of Telemando Maintenance Costs and Impact on Service Quality"
 description: "Multi-criteria prioritization of remote-control (telemando) repairs on a graph-based digital twin of the medium-voltage network of Granada."
 categories: [Endesa-UGR Chair, Maintenance, Graphs, Explainable AI]
-include-after-body: ../../_includes/_footer.html
 format: html
 ---
 
