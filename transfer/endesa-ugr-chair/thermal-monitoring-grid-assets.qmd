@@ -2,7 +2,6 @@
 title: "Thermal Monitoring of Grid Assets"
 description: "AI-based thermographic monitoring of electrical panels and transformers, from the RESISTO project to an urban pilot in Granada."
 categories: [Endesa-UGR Chair, Monitoring, Thermography, Anomaly Detection]
-include-after-body: ../../_includes/_footer.html
 format: html
 ---
 

@@ -28,9 +28,7 @@ listing:
   contents: 
     - "/research/projects.yml"
     - "/research/projects/**/*.qmd" 
-format: 
-  html:
-    include-after-body: _includes/_footer.html
+format: html
 ---
 
 # Tools
