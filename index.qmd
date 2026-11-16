@@ -1,5 +1,5 @@
 ---
-title: "SiPBA Research Group"
+pagetitle: "SiPBA Research Group"
 image: images/logos/SinFondoClaro.png
 toc: false
 format:
