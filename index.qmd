@@ -1,6 +1,6 @@
 ---
 pagetitle: "SiPBA Research Group"
-image: images/logos/SinFondoClaro.png
+image: images/social/sipba-card.jpg
 toc: false
 format:
   html: 
