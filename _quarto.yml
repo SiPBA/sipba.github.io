@@ -1,11 +1,14 @@
 project:
   type: website
-
+  
 website:
   title: "SiPBA Research Lab"  
   description: "SiPBA is a research group at the University of Granada working on statistical signal processing and machine learning applied to medical imaging."
   site-url: https://sipba.github.io/
+  image: images/social/sipba-card.jpg
+  image-alt: "SiPBA Research Lab: Signal Processing and Biomedical Applications, University of Granada"
   favicon: images/logos/favicon.webp
+  open-graph: true
   twitter-card: true
   navbar:
     title: ""
