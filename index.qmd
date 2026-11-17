@@ -1,10 +1,12 @@
 ---
 pagetitle: "SiPBA Research Group"
 image: images/social/sipba-card.jpg
-toc: false
 format:
   html: 
     include-in-header: _includes/_hero_banner.html
+    toc: false
+    grid: 
+      content-mode: full
 
 listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
   - id: news
