@@ -2,14 +2,15 @@ project:
   type: website
 
 website:
-  title: "SiPBA Research Lab"
-  description: "Demo projects, experiments, debugging data and so on from the [SiPBA Research Lab](https://sipba.github.io/)"
+  title: "SiPBA Research Lab"  
+  description: "SiPBA is a research group at the University of Granada working on statistical signal processing and machine learning applied to medical imaging."
   site-url: https://sipba.github.io/
   favicon: images/logos/favicon.webp
   twitter-card: true
   navbar:
     title: ""
-    background: "#0f172a"
+    background: "#1d4f91"
+    foreground: "#e0f2fe"
     search: true
     logo: images/logos/SinFondoClaro.png
     right:
@@ -23,13 +24,12 @@ website:
         text: Transfer
       - publications.qmd
       - posts.qmd
-    tools: 
-      - icon: github # add icons as navbar buttons
+    tools:
+      - icon: github
         href: https://github.com/SiPBA
         target: _blank
         aria-label: GitHub
       - icon: envelope-fill
-        text: ""
         href: contact.qmd
         aria-label: Contact
 
