@@ -29,12 +29,8 @@ about:
 
 :::
 
-```{r}
-#| column: screen-inset-shaded
-#| echo: false
-#| label: make map
-library(leaflet)
-leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=-3.6243289, lat=37.1971221)
-```
+::: {.column-screen-inset-shaded}
+<iframe title="SiPBA location map" width="100%" height="400" style="border:0" loading="lazy"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=-3.6293%2C37.1946%2C-3.6193%2C37.1996&amp;layer=mapnik&amp;marker=37.1971221%2C-3.6243289"></iframe>
+<small><a href="https://www.openstreetmap.org/?mlat=37.1971221&amp;mlon=-3.6243289#map=17/37.1971221/-3.6243289" target="_blank">View larger map</a></small>
+:::
