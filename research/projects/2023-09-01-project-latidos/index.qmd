@@ -16,7 +16,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 bibliography: latidos_bibliography.bib
 id: PID2022-137629OA-I00
 started: 2023-09-01
-ended: 2026-08-31
+ended: 2026-12-31
 funding: "151.250€"
 tags:
   - proyecto
@@ -67,7 +67,7 @@ LATiDOS has one **general objective: to build and evaluate data-driven models of
 
 # Results
 
-The project concluded on 31 August 2026. Over its three years, LATiDOS has produced the following results:
+![Progress of the project](latidos_graphical_abstract.svg)
 
 ## Publications
 

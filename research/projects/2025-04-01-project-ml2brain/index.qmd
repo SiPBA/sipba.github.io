@@ -54,7 +54,7 @@ ML2BRAIN has one general objective: **to develop new machine learning techniques
 
 # Results
 
-The project is already running. The current status is:
+![Graphical abstract](ml2brain_graphical_abstract.svg)
 
 ## Publications
 
