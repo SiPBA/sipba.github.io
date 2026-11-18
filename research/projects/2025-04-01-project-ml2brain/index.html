@@ -27,7 +27,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -48,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-f0a3c8c1ba1f9f025bc2fd151b76dc6d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-91a3de5f140e30b7b7ffaa08f01f65ee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -223,21 +242,86 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
-<p>The project is already running.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ml2brain_graphical_abstract.svg" class="img-fluid figure-img"></p>
+<figcaption>Graphical abstract</figcaption>
+</figure>
+</div>
 <section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications:</h2>
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<section id="neural-entrainment-to-rhythm-and-language" class="level3">
+<h3 class="anchored" data-anchor-id="neural-entrainment-to-rhythm-and-language">Neural entrainment to rhythm and language</h3>
 <ul>
-<li></li>
+<li>We analysed how the brain synchronises to non-speech rhythmic patterns and how this entrainment relates to language skills. The preprint <em>EEG Entrainment to Non-Speech Rhythmic Patterns Associated with Dimensions of Language Performance</em> by <span class="citation" data-cites="martinez2026eeg">Martı́nez-Murcia et al. (<a href="#ref-martinez2026eeg" role="doc-biblioref">2026</a>)</span> shows that EEG entrainment to rhythmic auditory stimuli is associated with different dimensions of language performance, supporting a shared neural basis for rhythm processing in music and language.</li>
+<li>Directed, weighted EEG connectograms were used to characterise one-to-one causal interactions between brain regions in developmental dyslexia, published in the <em>International Journal of Neural Systems</em> by <span class="citation" data-cites="rodriguez2025directed">Rodrı́guez-Rodrı́guez et al. (<a href="#ref-rodriguez2025directed" role="doc-biblioref">2025</a>)</span>.</li>
+<li>An explainable deep learning approach with a channel attention mechanism was proposed to assess cerebral lateralization, published in the <em>IEEE Journal of Biomedical and Health Informatics</em> by <span class="citation" data-cites="formoso2025cerebral">Formoso et al. (<a href="#ref-formoso2025cerebral" role="doc-biblioref">2025</a>)</span>.</li>
 </ul>
 </section>
-<section id="talks" class="level2">
-<h2 class="anchored" data-anchor-id="talks">Talks</h2>
+<section id="cross-frequency-coupling-and-eeg-feature-extraction" class="level3">
+<h3 class="anchored" data-anchor-id="cross-frequency-coupling-and-eeg-feature-extraction">Cross-frequency coupling and EEG feature extraction</h3>
 <ul>
-<li></li>
+<li>We proposed a multimodal integration of EEG and near-infrared spectroscopy (NIRS) for a robust estimation of cross-frequency coupling, published in the <em>International Journal of Neural Systems</em> by <span class="citation" data-cites="gallego2025multimodal">Gallego-Molina et al. (<a href="#ref-gallego2025multimodal" role="doc-biblioref">2025</a>)</span>.</li>
+<li>At the <em>International Conference on Hybrid Artificial Intelligent Systems</em> (HAIS 2026), we presented the characterization and classification of phase-phase coupling using a Kolmogorov-Arnold Network (KAN) based autoencoder <span class="citation" data-cites="ortiz2026phase">(<a href="#ref-ortiz2026phase" role="doc-biblioref">Ortiz et al. 2026</a>)</span>.</li>
 </ul>
 </section>
-<section id="software" class="level2">
-<h2 class="anchored" data-anchor-id="software">Software</h2>
+<section id="preliminary-work" class="level3">
+<h3 class="anchored" data-anchor-id="preliminary-work">Preliminary work</h3>
+<p>The project builds on previous work of the group on EEG synchronisation, phase-amplitude coupling and speech rhythm, mostly presented at IWINAC 2024 and in journal publications prior to the start of ML2BRAIN:</p>
+<ul>
+<li>A survey on EEG phase-amplitude coupling to speech rhythm for the prediction of dyslexia <span class="citation" data-cites="gallego2024survey">(<a href="#ref-gallego2024survey" role="doc-biblioref">N. Gallego-Molina et al. 2024</a>)</span>.</li>
+<li>An explainable representation of phase-amplitude coupling to visualize brain synchronization <span class="citation" data-cites="ortiz2024visualizing">(<a href="#ref-ortiz2024visualizing" role="doc-biblioref">Ortiz et al. 2024</a>)</span>.</li>
+<li>Neuronal coupling estimation enhanced by NIRS/EEG integration <span class="citation" data-cites="gallego2024enhancing">(<a href="#ref-gallego2024enhancing" role="doc-biblioref">N. J. Gallego-Molina, Ortiz, Formoso, et al. 2024</a>)</span>.</li>
+<li>Causal mechanisms of dyslexia via connectogram modeling of phase synchrony <span class="citation" data-cites="rodriguez2024causal">(<a href="#ref-rodriguez2024causal" role="doc-biblioref">Rodrı́guez-Rodrı́guez et al. 2024</a>)</span>.</li>
+<li>The interplay between heart rate variability features and EEG local connectivity patterns in dyslexia <span class="citation" data-cites="formoso2024explainable">(<a href="#ref-formoso2024explainable" role="doc-biblioref">Formoso et al. 2024</a>)</span>.</li>
+<li>Explainable neural networks to unravel brain synchronisation dynamics from EEG signals, published in <em>Interdisciplinary Sciences: Computational Life Sciences</em> by <span class="citation" data-cites="gallego2024unraveling">N. J. Gallego-Molina, Ortiz, Arco, et al. (<a href="#ref-gallego2024unraveling" role="doc-biblioref">2024</a>)</span>.</li>
+</ul>
+<!--
+## Talks
+-
+
+## Software
+-   
+-->
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-formoso2025cerebral" class="csl-entry" role="listitem">
+Formoso, Marco A, Juan E Arco, Andrés Ortiz, John Q Gan, and I Rodrı́guez-Rodrı́guez. 2025. <span>“Cerebral Lateralization Assessment: An Explainable Deep Learning Approach with Channel Attention Mechanism.”</span> <em>IEEE Journal of Biomedical and Health Informatics</em>.
+</div>
+<div id="ref-formoso2024explainable" class="csl-entry" role="listitem">
+Formoso, Marco A, Nicolás J Gallego-Molina, Andrés Ortiz, Ignacio Rodrı́guez-Rodrı́guez, and Almudena Giménez. 2024. <span>“Explainable Exploration of the Interplay Between HRV Features and EEG Local Connectivity Patterns in Dyslexia.”</span> <em>International Work-Conference on the Interplay Between Natural and Artificial Computation</em>, 45–54.
+</div>
+<div id="ref-gallego2024unraveling" class="csl-entry" role="listitem">
+Gallego-Molina, Nicolás J, Andrés Ortiz, Juan E Arco, Francisco J Martinez-Murcia, and Wai Lok Woo. 2024. <span>“Unraveling Brain Synchronisation Dynamics by Explainable Neural Networks Using EEG Signals: Application to Dyslexia Diagnosis.”</span> <em>Interdisciplinary Sciences: Computational Life Sciences</em> 16 (4): 1005–18.
+</div>
+<div id="ref-gallego2024enhancing" class="csl-entry" role="listitem">
+Gallego-Molina, Nicolás J, Andrés Ortiz, Marco A Formoso, Francisco J Martı́nez-Murcia, and Wai Lok Woo. 2024. <span>“Enhancing Neuronal Coupling Estimation by NIRS/EEG Integration.”</span> <em>International Work-Conference on the Interplay Between Natural and Artificial Computation</em>, 24–33.
+</div>
+<div id="ref-gallego2025multimodal" class="csl-entry" role="listitem">
+Gallego-Molina, Nicolás J, Andrés Ortiz, Francisco J Martı́nez-Murcia, and Wai Lok Woo. 2025. <span>“Multimodal Integration of EEG and Near-Infrared Spectroscopy for Robust Cross-Frequency Coupling Estimation.”</span> <em>International Journal of Neural Systems</em> 35 (06): 2550028.
+</div>
+<div id="ref-gallego2024survey" class="csl-entry" role="listitem">
+Gallego-Molina, Nicolás, Francisco Jesús Martı́nez-Murcia, Marco A Formoso, et al. 2024. <span>“A Survey on EEG Phase Amplitude Coupling to Speech Rhythm for the Prediction of Dyslexia.”</span> <em>International Work-Conference on the Interplay Between Natural and Artificial Computation</em>, 161–70.
+</div>
+<div id="ref-martinez2026eeg" class="csl-entry" role="listitem">
+Martı́nez-Murcia, Francisco J, Nicolás J Gallego-Molina, Marco A Formoso, and Andrés Ortiz. 2026. <span>“EEG Entrainment to Non-Speech Rhythmic Patterns Associated with Dimensions of Language Performance.”</span> <em>arXiv Preprint arXiv:2610.13419</em>.
+</div>
+<div id="ref-ortiz2024visualizing" class="csl-entry" role="listitem">
+Ortiz, Andrés, Nicolás J Gallego-Molina, Diego Castillo-Barnes, Ignacio Rodrı́guez-Rodrı́guez, and Juan M Górriz. 2024. <span>“Visualizing Brain Synchronization: An Explainable Representation of Phase-Amplitude Coupling.”</span> <em>International Work-Conference on the Interplay Between Natural and Artificial Computation</em>, 14–23.
+</div>
+<div id="ref-ortiz2026phase" class="csl-entry" role="listitem">
+Ortiz, Andrés, Nicolás J Gallego-Molina, Antonio M Martı́nez-Heredia, et al. 2026. <span>“Phase-Phase Coupling Characterization and Classification Using KAN-Based Autoencoder.”</span> <em>Hybrid Artificial Intelligent Systems: 21st International Conference, HAIS 2026, Marbella, Spain, June 18–19, 2026, Proceedings</em>, 15–25.
+</div>
+<div id="ref-rodriguez2025directed" class="csl-entry" role="listitem">
+Rodrı́guez-Rodrı́guez, Ignacio, José Ignacio Mateo-Trujillo, Andrés Ortiz, Nicolás J Gallego-Molina, Diego Castillo-Barnes, and Juan L Luque. 2025. <span>“Directed Weighted EEG Connectogram Insights of One-to-One Causality for Identifying Developmental Dyslexia.”</span> <em>International Journal of Neural Systems</em> 35 (06): 2550032.
+</div>
+<div id="ref-rodriguez2024causal" class="csl-entry" role="listitem">
+Rodrı́guez-Rodrı́guez, Ignacio, Andrés Ortiz, Marco A Formoso, Nicolás J Gallego-Molina, and Juan Luis Luque. 2024. <span>“Causal Mechanisms of Dyslexia via Connectogram Modeling of Phase Synchrony.”</span> <em>International Work-Conference on the Interplay Between Natural and Artificial Computation</em>, 34–44.
+</div>
+</div>
 </section>
 </section>
 <section id="funding" class="level1">
