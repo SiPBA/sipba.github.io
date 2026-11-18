@@ -67,6 +67,8 @@ LATiDOS has one **general objective: to build and evaluate data-driven models of
 
 # Results
 
+The project, originally scheduled to end in August 2026, has been extended until 31 December 2026. Its main results so far are:
+
 ![Progress of the project](latidos_graphical_abstract.svg)
 
 ## Publications
@@ -98,6 +100,8 @@ The methods developed in LATiDOS (latent representations, small-sample validatio
 -   Data- and model-driven permutation testing approaches to unravel the heterogeneity of the autism spectrum in the ABIDE I database [@alcaide2026unraveling].
 -   AI-driven discovery of neuroimaging biomarkers of brain tumour surgery [@jimenez2025uncovering], and the link between radiomic signatures and PCA/UMAP manifold representations of the brain in glioma, presented at IWINAC 2026 [@jimenez2026regions].
 -   *DualFlexKAN*, a dual-stage Kolmogorov-Arnold Network architecture with independent function control [@ortiz2026dualflexkan].
+-   Amyloid PET neuroimaging as a prognostic biomarker of multiple sclerosis, presented at IEEE NSS/MIC 2025 [@segovia2025amyloid].
+-   The prognostic value of regional brain reorganisation after tumour surgery using a PCA approach, presented at IEEE NSS/MIC 2025 [@jimenez2025prognostic].
 -   Improved organs-at-risk segmentation using a modified U-Net with self-attention and consistency regularisation, published in *CAAI Transactions on Intelligence Technology* by @manko2024improved.
 
 ### IWINAC 2024
@@ -106,6 +110,24 @@ We presented a series of publications at the *International Work-Conference on t
 -   *A Cross-Modality Latent Representation for the Prediction of Clinical Symptomatology in Parkinson's Disease* by @vazquez2024cross
 -   *PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models* by @lopez2024pdbigdata
 -   *A Comparative Study of Deep Learning Approaches for Cognitive Impairment Diagnosis Based on the Clock-Drawing Test* by @jimenez2024comparative
+
+### IEEE NSS/MIC 2024--2026
+We contributed several works to the *IEEE Nuclear Science Symposium and Medical Imaging Conference* (NSS/MIC) in 2024 and 2025:
+
+-   *Assessing the Use of Transfer Learning in Neural Networks Used to Assist in the Diagnosis of Alzheimer's Disease* by @munoz2024transfer (NSS/MIC 2024).
+-   *Explainability of the Latent Space in Autoencoders and Neuroimaging Features* by @peiro2025explainability, which relates the latent variables learnt by autoencoders to interpretable neuroimaging features.
+-   *Interpretable Multimodal Brain Image Fusion for Alzheimer's Diagnosis Via a Siamese Autoencoder* by @arco2025interpretable, extending our Siamese autoencoder framework to multimodal fusion.
+-   *An Explainable Model for the Relationship Between Dementia and Glucose Metabolism Patterns* by @vazquez2025explainable.
+-   *Statistical Agnostic Regression for Reliable Validation of Alzheimer's Disease Models* by @hernandez2025sar.
+-   *Semi-Supervised Labeling Process for the Development of an Imaging Dataset to Support Parkinson's Disease Research* by @lopez2025semisupervised, part of the PDBIGDATA effort.
+
+At NSS/MIC 2026 (Granada, November 2026) we presented five further contributions (in press):
+
+-   *Dementia Risk Estimation From a Positron Emission Tomography-Derived Latent Biomarker* by @vazquez2026dementia, an oral presentation that turns the latent representations learnt in the project into an individual risk biomarker.
+-   *Low-Dimensional Embeddings of Structural MRI for Multi-Disease Brain Morphometry* by @jimenez2026lowdim.
+-   *Impact of Spatial Normalization on the Performance of Deep Learning-Based Systems for Neurodegenerative Disease Classification* by @segovia2026spatial.
+-   *SAR-Based Brain Aging Validation Using Functional Connectivity Correlation Matrices from UK Biobank* by @hernandez2026brainaging.
+-   *Differential Diagnosis of PD, PSP, and MSA: An XGBoost Approach to Retinal Layer Analysis* by @rodriguez2026differential, in collaboration with LMU Munich.
 
 ### IWINAC 2026
 At IWINAC 2026 we presented the core disease progression and Age of Symptom Onset (ASO) models of the project:
@@ -122,6 +144,7 @@ At IWINAC 2026 we presented the core disease progression and Age of Symptom Onse
 -   IWINAC 2026 (oral): Longitudinal Modeling of Alzheimer's Disease Progression Using a Bayesian Latent Framework with APOE-Dependent Genetic Effects
 -   IWINAC 2026 (oral): Modeling and Predicting Age-at-Onset Trajectories in Genetic Frontotemporal Dementia Using Survival Methods
 -   IWINAC 2026 (oral): Assessing the Robustness of Clinical--Metabolic Activity Models Through SAR in the PPMI Dataset
+-   IEEE NSS/MIC 2026 (oral): Dementia Risk Estimation From a Positron Emission Tomography-Derived Latent Biomarker
 -   *Actividad*: Música e IA at the European Researcher's Night 2024 (27/09/2024)
 -   *Taller*: ¡Las máquinas nos quitan el trabajo! (14/03/2024), en el proyecto *Mujer y Niña en la Ciencia* de la Unidad de Cultura Científica de la Universidad de Granada.
 
