@@ -5,7 +5,7 @@ title-block-banner: false
 about:
     id: contact-info
     template: jolla
-    image: /images/logos/SinFondoClaro.png
+    image: images/logos/SinFondoClaro.png
     image-shape: rectangle
     image-width: 10em
     links:

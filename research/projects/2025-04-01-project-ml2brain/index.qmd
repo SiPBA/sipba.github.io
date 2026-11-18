@@ -8,6 +8,7 @@ citation:
   url: https://sipba.github.io/research/projects/2025-04-01-project-ml2brain/
 image: ml2brain_featured.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+bibliography: ml2brain_bibliography.bib
 started: 2025-04-01
 ended: 2027-03-31
 funding: 112.400€
@@ -53,17 +54,41 @@ ML2BRAIN has one general objective: **to develop new machine learning techniques
 
 # Results
 
-The project is already running. 
+![Graphical abstract](ml2brain_graphical_abstract.svg)
 
-## Publications:
+## Publications
 
--  
+### Neural entrainment to rhythm and language
+-   We analysed how the brain synchronises to non-speech rhythmic patterns and how this entrainment relates to language skills. The preprint *EEG Entrainment to Non-Speech Rhythmic Patterns Associated with Dimensions of Language Performance* by @martinez2026eeg shows that EEG entrainment to rhythmic auditory stimuli is associated with different dimensions of language performance, supporting a shared neural basis for rhythm processing in music and language.
+-   Directed, weighted EEG connectograms were used to characterise one-to-one causal interactions between brain regions in developmental dyslexia, published in the *International Journal of Neural Systems* by @rodriguez2025directed.
+-   An explainable deep learning approach with a channel attention mechanism was proposed to assess cerebral lateralization, published in the *IEEE Journal of Biomedical and Health Informatics* by @formoso2025cerebral.
 
+### Cross-frequency coupling and EEG feature extraction
+-   We proposed a multimodal integration of EEG and near-infrared spectroscopy (NIRS) for a robust estimation of cross-frequency coupling, published in the *International Journal of Neural Systems* by @gallego2025multimodal.
+-   At the *International Conference on Hybrid Artificial Intelligent Systems* (HAIS 2026), we presented the characterization and classification of phase-phase coupling using a Kolmogorov-Arnold Network (KAN) based autoencoder [@ortiz2026phase].
+
+### Preliminary work
+The project builds on previous work of the group on EEG synchronisation, phase-amplitude coupling and speech rhythm, mostly presented at IWINAC 2024 and in journal publications prior to the start of ML2BRAIN:
+
+-   A survey on EEG phase-amplitude coupling to speech rhythm for the prediction of dyslexia [@gallego2024survey].
+-   An explainable representation of phase-amplitude coupling to visualize brain synchronization [@ortiz2024visualizing].
+-   Neuronal coupling estimation enhanced by NIRS/EEG integration [@gallego2024enhancing].
+-   Causal mechanisms of dyslexia via connectogram modeling of phase synchrony [@rodriguez2024causal].
+-   The interplay between heart rate variability features and EEG local connectivity patterns in dyslexia [@formoso2024explainable].
+-   Explainable neural networks to unravel brain synchronisation dynamics from EEG signals, published in *Interdisciplinary Sciences: Computational Life Sciences* by @gallego2024unraveling.
+
+<!--
 ## Talks
-
--   
+-
 
 ## Software
+-   
+-->
+
+## References
+
+::: {#refs}
+:::
 
 # Funding
 
