@@ -8,6 +8,7 @@
   funding: "11.720€"
   started: "2009-01-01"
   ended: "2010-12-31"
+  categories: ["project"]
   participants: 
     - "Juan Manuel Górriz Sáez"
     - "Francisco Jesús Martínez Murcia"
@@ -22,6 +23,7 @@
   funding: "54.800€"
   started: "2009-01-01"
   ended: "2012-06-01"
+  categories: ["project"]
   participants: 
     - "Javier Ramírez Pérez de Inestrosa"
     - "Juan Manuel Górriz Sáez"
@@ -40,6 +42,7 @@
   funding: "159.668€"
   started: "2009-05-01"
   ended: "2012-12-31"
+  categories: ["project"]
   participants: 
     - "Javier Ramírez Pérez de Inestrosa"
     - "Ignacio Álvarez Illán"
@@ -59,6 +62,7 @@
   funding: "297.939,68€"
   started: "2010-02-03"
   ended: "2014-12-31"
+  categories: ["project"]
   participants: 
     - "Juan Manuel Górriz Sáez"
     - "Ignacio Álvarez Illán"
@@ -78,6 +82,7 @@
   funding: "80.730€"
   started: "2013-01-01"
   ended: "2015-12-31"
+  categories: ["project"]
   participants: 
     - "Juan Manuel Górriz Sáez"
     - "Ignacio Álvarez Illán"
@@ -96,6 +101,7 @@
   funding: "175.940,80€"
   started: "2013-03-27"
   ended: "2018-03-31"
+  categories: ["project"]
   participants: 
     - "Javier Ramírez Pérez de Inestrosa"
     - "Ignacio Álvarez Illán"
@@ -119,6 +125,7 @@
   funding: "-"
   started: "2015-09-01"
   ended: "2018-08-31"
+  categories: ["project"]
   participants: 
     - "Ignacio Álvarez Illán"
     - "Javier Ramírez Pérez de Inestrosa"
@@ -134,6 +141,7 @@
   funding: "175.450€"
   started: "2016-01-01"
   ended: "2019-09-30"
+  categories: ["project"]
   participants: 
     - "Pablo Padilla de la Torre"
     - "Javier Ramírez Pérez de Inestrosa"
@@ -170,6 +178,7 @@
   funding: "67.276€"
   started: "2019-01-01"
   ended: "2022-12-31"
+  categories: ["project"]
   participants: 
     - "Juan Manuel Górriz Sáez"
     - "Javier Ramírez Pérez de Inestrosa"
@@ -196,6 +205,7 @@
   funding: "14.900€"
   started: "2020-01-01"
   ended: "2022-06-30"
+  categories: ["project"]
   participants: 
     - "Juan Manuel Górriz Sáez"
     - "Javier Ramírez Pérez de Inestrosa"
@@ -220,6 +230,7 @@
   funding: "76.000€"
   started: "2020-11-14"
   ended: "2022-05-13"
+  categories: ["project"]
   participants: 
     - "Juan Manuel Górriz Sáez"
     - "Ignacio Álvarez Illán"
@@ -247,6 +258,7 @@
   funding: "-"
   started: "2021-07-01"
   ended: "2023-06-30"
+  categories: ["project"]
   participants: 
     - "Juan Manuel Górriz Sáez"
     - "Fermín Segovia Román"
@@ -268,6 +280,7 @@
   funding: "61.250€"
   started: "2021-10-04"
   ended: "2023-06-30"
+  categories: ["project"]
   participants: 
     - "Javier Ramírez Pérez de Inestrosa"
     - "Francisco José Alcaide Mariscal"
@@ -292,6 +305,7 @@
   funding: "-"
   started: "2022-01-01"
   ended: "2022-12-31"
+  categories: ["project"]
   participants: 
     - "José María González Peñalver"
     - "Carmen Jiménez Mesa"
@@ -310,6 +324,7 @@
   funding: "1.500€"
   started: "2022-01-01"
   ended: "2022-12-31"
+  categories: ["project"]
   participants: 
     - "Francisco Jesús Martínez Murcia"
     - "Juan Manuel"
@@ -326,6 +341,7 @@
   funding: "-"
   started: "2024-01-01"
   ended: "2026-12-31"
+  categories: ["project"]
   participants: 
     - "Diego Salas González"
     - "Fermín Segovia Román"

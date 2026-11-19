@@ -6,6 +6,7 @@ title-block-banner: var(--bs-secondary) url(../images/recursos/network.jpg) no-r
 toc: true
 toc-title: "On this page"
 format: html
+categories: [lab]
 ---
 
 <!-- TODO: add link to the official access request form, if available. -->
@@ -16,7 +17,7 @@ The **SigBio Lab** (Signal Processing and Biomedical Applications Laboratory) is
 
 The lab focuses on the analysis of physiological signals, their integration with imaging modalities (in particular with the upcoming low-field magnetic resonance imaging facility), and the development of advanced artificial intelligence methods.
 
-![](images/lab-overview.svg){fig-alt="General view of the SigBio Lab" .column-page .rounded}
+![](images/faraday-acoustic.jpg){fig-alt="General view of the SigBio Lab" .column-page .rounded} <!-- lab-overview.svg -->
 
 ::: {.callout-note appearance="simple" icon=false}
 {{< fa map-location-dot >}} **Location:** UGR AI Building, University of Granada ([view on map](https://maps.app.goo.gl/aoqZf6dA8NGW2zvUA)).
