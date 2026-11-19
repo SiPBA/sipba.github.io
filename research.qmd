@@ -8,7 +8,7 @@ listing:
   sort: "date desc" # can also sort on more than one field
   categories: true # allows you to sort posts by assigned categories 
   exclude: 
-    categories: ["project"]
+    categories: ["project", "lab"]
 - id: projects
   sort: "started desc"
   type: table
@@ -30,6 +30,18 @@ listing:
     - "/research/projects/**/*.qmd" 
 format: html
 ---
+
+::: {.sigbio-banner style="position: relative; margin: 1.5rem 0 2.5rem; padding: 2.5rem 2rem; border-radius: .75rem; overflow: hidden; color: #fff; background: linear-gradient(90deg, rgba(29,79,145,.92) 0%, rgba(29,79,145,.75) 55%, rgba(29,79,145,.35) 100%), url(research/2026-01-01-sigbiolab/images/faraday-acoustic.jpg) center / cover no-repeat;"}
+
+[Experimental facility]{style="text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; opacity: .85;"}
+
+[SigBio Lab]{style="display: block; font-size: 2rem; font-weight: 700; line-height: 1.2; margin: .25rem 0 .75rem;"}
+
+[High-density and wearable EEG, fNIRS and an acoustically conditioned Faraday cage at the UGR AI Building. Open to collaborations and external users at public rates.]{style="display: block; max-width: 36rem; margin-bottom: 1.25rem;"}
+
+[Discover the lab {{< fa arrow-right >}}](research/2026-01-01-sigbiolab/index.qmd){.btn .btn-light role="button"}
+
+:::
 
 # Tools
 
