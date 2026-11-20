@@ -1,0 +1,47 @@
+---
+title: "IEEE NSS MIC RTSD 2026 en Granada: SiPBA participa y Juan Manuel Górriz es Deputy General Chair"
+date: "2026-11-20"
+categories:
+  - "conferences"
+  - "research"
+tags:
+  - "nssmic"
+  - "ieee"
+  - "conference"
+  - "granada"
+  - "medical-imaging"
+  - "inteligencia-artificial"
+  - "sipba"
+image: ../../images/recursos/network.jpg
+title-block-banner: var(--bs-secondary) url(../../images/recursos/network.jpg) no-repeat 50% 50% / cover
+---
+
+Granada ha acogido, del **7 al 14 de noviembre de 2026**, el congreso internacional **IEEE NSS MIC RTSD 2026** (*Nuclear Science Symposium, Medical Imaging Conference and International Symposium on Room-Temperature Semiconductor Detectors*), que se celebró en el Palacio de Congresos de la ciudad en formato presencial e híbrido.
+
+El grupo **SiPBA** ha participado en el congreso, y el responsable de nuestro grupo, [Juan Manuel Górriz Sáez](/people/Juanma_Gorriz/index.qmd), catedrático del Departamento de Teoría de la Señal, Telemática y Comunicaciones de la Universidad de Granada, ha sido uno de sus organizadores como **Deputy General Chair**, junto con Stefan Ritt, General Chair del congreso.
+
+## Una cita de referencia en instrumentación e imagen médica
+
+El congreso reúne tres ámbitos de investigación: la instrumentación para ciencias nucleares (NSS), las tecnologías de imagen médica (MIC) y los detectores semiconductores que funcionan a temperatura ambiente (RTSD). Según la información difundida por la Universidad de Granada, se esperaba la asistencia de cerca de **2.000 investigadores, profesionales y representantes de la industria**, lo que lo convierte en una de las principales citas internacionales de estas especialidades y sitúa a Granada, durante una semana, en el centro de este debate científico.
+
+## Programa
+
+El programa científico abordó los avances en tecnologías de detección, procesamiento de señales y reconstrucción de imágenes, y sus aplicaciones en física de partículas, medicina nuclear y radiología, entre otros campos.
+
+- **Inteligencia artificial.** Tuvo un papel destacado, con sesiones dedicadas a su aplicación en el procesamiento de señales, la reconstrucción de imágenes y el desarrollo de herramientas de análisis, así como a los requisitos para llevarla a la práctica clínica: validación de resultados, fiabilidad de los sistemas y retos técnicos y éticos de su implantación en el ámbito sanitario.
+- **Talleres y cursos.** El congreso incluyó talleres sobre la evolución y las perspectivas de la IA en las ciencias nucleares y la imagen médica, y ocho cursos cortos del 7 al 10 de noviembre, entre ellos uno nuevo sobre inteligencia artificial para el análisis y el procesamiento de imagen médica.
+- **Industria y comunidad.** Una exposición industrial con empresas de instrumentación y soluciones tecnológicas, y actividades de *Women in Engineering* y *Young Professionals* orientadas a la participación de jóvenes investigadores.
+- **Inauguración y programa social.** La inauguración oficial estaba prevista para el miércoles 11 de noviembre, con la Tuna de Medicina como maestra de ceremonias. El programa social incluyó cenas y comidas en lugares emblemáticos de Granada, como el claustro del Hotel Palacio de Santa Paula y el Carmen de los Chapiteles, en la ladera de la Alhambra.
+
+## SiPBA en el congreso
+
+Los temas del congreso (procesamiento de señales, imagen médica e inteligencia artificial aplicada al diagnóstico) están en el centro de la investigación de SiPBA, y estamos muy contentos de haber participado en una edición que se ha celebrado en nuestra ciudad y en la que nuestro responsable ha formado parte del equipo organizador.
+
+No es la primera vez que el grupo participa en esta serie de congresos: en 2018 presentamos siete trabajos en el NSS/MIC de Sídney, como contamos en [Our contributions to IEEE NSS/MIC 2018](/posts/2018-11-20-our-contributions-to-ieee-nss-mic-2018/index.qmd).
+
+::: {.callout-note appearance="simple"}
+## Más información
+
+- Web oficial del congreso: [IEEE NSS MIC RTSD 2026](https://nssmic.ieee.org/2026/).
+- Noticia en *Canal UGR* (06/11/2026): [Granada acoge el congreso internacional IEEE NSS MIC RTSD 2026](https://canal.ugr.es/noticia/granada-congreso-internacional-ieee-nss-mic-rtsd-2026-ugr/).
+:::
