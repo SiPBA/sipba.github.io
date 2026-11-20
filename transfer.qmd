@@ -1,7 +1,6 @@
 ---
 title: "Knowledge Transfer"
 title-block-banner: var(--bs-secondary) url(images/recursos/network.jpg) no-repeat 50% 50% / cover
-include-after-body: _includes/_footer.html
 listing:
   id: transfer-areas
   contents:

@@ -1,0 +1,39 @@
+name: Desplegar en servidor UGR (FTPS)
+
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+  workflow_dispatch:   # permite lanzarlo a mano para probar
+
+concurrency:
+  group: ftp-ugr
+  cancel-in-progress: false   # evita dos subidas FTP simultáneas
+
+jobs:
+  deploy-ftp:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'gh-pages')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar la rama gh-pages (HTML ya compilado)
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+
+      - name: Subir a la UGR por FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftpweb.ugr.es
+          protocol: ftps            # FTPS explícito, puerto 21
+          port: 21
+          username: ${{ secrets.FTP_UGR_USER }}
+          password: ${{ secrets.FTP_UGR_PASS }}
+          local-dir: ./
+          server-dir: ./public_html/prueba/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .nojekyll

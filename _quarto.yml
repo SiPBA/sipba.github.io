@@ -1,21 +1,19 @@
 project:
   type: website
-
+  
 website:
-  title: "SiPBA Research Lab"
-  description: "Demo projects, experiments, debugging data and so on from the [SiPBA Research Lab](https://sipba.github.io/)"
+  title: "SiPBA Research Lab"  
+  description: "SiPBA is a research group at the University of Granada working on statistical signal processing and machine learning applied to medical imaging."
   site-url: https://sipba.github.io/
+  image: images/social/sipba-card.jpg
+  image-alt: "SiPBA Research Lab: Signal Processing and Biomedical Applications, University of Granada"
   favicon: images/logos/favicon.webp
+  open-graph: true
   twitter-card: true
-  page-footer: 
-    left: |
-      <a href="https://creativecommons.org">SiPBA</a> © 2025 by <a href="https://creativecommons.org">SiPBA</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
-    right: "This website is built with [Quarto](https://quarto.org/). [Terms of Use](https://www.ugr.es/condiciones-legales)"
-    background: warning
-    foreground: white
   navbar:
     title: ""
-    background: primary
+    background: "#1d4f91"
+    foreground: "#e0f2fe"
     search: true
     logo: images/logos/SinFondoClaro.png
     right:
@@ -29,12 +27,12 @@ website:
         text: Transfer
       - publications.qmd
       - posts.qmd
-    tools: 
-      - icon: github # add icons as navbar buttons
+    tools:
+      - icon: github
         href: https://github.com/SiPBA
         target: _blank
+        aria-label: GitHub
       - icon: envelope-fill
-        text: ""
         href: contact.qmd
         aria-label: Contact
 
@@ -42,10 +40,10 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
     page-layout: full
     grid:
       body-width: 1000px
+    include-after-body: _includes/_footer.html
     
 execute:
   freeze: auto

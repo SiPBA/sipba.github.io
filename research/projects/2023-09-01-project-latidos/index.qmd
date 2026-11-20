@@ -16,7 +16,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 bibliography: latidos_bibliography.bib
 id: PID2022-137629OA-I00
 started: 2023-09-01
-ended: 2026-08-31
+ended: 2026-12-31
 funding: "151.250€"
 tags:
   - proyecto
@@ -67,25 +67,94 @@ LATiDOS has one **general objective: to build and evaluate data-driven models of
 
 # Results
 
-The project is already running. The current status is:
+The project, originally scheduled to end in August 2026, has been extended until 31 December 2026. Its main results so far are:
 
-## Publications:
+![Progress of the project](latidos_graphical_abstract.svg)
+
+## Publications
+
+### Latent variable models and data fusion
+-   We published a paper in the *International Journal of Neural Systems* about a [cross-modality latent variable framework using joint Variational Autoencoders](/publications/2024-05-10-bridging/index.qmd) that bridges imaging and clinical scores in Parkinson's disease progression, by @martinez2024bridging.
+-   Siamese autoencoders were used to transfer information between imaging modalities in an explainable way, published in *IEEE Transactions on Radiation and Plasma Medical Sciences* by @arco2025explainable.
+-   A critical analysis of how latent space projections and brain atlases are used in deep neuroimaging with autoencoders, *Latent Space Projections and Atlases, a Cautionary Tale in Deep Neuroimaging using Autoencoders*, was published in the *International Journal of Neural Systems* by @gorriz2026latent.
+
+### Validation of machine learning models
 -   A novel framework to evaluate regression performance, called Statistical Agnostic Regression (SAR) by @gorriz2024statistical.
--   We published a paper in the *International Journal of Neural Systems* about a [cross-modality latent variable framework using joint Variational Autoencoders](/publications/2024-05-10-bridging/index.qmd), by @martinez-murcia2024.
--   We published a novel paper within the [GENFI](https://www.genfi.org) initiative, in collaboration with the team at the LMU University in Munich, entitled *Frequency and Longitudinal Course of Behavioral and Neuropsychiatric Symptoms in Participants with Genetic Frontotemporal Dementia* by @schönecker2024
--   We presented a series of publications at the *International Work-Conference on the Interplay Between Artificial and Natural Computation* (IWINAC 2024):
-    -   *A Cross-Modality Latent Representation for the Prediction of Clinical Symptomatology in Parkinson’s Disease* by @vázquez-garcía2024
-    -   *PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models* by @lópez2024a
+-   SAR was later applied to assess the robustness of clinical and metabolic activity models in the PPMI cohort [@hernandez2026assessing].
+
+### Parkinsonism and real-world clinical data
+-   Following the release of the PDBIGDATA database [@lopez2024pdbigdata], we published a semi-automated pipeline for extracting and analysing Parkinson's imaging data from routine clinical practice in the *European Journal of Medical Research* by @lopez2026bridging.
+
+### Frontotemporal dementia (GENFI)
+-   We published a novel paper within the [GENFI](https://www.genfi.org) initiative, in collaboration with the team at the LMU University in Munich, entitled *Frequency and Longitudinal Course of Behavioral and Neuropsychiatric Symptoms in Participants with Genetic Frontotemporal Dementia* by @schonecker2024frequency.
+-   The collaboration continued with a study in *Neurology* on the *Patterns and trajectories of behavioral and neuropsychiatric symptoms in frontotemporal dementia and primary progressive aphasia* by @marth2026patterns.
+
+### Alzheimer's disease in Down syndrome (DZNE)
 -   We collaborated with the Deutsche Zentrum für Neurodegenerative Erkrankungen (DZNE) in an analysis published in the *Alzheimer's & Dementia* journal about the exploratory analysis of the proteomic profile in plasma in adults with Down syndrome in the context of Alzheimer's Disease by @wagemann2025exploratory. These novel biomarkers could be used to stratify patients into different groups and predict the disease progression.
+-   A follow-up study in *Neurology* characterised the *Longitudinal Dynamics of the Blood Proteome Within the Alzheimer Spectrum in Down Syndrome* [@wagemann2026longitudinal], moving these biomarkers towards modelling disease progression over time.
+
+### Related methodology
+The methods developed in LATiDOS (latent representations, small-sample validation and explainable deep learning) have also been applied and extended in related problems:
+
+-   Novel measures for machine learning in small-sample neuroimaging studies, applied to schizophrenia, published in *Human Brain Mapping* by @jimenez2024machine.
+-   Data- and model-driven permutation testing approaches to unravel the heterogeneity of the autism spectrum in the ABIDE I database [@alcaide2026unraveling].
+-   AI-driven discovery of neuroimaging biomarkers of brain tumour surgery [@jimenez2025uncovering], and the link between radiomic signatures and PCA/UMAP manifold representations of the brain in glioma, presented at IWINAC 2026 [@jimenez2026regions].
+-   *DualFlexKAN*, a dual-stage Kolmogorov-Arnold Network architecture with independent function control [@ortiz2026dualflexkan].
+-   Amyloid PET neuroimaging as a prognostic biomarker of multiple sclerosis, presented at IEEE NSS/MIC 2025 [@segovia2025amyloid].
+-   The prognostic value of regional brain reorganisation after tumour surgery using a PCA approach, presented at IEEE NSS/MIC 2025 [@jimenez2025prognostic].
+-   Improved organs-at-risk segmentation using a modified U-Net with self-attention and consistency regularisation, published in *CAAI Transactions on Intelligence Technology* by @manko2024improved.
+
+### IWINAC 2024
+We presented a series of publications at the *International Work-Conference on the Interplay Between Natural and Artificial Computation* (IWINAC 2024):
+
+-   *A Cross-Modality Latent Representation for the Prediction of Clinical Symptomatology in Parkinson's Disease* by @vazquez2024cross
+-   *PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models* by @lopez2024pdbigdata
+-   *A Comparative Study of Deep Learning Approaches for Cognitive Impairment Diagnosis Based on the Clock-Drawing Test* by @jimenez2024comparative
+
+### IEEE NSS/MIC 2024--2026
+We contributed several works to the *IEEE Nuclear Science Symposium and Medical Imaging Conference* (NSS/MIC) in 2024 and 2025:
+
+-   *Assessing the Use of Transfer Learning in Neural Networks Used to Assist in the Diagnosis of Alzheimer's Disease* by @munoz2024transfer (NSS/MIC 2024).
+-   *Explainability of the Latent Space in Autoencoders and Neuroimaging Features* by @peiro2025explainability, which relates the latent variables learnt by autoencoders to interpretable neuroimaging features.
+-   *Interpretable Multimodal Brain Image Fusion for Alzheimer's Diagnosis Via a Siamese Autoencoder* by @arco2025interpretable, extending our Siamese autoencoder framework to multimodal fusion.
+-   *An Explainable Model for the Relationship Between Dementia and Glucose Metabolism Patterns* by @vazquez2025explainable.
+-   *Statistical Agnostic Regression for Reliable Validation of Alzheimer's Disease Models* by @hernandez2025sar.
+-   *Semi-Supervised Labeling Process for the Development of an Imaging Dataset to Support Parkinson's Disease Research* by @lopez2025semisupervised, part of the PDBIGDATA effort.
+
+At NSS/MIC 2026 (Granada, November 2026) we presented five further contributions (in press):
+
+-   *Dementia Risk Estimation From a Positron Emission Tomography-Derived Latent Biomarker* by @vazquez2026dementia, an oral presentation that turns the latent representations learnt in the project into an individual risk biomarker.
+-   *Low-Dimensional Embeddings of Structural MRI for Multi-Disease Brain Morphometry* by @jimenez2026lowdim.
+-   *Impact of Spatial Normalization on the Performance of Deep Learning-Based Systems for Neurodegenerative Disease Classification* by @segovia2026spatial.
+-   *SAR-Based Brain Aging Validation Using Functional Connectivity Correlation Matrices from UK Biobank* by @hernandez2026brainaging.
+-   *Differential Diagnosis of PD, PSP, and MSA: An XGBoost Approach to Retinal Layer Analysis* by @rodriguez2026differential, in collaboration with LMU Munich.
+
+### IWINAC 2026
+At IWINAC 2026 we presented the core disease progression and Age of Symptom Onset (ASO) models of the project:
+
+-   *Survival Modeling in the Latent Space for Alzheimer's Prognosis* by @martinez2026survival, which combines the latent representations learnt in the project with survival analysis to estimate time to conversion.
+-   *Longitudinal Modeling of Alzheimer's Disease Progression Using a Bayesian Latent Framework with APOE-Dependent Genetic Effects* by @vazquez2026longitudinal, a disease progression model that accounts for genetic background.
+-   *Modeling and Predicting Age-at-Onset Trajectories in Genetic Frontotemporal Dementia Using Survival Methods* by @arco2026modeling, in collaboration with GENFI and LMU Munich, directly addressing the prediction of individual age of symptom onset.
+-   *Assessing the Robustness of Clinical--Metabolic Activity Models Through SAR in the PPMI Dataset* by @hernandez2026assessing.
 
 ## Talks
--   IWINAC 2024: [Cross-Modality Latent Variable Framework for the Prediction of Clinical Symptomatology in Parkinson’s Disease]
+-   IWINAC 2024: [Cross-Modality Latent Variable Framework for the Prediction of Clinical Symptomatology in Parkinson's Disease]
 -   IWINAC 2024: [PDBIGDATA: A New Database for Parkinsonism Research Focused on Large Models]
+-   IWINAC 2026 (oral): Survival Modeling in the Latent Space for Alzheimer's Prognosis
+-   IWINAC 2026 (oral): Longitudinal Modeling of Alzheimer's Disease Progression Using a Bayesian Latent Framework with APOE-Dependent Genetic Effects
+-   IWINAC 2026 (oral): Modeling and Predicting Age-at-Onset Trajectories in Genetic Frontotemporal Dementia Using Survival Methods
+-   IWINAC 2026 (oral): Assessing the Robustness of Clinical--Metabolic Activity Models Through SAR in the PPMI Dataset
+-   IEEE NSS/MIC 2026 (oral): Dementia Risk Estimation From a Positron Emission Tomography-Derived Latent Biomarker
 -   *Actividad*: Música e IA at the European Researcher's Night 2024 (27/09/2024)
 -   *Taller*: ¡Las máquinas nos quitan el trabajo! (14/03/2024), en el proyecto *Mujer y Niña en la Ciencia* de la Unidad de Cultura Científica de la Universidad de Granada.
 
 ## Software
--   We released the [PDBIGDATA](https://github.com/PDBIGDATA/PDBIGDATA) database, a new database for Parkinsonism Research focused on Large Models.
+-   We released the [PDBIGDATA](https://github.com/PDBIGDATA/PDBIGDATA) database, a new database for Parkinsonism Research focused on Large Models [@lopez2024pdbigdata].
+
+## References
+
+::: {#refs}
+:::
 
 # Funding 
 This project PID2022-137629OA-I00 is funded by MICIU/AEI/10.13039/501100011033 and by ERDF/EU (European Regional Development Fund).
