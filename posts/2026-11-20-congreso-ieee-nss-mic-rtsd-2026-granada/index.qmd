@@ -12,8 +12,8 @@ tags:
   - "medical-imaging"
   - "inteligencia-artificial"
   - "sipba"
-image: ../../images/recursos/network.jpg
-title-block-banner: var(--bs-secondary) url(../../images/recursos/network.jpg) no-repeat 50% 50% / cover
+image: images/nssmic-rtsd-2026.jpg
+title-block-banner: linear-gradient(135deg, #1d4f91, #0b2e4e)
 ---
 
 Granada ha acogido, del **7 al 14 de noviembre de 2026**, el congreso internacional **IEEE NSS MIC RTSD 2026** (*Nuclear Science Symposium, Medical Imaging Conference and International Symposium on Room-Temperature Semiconductor Detectors*), que se celebró en el Palacio de Congresos de la ciudad en formato presencial e híbrido.
