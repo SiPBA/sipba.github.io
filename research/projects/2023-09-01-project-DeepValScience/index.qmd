@@ -12,7 +12,7 @@ ip: Juan Manuel Górriz Sáez, Ignacio Álvarez Illán
 date: last-modified
 categories: [python, project] # self-defined categories
 citation:
-  url: https://sipba.github.io/research/projects/2023-09-01-project-DeepValScience/ 
+  url: https://sipba.ugr.es/research/projects/2023-09-01-project-DeepValScience/ 
 image: val_deep_science_logo.png # TODO: añadir el logo del proyecto
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 bibliography: val_deep_science_bibliography.bib # TODO: descomentar si añades el .bib y citas con @clave

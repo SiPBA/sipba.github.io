@@ -5,7 +5,7 @@ ip: F.J. Martinez-Murcia
 date: 04-01-2025
 categories: [python, project] # self-defined categories
 citation: 
-  url: https://sipba.github.io/research/projects/2025-04-01-project-ml2brain/
+  url: https://sipba.ugr.es/research/projects/2025-04-01-project-ml2brain/
 image: ml2brain_featured.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 bibliography: ml2brain_bibliography.bib
