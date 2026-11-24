@@ -32,7 +32,7 @@ jobs:
           username: ${{ secrets.FTP_UGR_USER }}
           password: ${{ secrets.FTP_UGR_PASS }}
           local-dir: ./
-          server-dir: ./public_html/prueba/
+          server-dir: ./public_html/
           exclude: |
             **/.git*
             **/.git*/**
