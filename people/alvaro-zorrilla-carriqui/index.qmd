@@ -2,7 +2,7 @@
 title: "Álvaro Zorrilla Carriqui"
 image: images/alvaro.jpeg
 lastname: "Zorrilla Carriqui"
-categories: [Predoc] 
+categories: [PhD Student] 
 started: "2025"
 about:
   template: trestles
